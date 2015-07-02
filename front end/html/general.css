@@ -68,7 +68,11 @@ body {
 	margin-left: 100px;
 	margin-right: -200px;
 }
-
+.jumbotron li{
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
 
 
 
