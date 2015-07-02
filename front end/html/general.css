@@ -1,0 +1,69 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #7fdbff;
+  }
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  font-family: "Futura",Arial,sans-serif;	
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.player-name {
+	font-size: 5em;
+}
+
+.player-number, .player-team{
+	font-size: 2em;
+}
+
+.stats {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(127,219,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(127,219,255,1)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(127,219,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(127,219,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(127,219,255,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(127,219,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#7fdbff', GradientType=1 );
+
+}
+
+.vertical-center {
+	min-height: 100%;
+
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+}
+
+.ya {
+	color:#FF4136;
+}
+.football {
+	color: #FFFFFF;
+}
+.db {
+	color: #0074D9;
+}
+#navbar a{
+	color: #DDDDDD;
+}
+#navbar a:hover{
+	color: #FFFFFF;
+}
+
+
+
+
+
+
