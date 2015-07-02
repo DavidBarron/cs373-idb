@@ -1,0 +1,75 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-image: url("../Football_GridBG.jpg");
+  }
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  font-family: "Futura",Arial,sans-serif;	
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.player-name {
+	font-size: 5em;
+}
+
+.player-number, .player-team{
+	font-size: 2em;
+}
+
+.stats {
+	background-color: black;
+}
+
+.roster{
+
+}
+
+.roster-title{
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.jumbotron {
+	border-radius: 6px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.vertical-center {
+	min-height: 100%;
+
+	display: flex;
+	align-items: center;
+}
+
+.ya {
+	color:#FF4136;
+}
+.football {
+	color: #FFFFFF;
+}
+.db {
+	color: #0074D9;
+}
+#navbar a{
+	color: #DDDDDD;
+}
+#navbar a:hover{
+	color: #FFFFFF;
+}
+
+
+
+
+
+
