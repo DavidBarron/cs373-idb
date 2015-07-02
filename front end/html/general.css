@@ -26,9 +26,6 @@ body {
 	font-size: 2em;
 }
 
-.stats {
-	background-color: black;
-}
 
 .roster{
 
@@ -67,7 +64,10 @@ body {
 #navbar a:hover{
 	color: #FFFFFF;
 }
-
+.container{
+	margin-left: 100px;
+	margin-right: -200px;
+}
 
 
 
