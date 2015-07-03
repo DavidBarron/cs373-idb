@@ -2,6 +2,7 @@ body {
   padding-top: 70px;
   padding-bottom: 30px;
   background-image: url("../Football_GridBG.jpg");
+  background-attachment: fixed;
   }
 
 .theme-dropdown .dropdown-menu {
