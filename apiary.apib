@@ -5,177 +5,153 @@ HOST: http://polls.apiblueprint.org/
 
 YetAnotherNFLDB is a simple API that allows customers to view simple information about NFL divisions, teams, and players.  
 
-# Polls API Root [/]
+# Group Divisions
 
-This resource does not have any attributes. Instead it offers the initial
-API affordances in the form of the links in the JSON body.
-
-It is recommend to follow the “url” link values,
-[Link](https://tools.ietf.org/html/rfc5988) or Location headers where
-applicable to retrieve resources. Instead of constructing your own URLs,
-to keep your client decoupled from implementation details.
-
-## Retrieve the Entry Point [GET]
-
-+ Response 200 (application/json)
-
-        {
-            "questions_url": "/questions"
-        }
-
-## Group Question
-
-Resources related to questions in the API.
-
-## Question [/questions/{question_id}]
-
-A Question object has the following attributes:
-
-+ question
-+ published_at - An ISO8601 date when the question was published.
-+ url
-+ choices - An array of Choice objects.
+## Divisions Collection [/api/divisions/?offset={offset}&limit={limit}]
 
 + Parameters
-    + question_id: 1 (required, number) - ID of the Question in form of an integer
+    + offset (required, number, `1`) ... number `offset` of the Division to perform action with. Has example value.
+    + limit (required, number, `1`) ... number `limit` of the Division to perform action with. Has example value.
 
-### View a Questions Detail [GET]
 
+
+### List first {limit} Divisions starting from {offset}. Queries are bounded by the number of divisions which is 8 [GET]
 + Response 200 (application/json)
 
-        {
-            "question": "Favourite programming language?",
-            "published_at": "2014-11-11T08:40:51.620Z",
-            "url": "/questions/1",
-            "choices": [
-                {
-                    "choice": "Swift",
-                    "url": "/questions/1/choices/1",
-                    "votes": 2048
-                }, {
-                    "choice": "Python",
-                    "url": "/questions/1/choices/2",
-                    "votes": 1024
-                }, {
-                    "choice": "Objective-C",
-                    "url": "/questions/1/choices/3",
-                    "votes": 512
-                }, {
-                    "choice": "Ruby",
-                    "url": "/questions/1/choices/4",
-                    "votes": 256
-                }
-            ]
-        }
-
-## Choice [/questions/{question_id}/choices/{choice_id}]
-
-+ Parameters
-    + question_id: 1 (required, number) - ID of the Question in form of an integer
-    + choice_id: 1 (required, number) - ID of the Choice in form of an integer
-
-### Vote on a Choice [POST]
-
-This action allows you to vote on a question's choice.
-
-+ Response 201
-
-    + Headers
-
-            Location: /questions/1
-
-## Questions Collection [/questions{?page}]
-
-+ Parameters
-    + page: 1 (optional, number) - The page of questions to return
-
-### List All Questions [GET]
-
-+ Response 200 (application/json)
-
-    + Headers
-
-            Link: </questions?page=2>; rel="next"
-
-    + Body
-
-            [
-                {
-                    "question": "Favourite programming language?",
-                    "published_at": "2014-11-11T08:40:51.620Z",
-                    "url": "/questions/1",
-                    "choices": [
-                        {
-                            "choice": "Swift",
-                            "url": "/questions/1/choices/1",
-                            "votes": 2048
-                        }, {
-                            "choice": "Python",
-                            "url": "/questions/1/choices/2",
-                            "votes": 1024
-                        }, {
-                            "choice": "Objective-C",
-                            "url": "/questions/1/choices/3",
-                            "votes": 512
-                        }, {
-                            "choice": "Ruby",
-                            "url": "/questions/1/choices/4",
-                            "votes": 256
-                        }
-                    ]
-                }
-            ]
-
-### Create a New Question [POST]
-
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
-
-+ question (string) - The question
-+ choices (array[string]) - A collection of choices.
-
-+ Request (application/json)
-
-        {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
-        }
-
-+ Response 201 (application/json)
-
-    + Headers
-
-            Location: /questions/2
-
-    + Body
-
+        [
             {
-                "question": "Favourite programming language?",
-                "published_at": "2014-11-11T08:40:51.620Z",
-                "url": "/questions/2",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "url": "/questions/2/choices/1",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "url": "/questions/2/choices/2",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "url": "/questions/2/choices/3",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "url": "/questions/2/choices/4",
-                        "votes": 0
-                    }
-                ]
+                "Conference": "American Football Conference",
+                "League": "National Football League",
+                "Sport": "American football",
+                "Founded": "1960 (as the American Football League Eastern Division)",
+                "No. of teams": ["Buffalo Bills", "Miami Dolphins", "New England Patriots", "New York Jets"],
+                "Most recent champion(s)": "New England Patriots",
+                "Most titles": " New England Patriots"
+            },
+            {
+                "etc..."
             }
+            
+        ]
+
+## Divisions [/api/divisions/{id}]
+A single Division object with all its details
+
++ Parameters
+    + id (required, string, `AFC East`) ... String `id` of the Division to perform action with. Has example value.
+
+### Retrieve a Division [GET]
++ Response 200 (application/json)
+
+             {
+                "Conference": "American Football Conference",
+                "League": "National Football League",
+                "Sport": "American football",
+                "Founded": "1960 (as the American Football League Eastern Division)",
+                "No. of teams": ["Buffalo Bills", "Miami Dolphins", "New England Patriots", "New York Jets"],
+                "Most recent champion(s)": "New England Patriots",
+                "Most titles": " New England Patriots"
+            }
+
+
+# Group Teams
+## Teams Collection [/api/teams/?offset={offset}&limit={limit}]
+
++ Parameters
+    + offset (required, number, `1`) ... number `offset` of the Teams to perform action with. Has example value.
+    + limit (required, number, `1`) ... number `limit` of the Teams to perform action with. Has example value.
+
+
+
+### List first {limit} Teams starting from {offset}. Queries are bounded by the number of teams which is 32. [GET]
++ Response 200 (application/json)
+
+        [
+            {
+                "team": "New England Patriots",
+                "division": "AFC East",
+                "state": "Massachusetts",
+                "city": "Foxborough",
+                "stadium": "Gillette Stadium",
+                "coach": "Bill Belichick",
+                "established": "1960"
+            },
+            {
+                "etc..." : "more"
+            }
+        ]
+
+
+
+## Teams [/api/teams/{id}]
+A single Team object with all its details
+
++ Parameters
+    + id (required, string, `New England Patriots`) ... String `id` of the Team to perform action with. Has example value.
+
+### Retrieve a Team [GET]
++ Response 200 (application/json)
+
+
+        {
+            "team": "New England Patriots",
+            "division": "AFC East",
+            "state": "Massachusetts",
+            "city": "Foxborough",
+            "stadium": "Gillette Stadium",
+            "coach": "Bill Belichick",
+            "established": "1960"
+        }
+ 
+
+# Group Players
+## Players Collection [/api/players/?offset={offset}&limit={limit}]
++ Parameters
+    + offset (required, number, `1`) ... number `offset` of the Players to perform action with. Has example value.
+    + limit (required, number, `1`) ... number `limit` of the Players to perform action with. Has example value.
+
+
+
+### List first {limit} Players starting from {offset}. Queries are bounded by the number of players which is 2880[GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+            "name": "Bailey, Dan",
+            "team": "Dallas Cowboys",
+            "number": "5",
+            "pos": "K",
+            "height": "6'0",
+            "weight": "195",
+            "age": "27",
+            "exp": "5",
+            "college": "Oklahoma State",
+            "image": "http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/bai159977_15.png"
+            },
+            {
+                etc...
+            }
+        ]
+
+## Players [/api/players/{id}]
+A single Player object with all its details
+
++ Parameters
+    + id (required, number, `1`) ... Int `id` of the Player to perform action with. Has example value.
+
+### Retrieve a Player [GET]
++ Response 200 (application/json)
+
+        {
+            "name": "Bailey, Dan",
+            "team": "Dallas Cowboys",
+            "number": "5",
+            "pos": "K",
+            "height": "6'0",
+            "weight": "195",
+            "age": "27",
+            "exp": "5",
+            "college": "Oklahoma State",
+            "image": "http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/bai159977_15.png"
+        }

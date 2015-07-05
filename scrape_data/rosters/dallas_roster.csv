@@ -1,4 +1,4 @@
-name,team,number,pos,height,weight,age,exp,college,image
+player,team,number,pos,height,weight,age,exp,college,image
 "Agnew, Ray",Dallas Cowboys,48,FB,5'10”,245,24,1,Southern Illinois,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/AGN409291.png
 "Baggs, Donnie",Dallas Cowboys,46,LB,6'1”,230,22,R,Texas A&M,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/baggs_donnie.png
 "Bailey, Dan",Dallas Cowboys,5,K,6'0”,195,27,5,Oklahoma State,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/bai159977_15.png
