@@ -1,92 +1,91 @@
-Source page: http://www.dallascowboys.com/team/roster,,,,,,,,
-name_link,name_link/_text,number,pos_value,ht_number,wt_number,age_number,exp_value,college_value
-http://www.dallascowboys.com/team/players/roster/brandon-carr,"Carr, Brandon",39,CB,6; 0,210,29,8,Grand Valley State
-http://www.dallascowboys.com/team/players/roster/jeremy-mincey,"Mincey, Jeremy",92,DE,6; 4,280,31,8,Florida
-http://www.dallascowboys.com/team/players/roster/anthony-hitchens-0,"Hitchens, Anthony",59,LB,6; 0,235,23,2,Iowa
-http://www.dallascowboys.com/team/players/roster/corey-white,"White, Corey",23,CB,5; 11,206,25,3,Samford
-http://www.dallascowboys.com/team/players/roster/nick-harwell,"Harwell, Nick",17,WR,5; 11,193,24,R,Kansas
-http://www.dallascowboys.com/team/players/roster/efe-obada,"Obada, Efe",63,DE,6; 6,255,23,R,No College
-http://www.dallascowboys.com/team/players/roster/barry-church,"Church, Barry",42,S,6; 2,218,27,6,Toledo
-http://www.dallascowboys.com/team/players/roster/joseph-randle,"Randle, Joseph",21,RB,6; 0,210,23,3,Oklahoma State
-http://www.dallascowboys.com/team/players/roster/rolando-mcclain-0,"McClain, Rolando",55,LB,6; 4,259,25,5,Alabama
-http://www.dallascowboys.com/team/players/roster/rj-dill,"Dill, R.J.",74,OT,6; 6,316,24,1,Rutgers
-http://www.dallascowboys.com/team/players/roster/george-farmer,"Farmer, George",19,WR,6; 1,220,21,R,USC
-http://www.dallascowboys.com/team/players/roster/robert-steeples,"Steeples, Robert",28,CB,6; 1,195,25,1,Memphis
-http://www.dallascowboys.com/team/players/roster/morris-claiborne,"Claiborne, Morris",24,CB,5; 11,192,25,4,LSU
-http://www.dallascowboys.com/team/players/roster/tony-romo,"Romo, Tony",9,QB,6; 2,230,35,13,Eastern Illinois
-http://www.dallascowboys.com/team/players/roster/tyler-patmon-0,"Patmon, Tyler",26,CB,5; 10,185,24,R,Oklahoma State
-http://www.dallascowboys.com/team/players/roster/ryan-miller,"Miller, Ryan",78,OT,6; 7,321,25,2,Colorado
-http://www.dallascowboys.com/team/players/roster/joel-ross,"Ross, Joel",29,CB,5; 10,185,23,R,Appalachian State
-http://www.dallascowboys.com/team/players/roster/tyler-clutts,"Clutts, Tyler",44,FB,6; 2,250,30,5,Fresno State
-http://www.dallascowboys.com/team/players/roster/tyrone-crawford,"Crawford, Tyrone",98,DT,6; 4,285,25,4,Boise State
-http://www.dallascowboys.com/team/players/roster/orlando-scandrick,"Scandrick, Orlando",32,CB,5; 10,196,28,8,Boise State
-http://www.dallascowboys.com/team/players/roster/devin-street-0,"Street, Devin",15,WR,6; 3,200,24,2,Pittsburgh
-http://www.dallascowboys.com/team/players/roster/tom-hornsey,"Hornsey, Tom",1,P,6; 3,210,26,1,Memphis
-http://www.dallascowboys.com/team/players/roster/jason-wilson,"Wilson, Jason",33,CB,5; 11,185,22,R,Central Michigan
-http://www.dallascowboys.com/team/players/roster/tim-scott-0,"Scott, Tim",41,S,6; 0,195,22,R,North Carolina
-http://www.dallascowboys.com/team/players/roster/lance-dunbar,"Dunbar, Lance",25,RB,5; 8,195,25,4,North Texas
-http://www.dallascowboys.com/team/players/roster/tyron-smith,"Smith, Tyron",77,OT,6; 5,320,24,5,USC
-http://www.dallascowboys.com/team/players/roster/dustin-vaughan-0,"Vaughan, Dustin",10,QB,6; 5,235,24,R,West Texas A&M
-http://www.dallascowboys.com/team/players/roster/casey-kreiter-0,"Kreiter, Casey",49,LS,6; 1,250,24,1,Iowa
-http://www.dallascowboys.com/team/players/roster/ray-vinopal,"Vinopal, Ray",36,S,5; 10,200,23,R,Pittsburgh
-http://www.dallascowboys.com/team/players/roster/aj-jenkins,"Jenkins, A.J.",16,WR,6; 0,200,25,4,Illinois
-http://www.dallascowboys.com/team/players/roster/gavin-escobar,"Escobar, Gavin",89,TE,6; 6,260,24,3,San Diego State
-http://www.dallascowboys.com/team/players/roster/brandon-weeden,"Weeden, Brandon",3,QB,6; 3,228,31,4,Oklahoma State
-http://www.dallascowboys.com/team/players/roster/kenneth-boatright-0,"Boatright, Kenneth",79,DE,6; 3,253,25,1,Southern Illinois
-http://www.dallascowboys.com/team/players/roster/greg-hardy,"Hardy, Greg",76,DE,6; 4,279,26,5,Mississippi
-http://www.dallascowboys.com/team/players/roster/shane-mcdermott-0,"McDermott, Shane",62,C,6; 4,300,23,R,Miami
-http://www.dallascowboys.com/team/players/roster/lache-seastrunk,"Seastrunk, Lache",30,RB,5; 10,201,24,1,Baylor
-http://www.dallascowboys.com/team/players/roster/travis-frederick,"Frederick, Travis",72,C,6; 4,315,24,3,Wisconsin
-http://www.dallascowboys.com/team/players/roster/darrion-weems,"Weems, Darrion",75,OT,6; 5,310,26,3,Oregon
-http://www.dallascowboys.com/team/players/roster/ryan-williams-0,"Williams, Ryan",34,RB,5; 9,207,25,2,Virginia Tech
-http://www.dallascowboys.com/team/players/roster/byron-jones,"Jones, Byron",31,CB,6; 1,199,22,R,Connecticut
-http://www.dallascowboys.com/team/players/roster/reshod-fortenberry,"Fortenberry, Reshod",69,OT,6; 5,286,24,R,Texas Tech
-http://www.dallascowboys.com/team/players/roster/justin-jackson,"Jackson, Justin",57,LB,6; 1,232,23,1,Wake Forest
-http://www.dallascowboys.com/team/players/roster/doug-free,"Free, Doug",68,OT,6; 6,325,31,9,Northern Illinois
-http://www.dallascowboys.com/team/players/roster/john-wetzel,"Wetzel, John",61,OT,6; 7,328,23,1,Boston College
-http://www.dallascowboys.com/team/players/roster/chris-whaley,"Whaley, Chris",64,DT,6; 3,272,24,R,Texas
-http://www.dallascowboys.com/team/players/roster/randy-gregory,"Gregory, Randy",94,DE,6; 6,245,22,R,Nebraska
-http://www.dallascowboys.com/team/players/roster/deontay-greenberry,"Greenberry, Deontay",81,WR,6; 2,200,21,R,Houston
-http://www.dallascowboys.com/team/players/roster/james-hanna,"Hanna, James",84,TE,6; 4,260,25,4,Oklahoma
-http://www.dallascowboys.com/team/players/roster/kyle-wilber,"Wilber, Kyle",51,LB,6; 4,245,26,4,Wake Forest
-http://www.dallascowboys.com/team/players/roster/demarcus-lawrence-0,"Lawrence, DeMarcus",90,DE,6; 3,251,23,R,Boise St.
-http://www.dallascowboys.com/team/players/roster/chaz-green,"Green, Chaz",79,OL,6; 5,300,23,R,Florida
-http://www.dallascowboys.com/team/players/roster/antwan-goodley,"Goodley, Antwan",85,WR,5; 10,220,23,R,Baylor
-http://www.dallascowboys.com/team/players/roster/nick-hayden,"Hayden, Nick",96,DT,6; 4,303,29,8,Wisconsin
-http://www.dallascowboys.com/team/players/roster/jj-wilcox,"Wilcox, J.J.",27,S,6; 0,212,24,3,Georgia Southern
-http://www.dallascowboys.com/team/players/roster/ben-gardner-0,"Gardner, Ben",93,DE,6; 4,270,24,2,Stanford
-http://www.dallascowboys.com/team/players/roster/damien-wilson,"Wilson, Damien",45,LB,6; 0,243,22,R,Minnesota
-http://www.dallascowboys.com/team/players/roster/ray-hamilton,"Hamilton, Ray",86,TE,6; 4,252,22,R,Iowa
-http://www.dallascowboys.com/team/players/roster/jeff-heath,"Heath, Jeff",38,S,6; 1,212,24,3,Saginaw Valley State
-http://www.dallascowboys.com/team/players/roster/terrance-williams,"Williams, Terrance",83,WR,6; 2,208,25,3,Baylor
-http://www.dallascowboys.com/team/players/roster/reggie-dunn,"Dunn, Reggie",14,WR,5; 9,178,26,1,Utah
-http://www.dallascowboys.com/team/players/roster/ryan-russell,"Russell, Ryan",99,DE,6; 5,267,23,R,Purdue
-http://www.dallascowboys.com/team/players/roster/ray-agnew-0,"Agnew, Ray",48,FB,5; 10,245,24,1,Southern Illinois
-http://www.dallascowboys.com/team/players/roster/chris-jones,"Jones, Chris",6,P,6; 0,205,25,4,Carson-Newman
-http://www.dallascowboys.com/team/players/roster/jason-witten,"Witten, Jason",82,TE,6; 6,263,33,13,Tennessee
-http://www.dallascowboys.com/team/players/roster/lavar-edwards,"Edwards, Lavar",95,DE,6; 4,278,25,2,LSU
-http://www.dallascowboys.com/team/players/roster/mark-nzeocha,"Nzeocha, Mark",47,LB,6; 3,239,25,R,Wyoming
-http://www.dallascowboys.com/team/players/roster/keith-rivers-0,"Rivers, Keith",56,LB,6; 2,235,29,7,USC
-http://www.dallascowboys.com/team/players/roster/dan-bailey,"Bailey, Dan",5,K,6; 0,195,27,5,Oklahoma State
-http://www.dallascowboys.com/team/players/roster/lp-ladouceur,"LaDouceur, L.P.",91,LS,6; 5,256,34,11,California
-http://www.dallascowboys.com/team/players/roster/sean-lee,"Lee, Sean",50,LB,6; 2,238,28,6,Penn State
-http://www.dallascowboys.com/team/players/roster/jack-crawford,"Crawford, Jack",58,DE,6; 5,288,26,4,Penn State
-http://www.dallascowboys.com/team/players/roster/laurence-gibson,"Gibson, Laurence",67,OT,6; 6,300,24,R,Virginia Tech
-http://www.dallascowboys.com/team/players/roster/lael-collins,"Collins, La'el",71,OL,6; 4,321,21,R,LSU-Shreveport
-http://www.dallascowboys.com/team/players/roster/cole-beasley,"Beasley, Cole",11,WR,5; 8,180,26,4,Southern Methodist
-http://www.dallascowboys.com/team/players/roster/cameron-lawrence,"Lawrence, Cameron",53,LB,6; 2,238,24,3,Mississippi State
-http://www.dallascowboys.com/team/players/roster/zack-martin,"Martin, Zack",70,G,6; 4,310,24,2,Notre Dame
-http://www.dallascowboys.com/team/players/roster/darren-mcfadden,"McFadden, Darren",20,RB,6; 2,210,27,7,Arkansas
-http://www.dallascowboys.com/team/players/roster/geoff-swaim,"Swaim, Geoff",87,TE,6; 4,250,21,R,Texas
-http://www.dallascowboys.com/team/players/roster/donnie-baggs,"Baggs, Donnie",46,LB,6; 1,230,22,R,Texas A&M
-http://www.dallascowboys.com/team/players/roster/mackenzy-bernadeau,"Bernadeau, Mackenzy",73,G,6; 4,322,29,8,Bentley
-http://www.dallascowboys.com/team/players/roster/ronald-leary,"Leary, Ronald",65,G,6; 3,320,26,3,Memphis
-http://www.dallascowboys.com/team/players/roster/ken-bishop-0,"Bishop, Ken",66,NT,6; 0,305,24,R,Northern Illinois
-http://www.dallascowboys.com/team/players/roster/jasper-brinkley,"Brinkley, Jasper",54,LB,6; 2,252,29,7,South Carolina
-http://www.dallascowboys.com/team/players/roster/jameill-showers,"Showers, Jameill",7,QB,6; 1,230,23,R,Texas-El Paso
-http://www.dallascowboys.com/team/players/roster/danny-mccray,"McCray, Danny",40,S,6; 1,221,27,5,LSU
-http://www.dallascowboys.com/team/players/roster/dez-bryant,"Bryant, Dez",88,WR,6; 2,220,26,6,Oklahoma State
-http://www.dallascowboys.com/team/players/roster/terrell-mcclain,"McClain, Terrell",97,DT,6; 2,302,26,5,South Florida
-http://www.dallascowboys.com/team/players/roster/davon-coleman-0,"Coleman, Davon",60,DT,6; 2,300,24,R,Arizona State
-http://www.dallascowboys.com/team/players/roster/andrew-gachkar,"Gachkar, Andrew",52,LB,6; 2,224,26,5,Missouri
-http://www.dallascowboys.com/team/players/roster/lucky-whitehead,"Whitehead, Lucky",13,WR,5; 9,163,23,R,Florida Atlantic
+player,team,number,pos,height,weight,age,exp,college,image
+"Agnew, Ray",Dallas Cowboys,48,FB,5'10”,245,24,1,Southern Illinois,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/AGN409291.png
+"Baggs, Donnie",Dallas Cowboys,46,LB,6'1”,230,22,R,Texas A&M,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/baggs_donnie.png
+"Bailey, Dan",Dallas Cowboys,5,K,6'0”,195,27,5,Oklahoma State,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/bai159977_15.png
+"Beasley, Cole",Dallas Cowboys,11,WR,5'8”,180,26,4,Southern Methodist,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/bea434808_4.png
+"Bernadeau, Mackenzy",Dallas Cowboys,73,G,6'4”,322,29,8,Bentley,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/ber180672_9.png
+"Bishop, Ken",Dallas Cowboys,66,NT,6'0”,305,24,R,Northern Illinois,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/bishop_ken_headshot_14_0.png
+"Boatright, Kenneth",Dallas Cowboys,79,DE,6'3”,253,25,1,Southern Illinois,http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16049.png&w=350&h=254
+"Brinkley, Jasper",Dallas Cowboys,54,LB,6'2”,252,29,7,South Carolina,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/colllinss.jpg
+"Bryant, Dez",Dallas Cowboys,88,WR,6'2”,220,26,6,Oklahoma State,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/bry336027_7.png
+"Carr, Brandon",Dallas Cowboys,39,CB,6'0”,210,29,8,Grand Valley State,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/car347675_3.png
+"Church, Barry",Dallas Cowboys,42,S,6'2”,218,27,6,Toledo,
+"Claiborne, Morris",Dallas Cowboys,24,CB,5'11”,192,25,4,LSU,
+"Clutts, Tyler",Dallas Cowboys,44,FB,6'2”,250,30,5,Fresno State,
+"Coleman, Davon",Dallas Cowboys,60,DT,6'2”,300,24,R,Arizona State,
+"Collins, La'el",Dallas Cowboys,71,OL,6'4”,321,21,R,LSU-Shreveport,
+"Crawford, Jack",Dallas Cowboys,58,DE,6'5”,288,26,4,Penn State,
+"Crawford, Tyrone",Dallas Cowboys,98,DT,6'4”,285,25,4,Boise State,
+"Dill, R.J.",Dallas Cowboys,74,OT,6'6”,316,24,1,Rutgers,
+"Dunbar, Lance",Dallas Cowboys,25,RB,5'8”,195,25,4,North Texas,
+"Dunn, Reggie",Dallas Cowboys,14,WR,5'9”,178,26,1,Utah,
+"Edwards, Lavar",Dallas Cowboys,95,DE,6'4”,278,25,2,LSU,
+"Escobar, Gavin",Dallas Cowboys,89,TE,6'6”,260,24,3,San Diego State,
+"Farmer, George",Dallas Cowboys,19,WR,6'1”,220,21,R,USC,
+"Fortenberry, Reshod",Dallas Cowboys,69,OT,6'5”,286,24,R,Texas Tech,
+"Frederick, Travis",Dallas Cowboys,72,C,6'4”,315,24,3,Wisconsin,
+"Free, Doug",Dallas Cowboys,68,OT,6'6”,325,31,9,Northern Illinois,
+"Gachkar, Andrew",Dallas Cowboys,52,LB,6'2”,224,26,5,Missouri,
+"Gardner, Ben",Dallas Cowboys,93,DE,6'4”,270,24,2,Stanford,
+"Gibson, Laurence",Dallas Cowboys,67,OT,6'6”,300,24,R,Virginia Tech,
+"Goodley, Antwan",Dallas Cowboys,85,WR,5'10”,220,23,R,Baylor,
+"Green, Chaz",Dallas Cowboys,79,OL,6'5”,300,23,R,Florida,
+"Greenberry, Deontay",Dallas Cowboys,81,WR,6'2”,200,21,R,Houston,
+"Gregory, Randy",Dallas Cowboys,94,DE,6'6”,245,22,R,Nebraska,
+"Hamilton, Ray",Dallas Cowboys,86,TE,6'4”,252,22,R,Iowa,
+"Hanna, James",Dallas Cowboys,84,TE,6'4”,260,25,4,Oklahoma,
+"Hardy, Greg",Dallas Cowboys,76,DE,6'4”,279,26,5,Mississippi,
+"Harwell, Nick",Dallas Cowboys,17,WR,5'11”,193,24,R,Kansas,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/harwell_nick.jpg
+"Hayden, Nick",Dallas Cowboys,96,DT,6'4”,303,29,8,Wisconsin,
+"Heath, Jeff",Dallas Cowboys,38,S,6'1”,212,24,3,Saginaw Valley State,
+"Hitchens, Anthony",Dallas Cowboys,59,LB,6'0”,235,23,2,Iowa,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/hitchens_anthony_headshot_14.png
+"Hornsey, Tom",Dallas Cowboys,1,P,6'3”,210,26,1,Memphis,
+"Jackson, Justin",Dallas Cowboys,57,LB,6'1”,232,23,1,Wake Forest,
+"Jenkins, A.J.",Dallas Cowboys,16,WR,6'0”,200,25,4,Illinois,
+"Jones, Byron",Dallas Cowboys,31,CB,6'1”,199,22,R,Connecticut,
+"Jones, Chris",Dallas Cowboys,6,P,6'0”,205,25,4,Carson-Newman,
+"Kreiter, Casey",Dallas Cowboys,49,LS,6'1”,250,24,1,Iowa,
+"LaDouceur, L.P.",Dallas Cowboys,91,LS,6'5”,256,34,11,California,
+"Lawrence, Cameron",Dallas Cowboys,53,LB,6'2”,238,24,3,Mississippi State,
+"Lawrence, DeMarcus",Dallas Cowboys,90,DE,6'3”,251,23,R,Boise St.,
+"Leary, Ronald",Dallas Cowboys,65,G,6'3”,320,26,3,Memphis,
+"Lee, Sean",Dallas Cowboys,50,LB,6'2”,238,28,6,Penn State,
+"Martin, Zack",Dallas Cowboys,70,G,6'4”,310,24,2,Notre Dame,
+"McClain, Rolando",Dallas Cowboys,55,LB,6'4”,259,25,5,Alabama,
+"McClain, Terrell",Dallas Cowboys,97,DT,6'2”,302,26,5,South Florida,
+"McCray, Danny",Dallas Cowboys,40,S,6'1”,221,27,5,LSU,
+"McDermott, Shane",Dallas Cowboys,62,C,6'4”,300,23,R,Miami,
+"McFadden, Darren",Dallas Cowboys,20,RB,6'2”,210,27,7,Arkansas,
+"Miller, Ryan",Dallas Cowboys,78,OT,6'7”,321,25,2,Colorado,
+"Mincey, Jeremy",Dallas Cowboys,92,DE,6'4”,280,31,8,Florida,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/min067178_1.png
+"Nzeocha, Mark",Dallas Cowboys,47,LB,6'3”,239,25,R,Wyoming,
+"Obada, Efe",Dallas Cowboys,63,DE,6'6”,255,23,R,No College,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/obada_efea.png
+"Patmon, Tyler",Dallas Cowboys,26,CB,5'10”,185,24,R,Oklahoma State,
+"Randle, Joseph",Dallas Cowboys,21,RB,6'0”,210,23,3,Oklahoma State,
+"Rivers, Keith",Dallas Cowboys,56,LB,6'2”,235,29,7,USC,
+"Romo, Tony",Dallas Cowboys,9,QB,6'2”,230,35,13,Eastern Illinois,
+"Ross, Joel",Dallas Cowboys,29,CB,5'10”,185,23,R,Appalachian State,
+"Russell, Ryan",Dallas Cowboys,99,DE,6'5”,267,23,R,Purdue,
+"Scandrick, Orlando",Dallas Cowboys,32,CB,5'10”,196,28,8,Boise State,
+"Scott, Tim",Dallas Cowboys,41,S,6'0”,195,22,R,North Carolina,
+"Seastrunk, Lache",Dallas Cowboys,30,RB,5'10”,201,24,1,Baylor,
+"Showers, Jameill",Dallas Cowboys,7,QB,6'1”,230,23,R,Texas-El Paso,
+"Smith, Tyron",Dallas Cowboys,77,OT,6'5”,320,24,5,USC,
+"Steeples, Robert",Dallas Cowboys,28,CB,6'61,195,25,1,Memphis,
+"Street, Devin",Dallas Cowboys,15,WR,6'3”,200,24,2,Pittsburgh,
+"Swaim, Geoff",Dallas Cowboys,87,TE,6'4”,250,21,R,Texas,
+"Vaughan, Dustin",Dallas Cowboys,10,QB,6'5”,235,24,R,West Texas A&M,
+"Vinopal, Ray",Dallas Cowboys,36,S,5'10”,200,23,R,Pittsburgh,
+"Weeden, Brandon",Dallas Cowboys,3,QB,6'3”,228,31,4,Oklahoma State,
+"Weems, Darrion",Dallas Cowboys,75,OT,6'5”,310,26,3,Oregon,
+"Wetzel, John",Dallas Cowboys,61,OT,6'7”,328,23,1,Boston College,
+"Whaley, Chris",Dallas Cowboys,64,DT,6'3”,272,24,R,Texas,
+"White, Corey",Dallas Cowboys,23,CB,5'11”,206,25,3,Samford,http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/white_headshot.jpg
+"Whitehead, Lucky",Dallas Cowboys,13,WR,5'9”,163,23,R,Florida Atlantic,
+"Wilber, Kyle",Dallas Cowboys,51,LB,6'4”,245,26,4,Wake Forest,
+"Wilcox, J.J.",Dallas Cowboys,27,S,6'0”,212,24,3,Georgia Southern,
+"Williams, Ryan",Dallas Cowboys,34,RB,5'9”,207,25,2,Virginia Tech,
+"Williams, Terrance",Dallas Cowboys,83,WR,6'2”,208,25,3,Baylor,
+"Wilson, Damien",Dallas Cowboys,45,LB,6'0”,243,22,R,Minnesota,
+"Wilson, Jason",Dallas Cowboys,33,CB,5'11”,185,22,R,Central Michigan,
+"Witten, Jason",Dallas Cowboys,82,TE,6'6”,263,33,13,Tennessee,
