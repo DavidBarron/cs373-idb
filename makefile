@@ -21,3 +21,5 @@ check:
 models.html: 
 	pydoc3 -w models
 
+IDB.log:
+	git log > IDB.log
