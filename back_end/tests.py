@@ -6,7 +6,42 @@
 from io       import StringIO
 from unittest import main, TestCase
 
+# Create your tests here.
+import os
+import sys
+import json
+from django.test.utils import setup_test_environment
+from django.core.urlresolvers import reverse
+from django.core.management import call_command
+
+#New Imports
+from django.utils import unittest
+from django.test import TestCase
+from django.http import HttpResponse
+
+from json import dumps, loads
+
+
+from django.test import TestCase
+from wc_app.models import *
+
+try:
+    from urllib.request import urlopen, Request
+except:
+    from urllib2 import *
+
+from tastypie.test import ResourceTestCase
+
+import json
+import watson
+
+
+
 class testModels (TestCase):
+
+	#------------
+	# Player_model
+	#------------
 
 	class Player:	
 
