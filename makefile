@@ -19,4 +19,5 @@ check:
     done
 
 models.html: 
-	
+	pydoc3 -w models
+
