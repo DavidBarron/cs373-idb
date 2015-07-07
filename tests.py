@@ -47,7 +47,7 @@ class testModels (TestCase):
 	Player attribute:
 	name, team, number, position, height, weight, age, exp, college, image
 	'''
-	test_Player_dict1 = {"David Barron": ["David Barron","Liverpool","99","C","6'99",200.00,90,"123","University of Something","http://www.google.com/images"]}
+	test_Player_dict01 = {"David Barron": ["David Barron","Liverpool","99","C","6'99",200.00,90,"123","University of Something","http://www.google.com/images"]}
 	Player.objects.create(
 						  name="David Barron",
 						  team=test_Player_dict01["David Barron"][1],
@@ -61,32 +61,32 @@ class testModels (TestCase):
 						  player_image=test_Player_dict01["David Barron"][9]
 						 )
 
-	test_Player_dict2 = {"Mount Doritos": ["Mount Doritos","Illuminati","420","DT","4'20",69.420,69,"R","University of What Mate","http://www.xxxDDDDWOTDDDDxxx.com"]}
+	test_Player_dict02 = {"Mount Doritos": ["Mount Doritos","Illuminati","420","DT","4'20",69.420,69,"R","University of What Mate","http://www.xxxDDDDWOTDDDDxxx.com"]}
 	Player.objects.create(
 						  name="Mount Doritos",
 						  team=test_Player_dict02["Mount Doritos"][1],
-						  number=test_Player_dict01["Mount Doritos"][2],
-						  position=test_Player_dict01["Mount Doritos"][3],
-						  height=test_Player_dict01["Mount Doritos"][4],
-						  weight=test_Player_dict01["Mount Doritos"][5],
-						  age=test_Player_dict01["Mount Doritos"][6],
-						  experience=test_Player_dict01["Mount Doritos"][7],
-						  college=test_Player_dict01["Mount Doritos"][8],
-						  player_image=test_Player_dict01["Mount Doritos"][9]
+						  number=test_Player_dict02["Mount Doritos"][2],
+						  position=test_Player_dict02["Mount Doritos"][3],
+						  height=test_Player_dict02["Mount Doritos"][4],
+						  weight=test_Player_dict02["Mount Doritos"][5],
+						  age=test_Player_dict02["Mount Doritos"][6],
+						  experience=test_Player_dict02["Mount Doritos"][7],
+						  college=test_Player_dict02["Mount Doritos"][8],
+						  player_image=test_Player_dict02["Mount Doritos"][9]
 						 )
 
-	test_Player_dict3 = {"Shrek Love": ["Shrek Love","Fight","360","DT","4'32",374.25,"R","University of Phoenix","www.uop.com/images"]}
+	test_Player_dict03 = {"Shrek Love": ["Shrek Love","Fight","360","DT","4'32",374.25,"R","University of Phoenix","www.uop.com/images"]}
 	Player.objects.create(
 						  name="Shrek Love",
-						  team=test_Player_dict02["Shrek Love"][1],
-						  number=test_Player_dict01["Shrek Love"][2],
-						  position=test_Player_dict01["Shrek Love"][3],
-						  height=test_Player_dict01["Shrek Love"][4],
-						  weight=test_Player_dict01["Shrek Love"][5],
-						  age=test_Player_dict01["Shrek Love"][6],
-						  experience=test_Player_dict01["Shrek Love"][7],
-						  college=test_Player_dict01["Shrek Love"][8],
-						  player_image=test_Player_dict01["Shrek Love"][9]
+						  team=test_Player_dict03["Shrek Love"][1],
+						  number=test_Player_dict03["Shrek Love"][2],
+						  position=test_Player_dict03["Shrek Love"][3],
+						  height=test_Player_dict03["Shrek Love"][4],
+						  weight=test_Player_dict03["Shrek Love"][5],
+						  age=test_Player_dict03["Shrek Love"][6],
+						  experience=test_Player_dict03["Shrek Love"][7],
+						  college=test_Player_dict03["Shrek Love"][8],
+						  player_image=test_Player_dict03["Shrek Love"][9]
 						 )
 
 	def test_Player_model01(self):				
@@ -131,76 +131,182 @@ class testModels (TestCase):
 	#---------------
 	# Division_model
 	#---------------
-	def test_Division_Conference01(self):
-	def test_Division_Conference02(self):
-	def test_Division_Conference03(self):
+	'''
+	Division attribute:
+	division,division_image,conference,league,sport,founded,teams,mst_rec_champ,mst_champs
+	'''
+	test_Division_dict1 = {"Pacific 420": [0,1,2,3,4,5,6,7,8]}
+	Division.objects.create(
+						  division= test_Division_dict1[0]
+						  division_image=test_Division_dict[1]
+						  conference=test_Division_dict1[2]
+						  league=test_Division_dict1[3]
+						  sport=test_Division_dict1[4]
+						  founded=test_Division_dict1[5]
+						  teams=test_Division_dict1[6]
+						  most_recent_champ=test_Division_dict1[7]
+						  most_champs=test_Division_dict1[8]
+						 )
 
-	def test_Division_League01(self):
-	def test_Division_League02(self):
-	def test_Division_League03(self):
+	test_Division_dict2 = {"Illuminati Blaze it": [0,1,2,3,4,5,6,7,8]}
+	Division.objects.create(
+						  division= test_Division_dict2[0]
+						  division_image=test_Division_dict2[1]
+						  conference=test_Division_dict2[2]
+						  league=test_Division_dict2[3]
+						  sport=test_Division_dict2[4]
+						  founded=test_Division_dict2[5]
+						  teams=test_Division_dict2[6]
+						  most_recent_champ=test_Division_dict2[7]
+						  most_champs=test_Division_dict2[8]
+						 )
 
-	def test_Division_Sport01(self):
-	def test_Division_Sport02(self):
-	def test_Division_Sport03(self):
+	test_Division_dict3 = {"U WOT M8": [0,1,2,3,4,5,6,7,8]}
+	Division.objects.create(
+						  division= test_Division_dict3[0]
+						  division_image=test_Division_dict3[1]
+						  conference=test_Division_dict3[2]
+						  league=test_Division_dict3[3]
+						  sport=test_Division_dict3[4]
+						  founded=test_Division_dict3[5]
+						  teams=test_Division_dict3[6]
+						  most_recent_champ=test_Division_dict3[7]
+						  most_champs=test_Division_dict3[8]
+						 )
 
-	def test_Division_Founded01(self):	
-	def test_Division_Founded02(self):	
-	def test_Division_Founded03(self):	
+	def test_Division_model01(self):				
+		Division01 = Division.object.get(name="David Barron")				
+		self.assertEqual(Division01.name,test_Division_dict01[0])
+		self.assertEqual(Division01.team,test_Division_dict01[1])
+		self.assertEqual(Division01.number,test_Division_dict01[2])
+		self.assertEqual(Division01.position,test_Division_dict01[3])
+		self.assertEqual(Division01.height,test_Division_dict01[4])
+		self.assertEqual(Division01.weight,test_Division_dict01[5])
+		self.assertEqual(Division01.age,test_Division_dict01[6])
+		self.assertEqual(Division01.exp,test_Division_dict01[7])
+		self.assertEqual(Division01.college,test_Division_dict01[8])
+		self.assertEqual(Division01.image,test_Division_dict01[9])
 
-	def test_Division_Teams01(self):	
-	def test_Division_Teams02(self):	
-	def test_Division_Teams03(self):	
+	def test_Division_model02(self):		
+		Division02 = Division.object.get(name="Mount Doritos")
+		self.assertEqual(Division02.name,test_Division_dict02[0])
+		self.assertEqual(Division02.team,test_Division_dict02[1])
+		self.assertEqual(Division02.number,test_Division_dict02[2])
+		self.assertEqual(Division02.position,test_Division_dict02[3])
+		self.assertEqual(Division02.height,test_Division_dict02[4])
+		self.assertEqual(Division02.weight,test_Division_dict02[5])
+		self.assertEqual(Division02.age,test_Division_dict02[6])
+		self.assertEqual(Division02.exp,test_Division_dict02[7])
+		self.assertEqual(Division02.college,test_Division_dict02[8])
+		self.assertEqual(Division02.image,test_Division_dict02[9])
 
-	def test_Division_year01(self):
-	def test_Division_year02(self):
-	def test_Division_year03(self):
+	def test_Division_model03(self):
+		Division03 = Division.object.get(name="Shrek Love")
+		self.assertEqual(Division03.name,test_Division_dict03[0])
+		self.assertEqual(Division03.team,test_Division_dict03[1])
+		self.assertEqual(Division03.number,test_Division_dict03[2])
+		self.assertEqual(Division03.position,test_Division_dict03[3])
+		self.assertEqual(Division03.height,test_Division_dict03[4])
+		self.assertEqual(Division03.weight,test_Division_dict03[5])
+		self.assertEqual(Division03.age,test_Division_dict03[6])
+		self.assertEqual(Division03.exp,test_Division_dict03[7])
+		self.assertEqual(Division03.college,test_Division_dict03[8])
+		self.assertEqual(Division03.image,test_Division_dict03[9])		
 
-	def test_Division_mst_rec_champion01(self):
-	def test_Division_mst_rec_champion02(self):
-	def test_Division_mst_rec_champion03(self):
 
-	def test_Division_mst_title01(self):
-	def test_Division_mst_title02(elf):
-	def test_Division_mst_title03(self):
-
+	
 	#---------------
 	# Team_model
 	#---------------
-	def Team_team01(self): 
-	def Team_team02(self): 
-	def Team_team03(self): 
+	'''
+	Team attribute:
+	team,team_image,division,state,city,stadium,stadium_image,coach,established,conference_champs,superbowl_champs
+	'''	
+	test_Team_dict01 = {"Team01": [0,1,2,3,4,5,6,7,8,9,10]}
+	Team.objects.create(team=test_Team_dict1[0]
+						team_image=test_Team_dict1[1]
+						division=test_Team_dict1[2]
+						state=test_Team_dict1[3]
+						city=test_Team_dict1[4]
+						stadium=test_Team_dict1[5]
+						stadium_image=test_Team_dict1[6]
+						coach=test_Team_dict1[7]
+						established=test_Team_dict1[8]
+						conference_champs=test_Team_dict1[9]
+						superbowl_champs=test_Team_dict1[10]
 
-	def Team_division01(self):
-	def Team_division02(self):
-	def Team_division03(self):
+					   )
 
-	def Team_state01(self):	
-	def Team_state02(self):	
-	def Team_state03(self):	
+	test_Team_dict02 = {"Team02": [0,1,2,3,4,5,6,7,8,9,10]}
+	Team.objects.create(team=test_Team_dict2[0]
+						team_image=test_Team_dict2[1]
+						division=test_Team_dict2[2]
+						state=test_Team_dict2[3]
+						city=test_Team_dict2[4]
+						stadium=test_Team_dict2[5]
+						stadium_image=test_Team_dict2[6]
+						coach=test_Team_dict2[7]
+						established=test_Team_dict2[8]
+						conference_champs=test_Team_dict2[9]
+						superbowl_champs=test_Team_dict2[10]					   	
+				 	   )
 
-	def Team_city01(self):
-	def Team_city02(self):
-	def Team_city03(self):
+	test_Team_dict03 = {"Team03": [0,1,2,3,4,5,6,7,8,9,10]}
+	Team.objects.create(team=test_Team_dict3[0]
+						team_image=test_Team_dict3[1]
+						division=test_Team_dict3[2]
+						state=test_Team_dict3[3]
+						city=test_Team_dict3[4]
+						stadium=test_Team_dict3[5]
+						stadium_image=test_Team_dict3[6]
+						coach=test_Team_dict3[7]
+						established=test_Team_dict3[8]
+						conference_champs=test_Team_dict3[9]
+						superbowl_champs=test_Team_dict3[10]
+						 )
 
-	def Team_statium01(self):
-	def Team_statium02(self):
-	def Team_statium03(self):
+	def test_Team_model01(self):				
+		Team01 = Team.object.get(team="Team01")				
+		self.assertEqual(Team01.team,test_Team_dict01[0])
+		self.assertEqual(Team01.team_image,test_Team_dict01[1])
+		self.assertEqual(Team01.division,test_Team_dict01[2])
+		self.assertEqual(Team01.state,test_Team_dict01[3])		
+		self.assertEqual(Team01.city,test_Team_dict01[4])
+		self.assertEqual(Team01.stadium,test_Team_dict01[5])
+		self.assertEqual(Team01.stadium_image,test_Team_dict01[6])
+		self.assertEqual(Team01.coach,test_Team_dict01[7])
+		self.assertEqual(Team01.established,test_Team_dict01[7])
+		self.assertEqual(Team01.conference_champs,test_Team_dict01[8])
+		self.assertEqual(Team01.superbowl_champs,test_Team_dict01[9])
 
-	def Team_established01(self):
-	def Team_established02(self):
-	def Team_established03(self):
+	def test_Team_model02(self):		
+		Team02 = Team.object.get(team="Team02")
+		self.assertEqual(Team02.team,test_Team_dict02[0])
+		self.assertEqual(Team02.team_image,test_Team_dict02[1])
+		self.assertEqual(Team02.division,test_Team_dict02[2])
+		self.assertEqual(Team02.state,test_Team_dict02[3])		
+		self.assertEqual(Team02.city,test_Team_dict02[4])
+		self.assertEqual(Team02.stadium,test_Team_dict02[5])
+		self.assertEqual(Team02.stadium_image,test_Team_dict02[6])
+		self.assertEqual(Team02.coach,test_Team_dict02[7])
+		self.assertEqual(Team02.established,test_Team_dict02[7])
+		self.assertEqual(Team02.conference_champs,test_Team_dict02[8])
+		self.assertEqual(Team02.superbowl_champs,test_Team_dict02[9])
 
-	def Team_coach01(self):
-	def Team_coach02(self):
-	def Team_coach03(self):
-			
-	def Team_conference01(self):		
-	def Team_conference02(self):		
-	def Team_conference03(self):		
-			
-	def Team_owner01(self):
-	def Team_owner02(self):
-	def Team_owner03(self):
+	def test_Team_model03(self):
+		Team03 = Team.object.get(name="Team03")
+		self.assertEqual(Team03.team,test_Team_dict03[0])
+		self.assertEqual(Team03.team_image,test_Team_dict03[1])
+		self.assertEqual(Team03.division,test_Team_dict03[2])
+		self.assertEqual(Team03.state,test_Team_dict03[3])		
+		self.assertEqual(Team03.city,test_Team_dict03[4])
+		self.assertEqual(Team03.stadium,test_Team_dict03[5])
+		self.assertEqual(Team03.stadium_image,test_Team_dict03[6])
+		self.assertEqual(Team03.coach,test_Team_dict03[7])
+		self.assertEqual(Team03.established,test_Team_dict03[7])
+		self.assertEqual(Team03.conference_champs,test_Team_dict03[8])
+		self.assertEqual(Team03.superbowl_champs,test_Team_dict03[9])
+
 
 
 if __name__ == "__main__" :
