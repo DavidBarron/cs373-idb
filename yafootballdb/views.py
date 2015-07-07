@@ -7,7 +7,7 @@ def test(request):
     return HttpResponse(html)
 
 def home(request):
-    template = loader.get_template('bome.html')
+    template = loader.get_template('home.html')
     return HttpResponse(template.render())
 
 def about(request):
