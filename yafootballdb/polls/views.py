@@ -29,6 +29,7 @@ def results(request, question_id):
 def vote(request, question_id):
     return HttpResponse("You're voting on question %s." % question_id)
 
+
 def home(request):
     template = loader.get_template('polls/home.html')
     return HttpResponse(template.render())
@@ -37,12 +38,60 @@ def about(request):
     template = loader.get_template('polls/about.html')
     return HttpResponse(template.render())
 
+
 def divisions(request):
     template = loader.get_template('polls/divisions.html')
     return HttpResponse(template.render())
 
-def generic(request, question_id):
-    template = loader.get_template('polls/' + name)
+def teams(request):
+    template = loader.get_template('polls/teams.html')
+    return HttpResponse(template.render())
+
+def players(request):
+    template = loader.get_template('polls/players.html')
     return HttpResponse(template.render())
 
 
+def afceast(request):
+    template = loader.get_template('polls/afceast.html')
+    return HttpResponse(template.render())
+
+def afcsouth(request):
+    template = loader.get_template('polls/afcsouth.html')
+    return HttpResponse(template.render())
+
+def nfceast(request):
+    template = loader.get_template('polls/nfceast.html')
+    return HttpResponse(template.render())
+
+def nfcsouth(request):
+    template = loader.get_template('polls/nfcsouth.html')
+    return HttpResponse(template.render())
+
+def dallascowboys(request):
+    template = loader.get_template('polls/dallascowboys.html')
+    return HttpResponse(template.render())
+
+def houstontexans(request):
+    template = loader.get_template('polls/houstontexans.html')
+    return HttpResponse(template.render())
+
+def tbbuccaneers(request):
+    template = loader.get_template('polls/tbbuccaneers.html')
+    return HttpResponse(template.render())
+
+def duanebrown(request):
+    template = loader.get_template('polls/duanebrown.html')
+    return HttpResponse(template.render())
+
+def larryenglish(request):
+    template = loader.get_template('polls/larryenglish.html')
+    return HttpResponse(template.render())
+
+def tbbuccaneers(request):
+    template = loader.get_template('polls/tbbuccaneers.html')
+    return HttpResponse(template.render())
+
+def tonyromo(request):
+    template = loader.get_template('polls/tonyromo.html')
+    return HttpResponse(template.render())
