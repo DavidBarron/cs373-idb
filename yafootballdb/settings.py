@@ -53,7 +53,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '/home/gotopaws/html',
+            '/root/cs373-idb/front end/html',
         ],
         'APP_DIRS': False,
         'OPTIONS': {
