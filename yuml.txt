@@ -1,0 +1,4 @@
+// yafootballdb.me
+[Divisions|division:string;division_image:string;conference:string;league:string;sport:srting;founded:string;teams:foreignkey;most_recent_champ:foreignkey;most_champs:foreignkey;{bg:yellow}]<-*>[Teams|team:string;team_image:string;division:foreignkey;state:string;city:string;stadium:string;stadium_image:datefield;coach:string;established:string;conference_champs:string;superbowl_champs:string;{bg:blue}]
+[Players|name:string;team:foreignkey;number:int;position:string;height:string;weight:float;age:float;experience:string;college:string;player_image:string;{bg:red}]
+[Players]<*->[Teams]
