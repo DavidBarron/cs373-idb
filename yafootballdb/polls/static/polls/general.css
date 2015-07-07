@@ -1,0 +1,103 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-image: url("../images/Football_GridBG.jpg");
+  background-attachment: fixed;
+  }
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  font-family: "Futura",Arial,sans-serif;	
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.player-name {
+	font-size: 5em;
+}
+
+.player-number, .player-team{
+	font-size: 2em;
+}
+
+
+.roster{
+
+}
+
+.roster-title{
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.jumbotron {
+	border-radius: 6px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.vertical-center {
+	min-height: 100%;
+
+	display: flex;
+	align-items: center;
+}
+
+.ya {
+	color:#FF4136;
+}
+.football {
+	color: #FFFFFF;
+}
+.db {
+	color: #0074D9;
+}
+#navbar a{
+	color: #DDDDDD;
+}
+#navbar a:hover{
+	color: #FFFFFF;
+}
+.container{
+	margin: auto;
+}
+.jumbotron li{
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.splash-jumbo {
+	background-color: #000000;
+	border-radius: 0px;
+  	font-family: "Futura",Arial,sans-serif;
+    margin: auto;
+    width: 70em;
+    height: 20em;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+	color:#DDDDDD;
+}
+.navbar-transparent {
+   background: rgba(0,0,0,0);
+   border: none;
+}
+.sortable thead tr {
+  cursor: pointer;
+}
+
+.about-main img{
+  border-radius: 6px;
+}

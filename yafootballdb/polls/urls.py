@@ -10,4 +10,16 @@ urlpatterns = [
     url(r'^(?P<question_id>[0-9]+)/results/$', views.results, name='results'),
     # ex: /polls/5/vote/
     url(r'^(?P<question_id>[0-9]+)/vote/$', views.vote, name='vote'),
+    url(r'^home.html$', views.home),
+    url(r'^about.html$', views.about),
+
+    url(r'^afceast.html$', views.afceast),
+    url(r'^afcsouth.html$', views.afcsouth),
+    
+    
+    url(r'^dallascowboys.html$', views.dallascowboys),
+
+    url(r'^divisions.html$', views.divisions),
+    url(r'^teams.html$', views.teams),
+    url(r'^players.html$', views.players),
 ]
