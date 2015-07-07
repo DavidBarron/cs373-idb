@@ -18,7 +18,7 @@ check:
         [ -e $$i ] && echo "$$i found" || echo "$$i NOT FOUND"; \
     done
 
-models.html: 
+models.html: models.py
 	pydoc3 -w models
 
 IDB.log:
