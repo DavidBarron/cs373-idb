@@ -1,4 +1,5 @@
-"""nsaid URL Configuration
+"""yafootballdb URL Configuration
+
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
 Examples:
@@ -15,12 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from . import views
+from yafbdb import views
 
 urlpatterns = [
+	url(r'^polls/', include('polls.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^test/$', views.test),
-    url(r'^$', views.home),
     url(r'^home.html$', views.home),
     url(r'^about.html$', views.about),
 ]
