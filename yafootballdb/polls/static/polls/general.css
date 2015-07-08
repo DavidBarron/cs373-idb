@@ -1,8 +1,7 @@
-{% load staticfiles %}
 body {
   padding-top: 70px;
   padding-bottom: 30px;
-  background-image: url("{% static 'polls/images/Football_GridBG.jpg' %}");
+  background-image: url('polls/images/Football_GridBG.jpg');
   background-attachment: fixed;
   }
 
