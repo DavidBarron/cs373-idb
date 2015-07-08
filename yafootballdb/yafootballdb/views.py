@@ -58,11 +58,11 @@ def tbbuccaneers(request):
     return HttpResponse(template.render())
 
 def duanebrown(request):
-    template = loader.get_template('duanebrown.html')
+    template = loader.get_template('DuaneBrown.html')
     return HttpResponse(template.render())
 
 def larryenglish(request):
-    template = loader.get_template('larryenglish.html')
+    template = loader.get_template('LarryEnglish.html')
     return HttpResponse(template.render())
 
 def tbbuccaneers(request):
@@ -70,5 +70,5 @@ def tbbuccaneers(request):
     return HttpResponse(template.render())
 
 def tonyromo(request):
-    template = loader.get_template('tonyromo.html')
+    template = loader.get_template('TonyRomo.html')
     return HttpResponse(template.render())
