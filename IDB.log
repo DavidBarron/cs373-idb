@@ -1,0 +1,1012 @@
+commit 9cbe0f9595d309a860051d2be35cdfa391bb4cde
+Author: samador88 <Sam@wireless-10-147-199-211.public.utexas.edu>
+Date:   Tue Jul 7 21:42:26 2015 -0500
+
+    edited link for sorttable.js
+
+commit a3054dbb225e4ca87dc07776d91e29714c38a000
+Merge: 9949410 6496c52
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 21:40:03 2015 -0500
+
+    Merge branch 'david'
+
+commit 9949410cf6642315bda59d57a40116d635c19919
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 21:36:38 2015 -0500
+
+    moved sortable.js
+
+commit 6496c52700f73176005848e747d8b347dd58485e
+Merge: e638e52 95c11f1
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 02:03:51 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 95c11f153874419054613b00789452da100517ec
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 7 21:03:16 2015 -0500
+
+    More fixes to wonky images
+
+commit e638e52017a98471dcfdef7c25847886ec59c5b5
+Merge: 7358f8f 3a4a7fc
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 02:02:34 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 3a4a7fc68c2449dbd46c1dcc330b56c7620286c8
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 21:02:21 2015 -0500
+
+    added apiary link
+
+commit 7358f8f9cf4631e0e226301188b4136e69b221a2
+Merge: e156b67 7036054
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:58:22 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 703605428304e3ed31ae4490763d1e8a436a1f8a
+Merge: aa93b40 4fb1eb8
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:58:11 2015 -0500
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit e156b67cad2adb2c9e6023efdea7bc3a30a75088
+Merge: 44849a0 4fb1eb8
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:57:58 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit aa93b4053d538c81d13ebb68c79cf3325e1a4637
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:57:49 2015 -0500
+
+    added stats to about
+
+commit 4fb1eb855a518dc8dc992616e6efd3bd004c7453
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 7 20:54:27 2015 -0500
+
+    Fixes to site images
+
+commit 1ebce1fce668303261b167199b7afbd800037cd7
+Merge: 89aedbe 397c86c
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:50:00 2015 -0500
+
+    Merge branch 'david'
+
+commit 397c86c97323d95cf5273500af83efd4410792af
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:49:33 2015 -0500
+
+    fixed issue I caused with picture
+
+commit 44849a0f88de7e4dc11e3f8ecf9a16a052b02883
+Merge: d2d2aac d5fe87b
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:39:26 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit d5fe87bf29482b5dba7f51a8b1215ca53e6230a2
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:39:19 2015 -0500
+
+    moved images
+
+commit d2d2aacca9b3bf81603eb6332aa55ecffdd6032e
+Merge: 2e3a686 1b098f1
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:36:42 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 1b098f127859b9314110f07193682c965916bc53
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:36:32 2015 -0500
+
+    image sources change
+
+commit 2e3a6868492b84e17d02a4533c09d1c05f31893d
+Merge: 0b66113 5485607
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:28:18 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 54856070cbdd3d6e9268f7db98fff31acf92415b
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:28:09 2015 -0500
+
+    changed background source
+
+commit 0b6611333364e479319d980a4e8b036b2a7e3d60
+Merge: fa99942 543d250
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:27:11 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 543d2507ce89a74bb95fce7b27cf14a9abb9abea
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:27:04 2015 -0500
+
+    removed extra css
+
+commit fa99942e56c572d8198f1ded24e59a73c3af3cef
+Merge: 50fa135 c6e2d88
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:25:50 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit c6e2d889d1dbf8bc40b3df7b97efa746d0243615
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:25:44 2015 -0500
+
+    moved css
+
+commit 50fa1351ebfc0b13a5ab9e741c492f8c08d4e020
+Merge: 27cbaa0 b702a6e
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:23:35 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit b702a6e19598417771a142b056c05f56aaa87833
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:23:28 2015 -0500
+
+    changed images location
+
+commit 27cbaa0da371fa36da2ac1ec4222179ff52dd6e9
+Merge: 6ce2282 faf74ef
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:22:12 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit faf74efdcf41d477c78cf866fc5b502054682f49
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:22:04 2015 -0500
+
+    changed background source
+
+commit 6ce2282e95c34d1f64cfebf8fc4cccffa28b0f8b
+Merge: defddda e16d372
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:05:44 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit e16d3725885e562f89189be4614831e928f772a8
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:05:19 2015 -0500
+
+    Player names to upper in views
+
+commit defdddaccd89b5a887b5965d155631b0f9249abb
+Merge: d74c928 4c7440b
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 01:02:32 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 4c7440b2c16f659ab52763c1a4e0bf716f5d2aa8
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 20:02:05 2015 -0500
+
+    trivial change
+
+commit d74c9289eb685d126752edf78ae1ccb16b257000
+Merge: ddcb8c6 491ed46
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 00:55:21 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 491ed46a0c2a0f1a7f4646a595e646f357e1cda5
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 19:55:13 2015 -0500
+
+    fixed css importing
+
+commit ddcb8c6b03ce30476bf5f18967152f8906787605
+Merge: fddc840 e969c33
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 00:50:15 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit e969c33a76f26d66ecc7a0d88a76dd62a530103c
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 19:50:07 2015 -0500
+
+    added css to new server html
+
+commit fddc840836236e0d3960c9682dd19ebd049a1453
+Merge: 4396c86 87e1f9d
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 00:49:13 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 87e1f9d28c4e3bfc3d24041294f98c0816beeca7
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 19:49:04 2015 -0500
+
+    removed erranious import
+
+commit 4396c8625b789be08c03d586006ec443d470c5f7
+Merge: 1767a2d dcf0bb4
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 00:47:13 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit dcf0bb4df108b9a63c82aac1510ae48acfad4308
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 19:46:53 2015 -0500
+
+    fixed import
+
+commit 1767a2d56e56b93d38a6f422da81e973b71bda84
+Merge: 89aedbe 33b98ba
+Author: Paulo Alves <p@uloalv.es>
+Date:   Wed Jul 8 00:43:56 2015 +0000
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 33b98ba235c74d624701ab533db283e1a0d7a092
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 19:41:26 2015 -0500
+
+    moved urls.py and views.py to project
+
+commit 89aedbe361939586991ef00442aa272ed888b12b
+Merge: 0291d0b f3db5da
+Author: samador88 <Sam@wireless-10-147-254-97.public.utexas.edu>
+Date:   Tue Jul 7 19:17:17 2015 -0500
+
+    Merge branch 'david'
+
+commit f3db5dae8d6fee6b9f13a4a9e3c69b3cb1b662c5
+Author: samador88 <Sam@wireless-10-147-254-97.public.utexas.edu>
+Date:   Tue Jul 7 19:12:44 2015 -0500
+
+    changed bootstrap links
+
+commit 0291d0b54e69f9096e922a10e66eae430800688e
+Author: samador88 <Sam@wireless-10-147-254-97.public.utexas.edu>
+Date:   Tue Jul 7 19:05:41 2015 -0500
+
+    changed bootstrap links
+
+commit 3b4c0196bb512f46e9191c91668497a3416f4935
+Merge: 4a516f6 3ca7bd2
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 18:45:27 2015 -0500
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 4a516f6a34976a503169c5b0b298dfa987ca8062
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 18:44:59 2015 -0500
+
+    added pip setup file
+
+commit 3ca7bd2c8ac29e0f14a0948cacafeca8dd94bb00
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 7 18:39:44 2015 -0500
+
+    Added hardlinks to ikages in html files
+
+commit 50d0025d2c2131e573f0cd74f179e244ef267b94
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 18:22:36 2015 -0500
+
+    added links to html files in urls.py and views.py
+
+commit d442a356f601298683fb6fa7453b034e901dd04c
+Merge: d1e0c21 b3ebdeb
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 7 18:16:06 2015 -0500
+
+    Merge branch 'master' into david
+    
+    Updating from Master again!
+
+commit b3ebdeb3a06903c57e3eacda95f562fc155a68ae
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 18:10:42 2015 -0500
+
+    moved templates to django folder
+
+commit 02fc8918d92db9ef5910fe74436f15ce3ffdb5ef
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 16:36:47 2015 -0500
+
+    added django stuff
+
+commit 6f9a56b9d3fb332648d51e307755ec98806f367d
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 14:13:59 2015 -0500
+
+    reremoved server files
+
+commit 2132668df404c624ec593ee28cee764548789b4c
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 14:07:26 2015 -0500
+
+    Added requirements.txt
+
+commit 56d0ee9a8f183da447e16cc61d3ad1c6e793081a
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 14:04:58 2015 -0500
+
+    readded server files
+
+commit 1dea36e22130cf9caee13a7bc14082ca034833a2
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 7 13:53:13 2015 -0500
+
+    removed yesterdays try at server setup
+
+commit 76ef50bb3a51af6a688d4210ef430be260224f06
+Author: saNed <saNed@users.noreply.github.com>
+Date:   Tue Jul 7 13:51:33 2015 -0500
+
+    Deleting everything from yesterday's failed try 3
+    
+    at setting up server
+
+commit ea82e8d4f018dab2ef6de6414fccd7db5815fe34
+Author: saNed <saNed@users.noreply.github.com>
+Date:   Tue Jul 7 13:51:17 2015 -0500
+
+    Deleting everything from yesterday's failed try 2
+    
+    at setting up server
+
+commit 987596ca99cb8021a7459014637e91ab05685530
+Author: saNed <saNed@users.noreply.github.com>
+Date:   Tue Jul 7 13:50:53 2015 -0500
+
+    Deleting everything from yesterday's failed try
+    
+    at setting up the server
+
+commit d1e0c212c6df5139d81551e16fcdad9f6a617950
+Merge: 67affcc 94cfb5b
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 7 00:34:21 2015 -0500
+
+    Merge branch 'master' into david
+    
+    updating from master
+
+commit 94cfb5b626284f675fca61d91bcbf51ee9be6adc
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 21:12:17 2015 -0500
+
+    added db.sqlite3
+
+commit ed73084440a68ee8e7bba6db9fab5f3d7faf66c8
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 21:05:37 2015 -0500
+
+    changed root directory
+
+commit b08e280a7db0f172eb78c4963487ba5e81bf6799
+Merge: 5099c76 c46615c
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 20:56:23 2015 -0500
+
+    Merge branch 'master' of https://github.com/DavidBarron/cs373-idb
+
+commit 5099c76e598ca06ed170e18612d3665c4c365779
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 20:56:03 2015 -0500
+
+    fixed typo
+
+commit c46615c681623274ddd2e1ba13cb50947dbb5b12
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 20:54:05 2015 -0500
+
+    imp. Team models
+
+commit 003a107210461f8940a0c6df9775ec219cabacf2
+Merge: 0a78360 eb450d5
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 20:26:42 2015 -0500
+
+    Merge branch 'master' into dev-nic
+    
+    Don't ask me, I have no idea what's going on
+
+commit 0a78360f5420b6b343899c314fce6f596c4e4bc0
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 20:26:31 2015 -0500
+
+    Imp Division Testcasesa
+
+commit eb450d5da559802c209a924ce6aad58bd5e03046
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 20:23:08 2015 -0500
+
+    copied manage.py from nsaid
+
+commit fd3c82a34af718201c03acc949bf699eb45b3b72
+Merge: b9ad7cc d739bdb
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 20:22:17 2015 -0500
+
+    Merge branch 'master' of https://github.com/DavidBarron/cs373-idb into dev-Luis
+
+commit b9ad7cc9aee118704ef5b04d94539e5bfa1dc625
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 20:22:03 2015 -0500
+
+    copyed files from nsaid
+
+commit d739bdbc2582c5fb694213b6ff752204de82d27e
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 20:05:05 2015 -0500
+
+    removed indentation
+
+commit 8a1994660854ca66fabe63f050f95ab6e4df588b
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 20:03:02 2015 -0500
+
+    updated manage.py
+
+commit f366fb777c0ab5a1062045fb8ce3837ec972672b
+Merge: fd63a83 eebfe89
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 19:43:00 2015 -0500
+
+    Merge branch 'dev-Luis'
+
+commit fd63a836ce2116b05c4dc5500a1ace4b8bcf5ee0
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 19:41:17 2015 -0500
+
+    added more to manage.py to fix server issue
+
+commit eebfe89475e848b9360b953290e7f13f5d47c08c
+Merge: 161dce2 77ccad1
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 19:38:43 2015 -0500
+
+    Merge branch 'master' into dev-nic
+    
+    I have no idea what have you guys done, but merge
+
+commit 161dce2b2ecee0ec0cff2166d88cea1fc32812f2
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 19:35:53 2015 -0500
+
+    (1)Imp. PlayerModel test cases, (2) Remove incorrect testCase format
+
+commit 67affccfb925a4bf675410de990a27d36b8ca31a
+Merge: 1ca3f0e 77ccad1
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 6 19:33:11 2015 -0500
+
+    Merge branch 'master' into david
+    
+    try to fix from master
+
+commit 77ccad112757b904d05f048eead2f4be96db17ad
+Author: samador88 <Sam@wireless-10-147-39-89.public.utexas.edu>
+Date:   Mon Jul 6 19:31:27 2015 -0500
+
+    fixed conflict with makefile
+
+commit 2df7274eee824b1aaef553bd0d97dd46eae59e7b
+Author: samador88 <Sam@wireless-10-147-39-89.public.utexas.edu>
+Date:   Mon Jul 6 19:29:31 2015 -0500
+
+    fixed makefile
+
+commit 1ca3f0e39132d430e21d891157c29e324c4258ff
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 6 19:23:59 2015 -0500
+
+    try to fix pydoc
+
+commit f08a2380bb9fa969444bba2f0aeed6163cb02281
+Merge: 722484a 4e8fc02
+Author: samador88 <Sam@wireless-10-147-39-89.public.utexas.edu>
+Date:   Mon Jul 6 19:12:46 2015 -0500
+
+    Merge branch 'master' into dev-sam
+
+commit 722484ae6d08d9ac1145ea216693d0408740d85d
+Author: samador88 <Sam@wireless-10-147-39-89.public.utexas.edu>
+Date:   Mon Jul 6 19:12:11 2015 -0500
+
+    created UML diagram of models
+
+commit 4e8fc02c50e7774fe6dd513388be444aef54ac77
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 19:10:57 2015 -0500
+
+    created settings.py
+
+commit 7c956609247a1c46e20307c9fc3d2877766ccbbb
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 19:06:58 2015 -0500
+
+    moved __init__.py
+
+commit 6af4168bba53e218a2b978cff3c59c7f1d117a80
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 19:04:25 2015 -0500
+
+    moved manage.py to new folder
+
+commit 0901f56be5085ef71e015ab272ad55e1c1cbb551
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 18:58:32 2015 -0500
+
+    create settings folder
+
+commit 079e6d7be0371708b03eb8b442edbcf79ff19da6
+Merge: a644e69 5645261
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 18:53:27 2015 -0500
+
+    Merge branch 'master' of https://github.com/DavidBarron/cs373-idb into dev-Luis
+
+commit 5645261c2dcca5d72d0981c48f32103530726e04
+Merge: 91b4961 b89eafc
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 18:49:42 2015 -0500
+
+    Merge branch 'dev-frontend'
+
+commit b89eafc11a470fff4525cab8e26b907a695017c2
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 18:49:13 2015 -0500
+
+    created manage.py and requirements.txt
+
+commit 91b49616609abbed7a91677c80e3c912777b14cd
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 6 18:46:16 2015 -0500
+
+    Fix format error in models
+
+commit 346eedacd8806dbedec89d975b7ec884d44fc185
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 6 18:27:28 2015 -0500
+
+    finished models, close #21
+
+commit a644e6971125b65a3be0febcbdf4d1ece14fbefa
+Merge: 76465a6 926467c
+Author: Luis Lopez <lclg21@utexas.edu>
+Date:   Mon Jul 6 18:17:33 2015 -0500
+
+    updated luis' branch with master
+
+commit 926467ca85ad1d98d93a4669e3c2ce7366126a78
+Merge: 4fdd7c6 444e8e5
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 18:11:33 2015 -0500
+
+    Merge branch 'dev-nic'
+    
+    Format tests.py
+
+commit 444e8e5a7d5e40ea88b257ab9ac6ac00ae68e701
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 18:10:24 2015 -0500
+
+    Re-formalize test.py based on someone's test.py
+
+commit 4fdd7c6c096cdc3f74bdbe6e696c910112630a94
+Merge: acf1e72 74a03da
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 18:06:54 2015 -0500
+
+    Merge branch 'dev-frontend'
+
+commit c68edc69ff92b21f7a5beac971c192e0766d90e8
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 18:04:20 2015 -0500
+
+    Start drafting test.py in someone style
+
+commit acf1e729986c7a2cab16f591be76f1d16e553608
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 17:58:38 2015 -0500
+
+    Remove uncorrect format models.py
+
+commit 1e145c86439274dff2e605a5d477d35ee3bd0f36
+Merge: 9389225 c57ce62
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 17:51:33 2015 -0500
+
+    Merge branch 'master' into dev-nic
+    
+    David
+
+commit 74a03da685ef0939af2ee100aec8df18c8b3f3bd
+Merge: 56da5f0 c57ce62
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 17:51:05 2015 -0500
+
+    Merge branch 'master' of https://github.com/DavidBarron/cs373-idb into dev-frontend
+
+commit 56da5f033ebe1adcadb61671ab9f56463ee1d30e
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 17:50:48 2015 -0500
+
+    added my bio
+
+commit c57ce62475ebe711dbd4ee128b70820ae8258a1d
+Merge: 0d24939 b9589ea
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 6 17:49:57 2015 -0500
+
+    Merge branch 'master' into david
+    
+    updating from master
+
+commit 9389225423387fcfd900d1c84e613f0556c70847
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 17:49:28 2015 -0500
+
+    Include log for branch
+
+commit 0d249390db4bfbc222edb76b9ea2f04f0151521f
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 6 17:49:21 2015 -0500
+
+    Finished with models attributes, need to comment
+
+commit 4c53346ad91dca4cba37ce7aec02e5903e9efa09
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 17:46:51 2015 -0500
+
+    Moved images to their own folder
+
+commit b9589eaa9866a87d13656a959526e004a09e1d80
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 17:44:53 2015 -0500
+
+    Include pydocs for make
+
+commit ebc8dd9d68164fddc800d40546210fd53fd40628
+Author: NL <nickylam125@gmail.com>
+Date:   Mon Jul 6 17:42:21 2015 -0500
+
+    working on pydocs for make
+
+commit 88bcfbba640a77424279425613d3f8f8c8e10622
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 6 17:38:17 2015 -0500
+
+    Changes to apiary
+
+commit 592c098e223a7f54759c2e27d76d711da18f62e8
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 6 17:23:12 2015 -0500
+
+    still working on models
+
+commit f7d4321d732eda536011c21079c4aa2d83afe5a8
+Merge: 0de3967 72c6dc7
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 6 17:12:58 2015 -0500
+
+    Merge branch 'master' of https://github.com/DavidBarron/cs373-idb into dev-frontend
+
+commit 72c6dc7e571883182fbee9b4fdd58119ac60b652
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 6 11:37:04 2015 -0500
+
+    added pic and bio for nic
+
+commit e3c53061fd3a8a1a6c605e148c5678031640259e
+Author: Kiu Fung Lam <niclam@cs.utexas.edu>
+Date:   Sun Jul 5 20:59:36 2015 -0500
+
+    added my backend files to master instead of merge, because it's not possible for now
+
+commit 20b511f02033b23a85c78c695df9af572bf5b07e
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Sun Jul 5 12:56:57 2015 -0500
+
+    Update to apiary, may have to recheck and add additional info
+
+commit 0de3967cfa93b51daab6bccfa02b5a83a308eacb
+Author: saNed <this.is.saned@gmail.com>
+Date:   Sun Jul 5 02:40:15 2015 -0500
+
+    added divisions wikipedia jsons
+
+commit 107364ef5a7c216a21b3674da4fd7dfa75a6d010
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Sat Jul 4 23:25:20 2015 -0500
+
+    Add division scrape data for models, need to convert to JSON
+
+commit c4c4193784c9d1b7f14175323ab83f17d88be07e
+Merge: dc872ad 3e2bcab
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Sat Jul 4 23:23:27 2015 -0500
+
+    Merge branch 'master' into david
+    
+    Update to master
+
+commit 76465a6d4d35dd2b8fea4dfee60f78eb2e076dc7
+Author: Luis Lopez <lclg21@utexas.edu>
+Date:   Sat Jul 4 22:33:34 2015 -0500
+
+    started a skeleton for models.py
+
+commit 3e2bcabeb6cfab6dff04f811ab362a7b74e202f2
+Author: Luis Lopez <lclg21@utexas.edu>
+Date:   Sat Jul 4 13:34:18 2015 -0500
+
+    added the UML diagram
+
+commit 1c19f7094123b97acd2a5db81c7d951eca2bc417
+Author: Luis Lopez <lclg21@utexas.edu>
+Date:   Sat Jul 4 13:03:41 2015 -0500
+
+    added bio information for Luis and added a pic
+
+commit c0e321e7a6a21fbab4216f9050af7867f672b2c0
+Merge: 947bcd3 7a8cf1d
+Author: Luis Lopez <lclg21@utexas.edu>
+Date:   Fri Jul 3 15:30:09 2015 -0500
+
+    Merge branch 'master' into dev-Luis
+
+commit dc872ad7dc4e02f32e5082f7230e32c6f7e33981
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Fri Jul 3 14:40:17 2015 -0500
+
+    Update to api
+
+commit 7a8cf1daf2ac4dd81f26dd6af942350091eef405
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Fri Jul 3 14:28:51 2015 -0500
+
+    Update David About
+
+commit 3533efdfd735dc82303e32f51484ce95ca63fc34
+Author: David Barron <david.barron91@gmail.com>
+Date:   Fri Jul 3 13:54:10 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit c84977fac9256d77fde12ec95a81d3cce85cc8ae
+Merge: 8888a44 4ed0648
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Fri Jul 3 13:44:52 2015 -0500
+
+    Merge branch 'master' into david
+    
+    Updating from master branch
+
+commit 8888a4467ed896c4495a7d238e052352e47e05c3
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Fri Jul 3 13:37:24 2015 -0500
+
+    More to apiary
+
+commit 518046cd1193954e787cf9179d28b5eb79831982
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Fri Jul 3 13:31:55 2015 -0500
+
+    initial apiary set up
+
+commit 4ed0648b4937598fc86b9940be24a464fa0c4845
+Author: samador88 <Sam@wireless-10-147-60-83.public.utexas.edu>
+Date:   Fri Jul 3 12:38:31 2015 -0500
+
+    changed location of sortable.js file
+
+commit 5f9c23abedcddd2d5c18851525a986b494de5242
+Author: samador88 <Sam@wireless-10-147-60-83.public.utexas.edu>
+Date:   Fri Jul 3 12:35:10 2015 -0500
+
+    added picture for sam
+
+commit 60adc391ca9ebbed16908a0c9e106e7d8a5c4e95
+Author: samador88 <Sam@wireless-10-147-60-83.public.utexas.edu>
+Date:   Fri Jul 3 12:33:36 2015 -0500
+
+    added more info to sam bio
+
+commit cbc63c4af51b451cfd755d2b6929b0c9c517c172
+Author: samador88 <Sam@wireless-10-147-60-83.public.utexas.edu>
+Date:   Fri Jul 3 12:31:38 2015 -0500
+
+    added bio for sam
+
+commit ad5789b2be79e2287ab44d2f15aa5e1840d19c3f
+Merge: 7f2c503 4cabfb9
+Author: saNed <this.is.saned@gmail.com>
+Date:   Thu Jul 2 22:17:57 2015 -0500
+
+    Merge branch 'dev-frontend' of https://github.com/DavidBarron/cs373-idb into dev-frontend
+
+commit 7f2c503cc5c67e059ab181dd47b2bf22f713b428
+Author: saNed <this.is.saned@gmail.com>
+Date:   Thu Jul 2 22:17:29 2015 -0500
+
+    background image is now static
+
+commit 4cabfb9b5774f1741d9eb36f3b9890a02d80e4cc
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Thu Jul 2 21:21:29 2015 -0500
+
+    added divions, players, teams pages with sortable tables
+
+commit 9e6848914834ada28e36f04ab7d2bcc5a02a741e
+Author: samador88 <Sam@2ndclass-10-144-50-233.public.utexas.edu>
+Date:   Thu Jul 2 18:33:28 2015 -0500
+
+    fixed a typo in about page
+
+commit 8c05be6c68fe25796b42086ff777f72fc0e98aea
+Merge: 9bfd0bf a7ef405
+Author: samador88 <Sam@2ndclass-10-144-52-56.public.utexas.edu>
+Date:   Thu Jul 2 18:18:29 2015 -0500
+
+    Merge branch 'dev-frontend' of https://github.com/DavidBarron/cs373-idb into dev-frontend
+    
+    merging frontends
+
+commit 9bfd0bf26e62c027c91e8f86328644378a2a0c63
+Author: samador88 <Sam@2ndclass-10-144-52-56.public.utexas.edu>
+Date:   Thu Jul 2 18:14:03 2015 -0500
+
+    added afc south, nfc east, nfc south pages
+
+commit a7ef405d19e4a3ff42f5e7b7eee527df2f819067
+Author: saNed <this.is.saned@gmail.com>
+Date:   Thu Jul 2 18:02:29 2015 -0500
+
+    added splash page
+
+commit 931aa9ea162f4c3d71e0e374a83d1a9a7e781044
+Author: samador88 <Sam@wireless-10-147-65-155.public.utexas.edu>
+Date:   Thu Jul 2 17:54:31 2015 -0500
+
+    added afc east division page
+
+commit 0e0ffe1e32f5179528fbe6b6d095df950d5cc0c3
+Author: samador88 <Sam@wireless-10-147-65-155.public.utexas.edu>
+Date:   Thu Jul 2 17:40:43 2015 -0500
+
+    added buccaneers and texans pages
+
+commit 99cc01ce166054b72eed3e8d277c8a9349875100
+Author: samador88 <Sam@wireless-10-147-65-155.public.utexas.edu>
+Date:   Thu Jul 2 17:16:07 2015 -0500
+
+    added dallas cowboys page
+
+commit bd7456f9f28aa370187ebabbda8f30cefbb44521
+Author: saNed <this.is.saned@gmail.com>
+Date:   Thu Jul 2 17:15:20 2015 -0500
+
+    created about page
+
+commit c7bc07cb24e80836f29016fde85b027f09ff61f0
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Thu Jul 2 16:55:06 2015 -0500
+
+    Forgot to add gitignore
+
+commit f60c3bf6ae9663e73eaddb3e29d168c2839583db
+Author: samador88 <Sam@wireless-10-147-65-155.public.utexas.edu>
+Date:   Thu Jul 2 16:50:17 2015 -0500
+
+    added player pages for romo, brown, and english
+
+commit 7ccea32517e27b1d3778c246ff3adab7c6d75c17
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Thu Jul 2 16:48:10 2015 -0500
+
+    add base models file
+
+commit d669556d011510dc5eebeebfac5c57e8f38be5e3
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Thu Jul 2 16:43:06 2015 -0500
+
+    Add initial travis yml
+
+commit 4b606fd3e9bdd0f02ee97468432b294973188ad3
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Thu Jul 2 16:37:46 2015 -0500
+
+    Finish makefile, only check for files
+
+commit e34e95eeba1bcb4b35f25d3a59b30e4e6a58d607
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Thu Jul 2 16:32:08 2015 -0500
+
+    Add makefile, not done
+
+commit cea9ce07bc9465693e0263c3cab6b0ef385fb8cd
+Merge: f5f5d64 25b737e
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Thu Jul 2 16:18:04 2015 -0500
+
+    Merge remote-tracking branch 'origin' into david
+    
+    blah
+
+commit f5f5d64a84a90352671f2123155f5bb9b6140894
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Thu Jul 2 16:16:04 2015 -0500
+
+    updating from master
+
+commit 052451083868d4fe0dc7e5a71a8f0bc7bcb3aa35
+Author: saNed <this.is.saned@gmail.com>
+Date:   Thu Jul 2 16:09:41 2015 -0500
+
+    added about button
+
+commit 5c9909bbfdaca6a8410f8be93520e05d7c7a1d92
+Author: saNed <this.is.saned@gmail.com>
+Date:   Thu Jul 2 16:04:22 2015 -0500
+
+    added division template
+
+commit 25b737efcc5b9e729449c5af9eb0d9b651ce2964
+Author: saNed <this.is.saned@gmail.com>
+Date:   Thu Jul 2 14:58:06 2015 -0500
+
+    created team template
+
+commit f9ab09b2c47efa8435b900e12652582dc540eb99
+Author: saNed <this.is.saned@gmail.com>
+Date:   Thu Jul 2 14:13:26 2015 -0500
+
+    added player information
+
+commit 947bcd326be4a4b118d00fe91e144b1d6e6698e6
+Author: Luis Lopez <lclg21@utexas.edu>
+Date:   Thu Jul 2 13:41:38 2015 -0500
+
+    created file tests.py
+
+commit ae087928c2f40054a0fa8b88ef490ea0012361cb
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Thu Jul 2 00:58:12 2015 -0500
+
+    Add Dallas, Houston, Tampa roster scrapes
+
+commit bc281c87676a95dcebddbae79371aa75f242ccf6
+Author: saNed <this.is.saned@gmail.com>
+Date:   Wed Jul 1 19:38:06 2015 -0500
+
+    created html pages
+
+commit d6e22e7f5eacefeb0ea8776848523d5f9057ae4b
+Author: David Barron <david.barron91@gmail.com>
+Date:   Tue Jun 30 13:50:15 2015 -0500
+
+    Initial commit
