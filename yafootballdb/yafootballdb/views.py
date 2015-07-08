@@ -40,6 +40,7 @@ def nfceast(request):
     template = loader.get_template('nfceast.html')
     return HttpResponse(template.render())
 
+
 def nfcsouth(request):
     template = loader.get_template('nfcsouth.html')
     return HttpResponse(template.render())
