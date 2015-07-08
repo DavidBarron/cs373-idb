@@ -16,11 +16,29 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from yafbdb import views
+from . import views
 
 urlpatterns = [
-	url(r'^polls/', include('polls.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^home.html$', views.home),
     url(r'^about.html$', views.about),
+    url(r'^$', views.home),
+
+
+    url(r'^afceast.html$', views.afceast),
+    url(r'^afcsouth.html$', views.afcsouth),
+    url(r'^nfceast.html$', views.nfceast),
+    url(r'^nfcsouth.html$', views.nfcsouth),
+    
+    url(r'^dallascowboys.html$', views.dallascowboys),
+    url(r'^houstontexans.html$', views.houstontexans),
+    url(r'^tbbuccaneers.html$', views.tbbuccaneers),
+
+    url(r'^DuaneBrown.html$', views.duanebrown),
+    url(r'^LarryEnglish.html$', views.larryenglish),
+    url(r'^TonyRomo.html$', views.tonyromo),
+
+    url(r'^divisions.html$', views.divisions),
+    url(r'^teams.html$', views.teams),
+    url(r'^players.html$', views.players),
 ]
