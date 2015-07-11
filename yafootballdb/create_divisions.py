@@ -1,16 +1,11 @@
-# import json
-#import sys
-# import django
-from wc_app.models import *
+from yafbdb.models import *
+import json
 
-import 
+with open('../json_data/divisions.json') as f:
+	divisions_cache = json.load(f)
 
-open ()
-teams_file = 
-teams_cache = teams_file.json()
-
-for key in adict:
+for div_cache in divisions_cache:
     q = 0
-    q =Country(country_name=key, country_code=adict[key][0], rank = adict[key][1], flag=adict[key][2], symbol_flag=adict[key][3], map_url=adict[key][4], team_logo_url=adict[key][5], team_video_url=adict[key][6])
+    q =Division(division=div_cache["division"], dimage=div_cache["dimage"], conference=div_cache["conference"], cimage=div_cache["cimage"], founded=div_cache["founded"], rchamp=div_cache["rchamp"], mchamps=div_cache["mchamps"], cnum=div_cache["cnum"])
     q.save()
 # save()
