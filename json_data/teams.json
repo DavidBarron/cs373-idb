@@ -1,6 +1,7 @@
 [
   {
     "team":"Dallas Cowboys",
+    "division":"NFC East",
     "timage":"static/images/cowyboys.png",
     "state":"TX",
     "city":"Arlington",
@@ -13,6 +14,7 @@
   },
   {
     "team":"New York Giants",
+    "division":"NFC East",
     "timage":"static/images/giants.png",
     "state":"NJ",
     "city":"East Rutherford",
@@ -25,6 +27,7 @@
   },
   {
     "team":"Philadelphia Eagles",
+    "division":"NFC East",
     "timage":"static/images/eagles.png",
     "state":"PA",
     "city":"Philadelphia",
@@ -37,6 +40,7 @@
   },
   {
     "team":"Washington Redskins",
+    "division":"NFC East",
     "timage":"static/images/redskins.png",
     "state":"VA",
     "city":"Ashburn",
@@ -49,6 +53,7 @@
   },
   {
     "team":"Arizona Cardinals",
+    "division":"NFC West",
     "timage":"static/images/cardinals.png",
     "state":"AZ",
     "city":"Glendale",
@@ -61,6 +66,7 @@
   },
   {
     "team":"San Francisco 49ers",
+    "division":"NFC West",
     "timage":"static/images/49ers.png",
     "state":"CA",
     "city":"Santa Clara",
@@ -73,6 +79,7 @@
   },
   {
     "team":"Seattle Seahawks",
+    "division":"NFC West",
     "timage":"static/images/seahawks.png",
     "state":"WA",
     "city":"Seattle",
@@ -85,6 +92,7 @@
   },
   {
     "team":"St. Louis Rams",
+    "division":"NFC West",
     "timage":"static/images/rams.png",
     "state":"MO",
     "city":"St. Louis",
@@ -97,6 +105,7 @@
   },
   {
     "team":"Chicago Bears",
+    "division":"NFC North",
     "timage":"static/images/bears.png",
     "state":"IL",
     "city":"Chicago",
@@ -109,6 +118,7 @@
   },
   {
     "team":"Detroit Lions",
+    "division":"NFC North",
     "timage":"static/images/lions.png",
     "state":"MI",
     "city":"Detroit",
@@ -121,6 +131,7 @@
   },
   {
     "team":"Green Bay Packers",
+    "division":"NFC North",
     "timage":"static/images/packers.png",
     "state":"WI",
     "city":"Green Bay",
@@ -133,6 +144,7 @@
   },
   {
     "team":"Minnesota Vikings",
+    "division":"NFC North",
     "timage":"static/images/vikings.png",
     "state":"MN",
     "city":"Minneapolis",
@@ -145,6 +157,7 @@
   },
   {
     "team":"Atlanta Falcons",
+    "division":"NFC South",
     "timage":"static/images/falcons.png",
     "state":"GA",
     "city":"Atlanta",
@@ -157,6 +170,7 @@
   },
   {
     "team":"Carolina Panthers",
+    "division":"NFC South",
     "timage":"static/images/panthers.png",
     "state":"NC",
     "city":"Charlotte",
@@ -169,6 +183,7 @@
   },
   {
     "team":"New Orleans Saints",
+    "division":"NFC South",
     "timage":"static/images/saints.png",
     "state":"LA",
     "city":"New Orleans",
@@ -181,6 +196,7 @@
   },
   {
     "team":"Tampa Bay Buccaneers",
+    "division":"NFC South",
     "timage":"static/images/buccaneers.png",
     "state":"FL",
     "city":"Tampa",
@@ -193,6 +209,7 @@
   },
   {
     "team":"Tennessee Titans",
+    "division":"AFC South",
     "timage":"static/images/titans.png",
     "state":"TN",
     "city":"Nashville",
@@ -205,6 +222,7 @@
   },
   {
     "team":"Jacksonville Jaguars",
+    "division":"AFC South",
     "timage":"static/images/jaguars.png",
     "state":"FL",
     "city":"Jacksonville",
@@ -217,6 +235,7 @@
   },
   {
     "team":"Indianapolis Colts",
+    "division":"AFC South",
     "timage":"static/images/colts.png",
     "state":"IN",
     "city":"Indianapolis",
@@ -229,6 +248,7 @@
   },
   {
     "team":"Houston Texans",
+    "division":"AFC South",
     "timage":"static/images/texans.png",
     "state":"TX",
     "city":"Houston",
@@ -241,6 +261,7 @@
   },
   {
     "team":"Pittsburgh Steelers",
+    "division":"AFC North",
     "timage":"static/images/steelers.png",
     "state":"PA",
     "city":"Pittsburgh",
@@ -253,6 +274,7 @@
   },
   {
     "team":"Cleveland Browns",
+    "division":"AFC North",
     "timage":"static/images/browns.png",
     "state":"OH",
     "city":"Cleveland",
@@ -265,6 +287,7 @@
   },
   {
     "team":"Cincinnati Bengals",
+    "division":"AFC North",
     "timage":"static/images/bengals.png",
     "state":"OH",
     "city":"Cincinnati",
@@ -277,6 +300,7 @@
   },
   {
     "team":"Baltimore Ravens",
+    "division":"AFC North",
     "timage":"static/images/ravens.png",
     "state":"MD",
     "city":"Baltimore",
@@ -289,6 +313,7 @@
   },
   {
     "team":"San Diego Chargers",
+    "division":"AFC West",
     "timage":"static/images/chargers.png",
     "state":"CA",
     "city":"San Diego",
@@ -301,6 +326,7 @@
   },
   {
     "team":"Oakland Raiders",
+    "division":"AFC West",
     "timage":"static/images/raiders.png",
     "state":"CA",
     "city":"Oakland",
@@ -313,6 +339,7 @@
   },
   {
     "team":"Kansas City Chiefs",
+    "division":"AFC West",
     "timage":"static/images/chiefs.png",
     "state":"MO",
     "city":"Kansas City",
@@ -325,6 +352,7 @@
   },
   {
     "team":"Denver Broncos",
+    "division":"AFC West",
     "timage":"static/images/broncos.png",
     "state":"CO",
     "city":"Denver",
@@ -337,6 +365,7 @@
   },
   {
     "team":"New York Jets",
+    "division":"AFC East",
     "timage":"static/images/jets.png",
     "state":"NJ",
     "city":"East Rutherford",
@@ -349,6 +378,7 @@
   },
   {
     "team":"New England Patriots",
+    "division":"AFC East",
     "timage":"static/images/patriots.png",
     "state":"MA",
     "city":"Foxborough",
@@ -361,6 +391,7 @@
   },
   {
     "team":"Miami Dolphins",
+    "division":"AFC East",
     "timage":"static/images/dolphins.png",
     "state":"FL",
     "city":"Miami Gardens",
@@ -373,6 +404,7 @@
   },
   {
     "team":"Buffalo Bills",
+    "division":"AFC East",
     "timage":"static/images/bills.png",
     "state":"NY",
     "city":"Orchard Park",
