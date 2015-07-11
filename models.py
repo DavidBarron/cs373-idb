@@ -34,7 +34,7 @@ class Team(models.Model):
     state = models.CharField(max_length=200)
     city = models.CharField(max_length=200)
     stadium = models.CharField(max_length=200)
-    simage = models.DateField()
+    simage = models.CharField()
     coach = models.CharField(max_length=200)   
     established = models.CharField(max_length=200)
     cchamps = models.CharField(max_length=200)
