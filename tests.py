@@ -241,7 +241,7 @@ class testModels (TestCase):
 								   1960,
 								   10,
 								   5]}
-								   
+
 	Team.objects.create(team=test_Team_dict1[0]
 						team_image=test_Team_dict1[1]
 						division=test_Team_dict1[2]
@@ -256,7 +256,18 @@ class testModels (TestCase):
 
 					   )
 
-	test_Team_dict02 = {"Team02": [0,1,2,3,4,5,6,7,8,9,10]}
+	test_Team_dict02 = {"Team02": ["New York Giants",
+								   "static/images/giants.png"								   "NFC East",
+								   "NFC East",
+								   "NJ",
+								   "East Rutherford",
+								   "MetLife Stadium",
+								   "https://upload.wikimedia.org/wikipedia/commons/4/46/New_Meadowlands_Stadium_Mezz_Corner.jpg",
+								   "Tom Coughlin",
+								   1925,
+								   11,
+								   4]}
+
 	Team.objects.create(team=test_Team_dict2[0]
 						team_image=test_Team_dict2[1]
 						division=test_Team_dict2[2]
