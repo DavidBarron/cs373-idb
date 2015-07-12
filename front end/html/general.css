@@ -102,3 +102,10 @@ body {
 .about-main img{
   border-radius: 6px;
 }
+element {
+    width: 200px;
+    height: 200px;
+}
+.img-circle {
+    border-radius: 50%;
+}
