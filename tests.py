@@ -143,7 +143,15 @@ class testModels (TestCase):
 	Division attribute:
 	division,division_image,conference,league,sport,founded,teams,mst_rec_champ,mst_champs
 	'''
-	test_Division_dict1 = {"Pacific 420": [0,1,2,3,4,5,6,7,8]}
+	test_Division_dict1 = {"Pacific 420": [0,
+										   1,
+										   2,
+										   3,
+										   4,
+										   5,
+										   6,
+										   7,
+										   8]}
 	Division.objects.create(
 						  division= test_Division_dict1[0]
 						  division_image=test_Division_dict[1]
@@ -156,7 +164,15 @@ class testModels (TestCase):
 						  most_champs=test_Division_dict1[8]
 						 )
 
-	test_Division_dict2 = {"Illuminati Blaze it": [0,1,2,3,4,5,6,7,8]}
+	test_Division_dict2 = {"Illuminati Blaze it": [0,
+												   1,
+												   2,
+												   3,
+												   4,
+												   5,
+												   6,
+												   7,
+												   8]}
 	Division.objects.create(
 						  division= test_Division_dict2[0]
 						  division_image=test_Division_dict2[1]
@@ -169,7 +185,15 @@ class testModels (TestCase):
 						  most_champs=test_Division_dict2[8]
 						 )
 
-	test_Division_dict3 = {"U WOT M8": [0,1,2,3,4,5,6,7,8]}
+	test_Division_dict3 = {"U WOT M8": [0,
+										1,
+										2,
+										3,
+										4,
+										5,
+										6,
+										7,
+										8]}
 	Division.objects.create(
 						  division= test_Division_dict3[0]
 						  division_image=test_Division_dict3[1]
@@ -281,7 +305,17 @@ class testModels (TestCase):
 						superbowl_champs=test_Team_dict2[10]					   	
 				 	   )
 
-	test_Team_dict03 = {"Team03": [0,1,2,3,4,5,6,7,8,9,10]}
+	test_Team_dict03 = {"Team03": [0,
+								   1,
+								   2,
+								   3,
+								   4,
+								   5,
+								   6,
+								   7,
+								   8,
+								   9,
+								   10]}
 	Team.objects.create(team=test_Team_dict3[0]
 						team_image=test_Team_dict3[1]
 						division=test_Team_dict3[2]
