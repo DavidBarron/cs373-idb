@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Division(models.Model):
     """
@@ -9,15 +8,15 @@ class Division(models.Model):
     team with most championships.
     The __str__ function returns the division name as a string.
     """
-    division = models.CharField(max_length=200)
-    division_image = models.CharField(max_length=200)
-    conference = models.CharField(max_length=200)
-    league = models.CharField(max_length=200)
-    sport = models.CharField(max_length=200)
-    founded = models.CharField(max_length=200)
-    #teams = models.ForeignKey(Team)
-    #most_recent_champ = models.ForeignKey(Team)
-    #most_champs = models.ForeignKey(Team)
+    division = models.CharField(max_length=200,default="default")
+    dimage = models.CharField(max_length=200,default="default")
+    conference = models.CharField(max_length=200,default="default")
+    cimage = models.CharField(max_length=200,default="default")
+    founded = models.CharField(max_length=200,default="default")
+    rchamp = models.CharField(max_length=200,default="default")     # most recent champion
+    mchamps = models.CharField(max_length=200,default="default")    # most championships
+    cnum = models.CharField(max_length=200,default="default")  # that number of champs
+    # teams
 
     def __str__(self) :
         return self.division
@@ -30,17 +29,19 @@ class Team(models.Model):
     years of superbow wins.
     The __str__ function returns the team name as a string.
     """    
-    team = models.CharField(max_length=200)
-    team_image = models.CharField(max_length=400)     
-    division = models.ForeignKey(Division) 
-    state = models.CharField(max_length=200)
-    city = models.CharField(max_length=200)
-    stadium = models.CharField(max_length=200)
-    stadium_image = models.DateField()
-    coach = models.CharField(max_length=200)     
-    established = models.CharField(max_length=200)
-    conference_champs = models.CharField(max_length=200)
-    superbowl_champs = models.CharField(max_length=200)
+
+    team = models.CharField(max_length=200,default="default")
+    division = models.ForeignKey(Division)
+    timage = models.CharField(max_length=400,default="default")     
+    state = models.CharField(max_length=200,default="default")
+    city = models.CharField(max_length=200,default="default")
+    stadium = models.CharField(max_length=200,default="default")
+    simage = models.CharField(max_length=200,default="default")
+    coach = models.CharField(max_length=200,default="default")   
+    established = models.CharField(max_length=200,default="default")
+    cchamps = models.CharField(max_length=200,default="default")
+    schamps = models.CharField(max_length=200,default="default")
+    #players
 
 
     def __str__(self) :
@@ -53,16 +54,16 @@ class Player(models.Model):
     weight, age, experience in seasons, college, image of player.
     The __str__ function returns the player name as a string.
     """
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200,default="default")
     team = models.ForeignKey(Team)
-    number = models.IntegerField()
-    position = models.CharField(max_length=2)
-    height = models.CharField(max_length=200)
-    weight = models.FloatField()
-    age = models.FloatField()
-    experience = models.CharField(max_length=200)
-    college = models.CharField(max_length=200)
-    player_image = models.CharField(max_length=400)
+    number = models.CharField(max_length=200,default="default")
+    position = models.CharField(max_length=2,default="default")
+    height = models.CharField(max_length=200,default="default")
+    weight = models.CharField(max_length=200,default="default")
+    age = models.CharField(max_length=200,default="default")
+    experience = models.CharField(max_length=200,default="default")
+    college = models.CharField(max_length=200,default="default")
+    pimage = models.CharField(max_length=400,default="default")
 
     def __str__(self) :
         return self.name

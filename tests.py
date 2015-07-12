@@ -47,7 +47,15 @@ class testModels (TestCase):
 	Player attribute:
 	name, team, number, position, height, weight, age, exp, college, image
 	'''
-	test_Player_dict01 = {"David Barron": ["David Barron","Liverpool","99","C","6'99",200.00,90,"123","University of Something","http://www.google.com/images"]}
+	test_Player_dict01 = {"David Barron": ["Drew Brees",
+										   "Indianapolis Colts",
+										   "45","LS",
+										   "6-0",
+										   241,
+										   36,
+										   "15",
+										   "Western Washington",
+										   "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2580.png"]}
 	Player.objects.create(
 						  name="David Barron",
 						  team=test_Player_dict01["David Barron"][1],
@@ -222,7 +230,18 @@ class testModels (TestCase):
 	Team attribute:
 	team,team_image,division,state,city,stadium,stadium_image,coach,established,conference_champs,superbowl_champs
 	'''	
-	test_Team_dict01 = {"Team01": [0,1,2,3,4,5,6,7,8,9,10]}
+	test_Team_dict01 = {"Team01": ["Dallas Cowboys",
+								   "static/images/cowyboys.png",
+								   "NFC East",
+								   "TX",
+								   "Arlington",
+								   "AT&T Stadium",
+								   "https://upload.wikimedia.org/wikipedia/commons/2/29/Cowboys_stadium.JPG",
+								   "Jason Garrett",
+								   1960,
+								   10,
+								   5]}
+
 	Team.objects.create(team=test_Team_dict1[0]
 						team_image=test_Team_dict1[1]
 						division=test_Team_dict1[2]
@@ -237,7 +256,18 @@ class testModels (TestCase):
 
 					   )
 
-	test_Team_dict02 = {"Team02": [0,1,2,3,4,5,6,7,8,9,10]}
+	test_Team_dict02 = {"Team02": ["New York Giants",
+								   "static/images/giants.png"								   "NFC East",
+								   "NFC East",
+								   "NJ",
+								   "East Rutherford",
+								   "MetLife Stadium",
+								   "https://upload.wikimedia.org/wikipedia/commons/4/46/New_Meadowlands_Stadium_Mezz_Corner.jpg",
+								   "Tom Coughlin",
+								   1925,
+								   11,
+								   4]}
+
 	Team.objects.create(team=test_Team_dict2[0]
 						team_image=test_Team_dict2[1]
 						division=test_Team_dict2[2]
