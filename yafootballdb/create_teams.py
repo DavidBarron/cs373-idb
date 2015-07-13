@@ -7,7 +7,6 @@ with open('../json_data/teams.json') as f:
 	print (len(teams_cache))
 
 assert(len(teams_cache) != 0)
-
 for team_cache in teams_cache:
     print(team_cache)
     q = 0

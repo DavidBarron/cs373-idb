@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'yafootballdb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'USER': 'kl',
-        'PASSWORD': '0431',
-        'HOST': 'localhost',
-        'PORT': '3360',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mydb',
+        'USER': 'admin',
+        'PASSWORD': 'admin',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
