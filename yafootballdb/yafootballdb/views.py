@@ -8,9 +8,13 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from yafbdb.models import *
 
+#def home(request):
+#    template = loader.get_template('home.html')
+#    return HttpResponse(template.render())
+
 def home(request):
-    template = loader.get_template('home.html')
-    return HttpResponse(template.render())
+    context = RequestContext(request)
+    return render_to_response('home.html', context)
 
 def about(request):
     template = loader.get_template('about.html')
@@ -29,14 +33,9 @@ def players(request):
     template = loader.get_template('players.html')
     return HttpResponse(template.render())
 
-
-def afceast(request):
-    template = loader.get_template('afceast.html')
-    return HttpResponse(template.render())
-
 def division(request, d_name):
     context = RequestContext(request)
-    div = Division.objects.get(division=d_name)
+    div = Division.objects.get(division=d_name.replace("_"," "))
     teams = list(Team.objects.all().filter(division=div))
     context_dict = {
         'division' : div.division,
@@ -48,28 +47,39 @@ def division(request, d_name):
         'mchamps' : div.mchamps,
         'cnum' : div.cnum,
         'team0' : teams[0].team,
-        'team0url' : teams[0].team.replace(" ", "").lower() + ".html",
+        'team0url' : teams[0].team.replace(" ", "_").lower(),
         'team1' : teams[1].team,
-        'team1url' : teams[1].team.replace(" ", "").lower() + ".html",
+        'team1url' : teams[1].team.replace(" ", "_").lower(),
         'team2' : teams[2].team,
-        'team2url' : teams[2].team.replace(" ", "").lower() + ".html",
+        'team2url' : teams[2].team.replace(" ", "_").lower(),
         'team3' : teams[3].team,
-        'team3url' : teams[3].team.replace(" ", "").lower() + ".html",
+        'team3url' : teams[3].team.replace(" ", "_").lower(),
     }
     return render_to_response('division_template.html', context_dict, context)
 
-#def afcsouth(request):
-#    template = loader.get_template('afcsouth.html')
-#    return HttpResponse(template.render())
+def team(request, t_name):
+    context = RequestContext(request)
+    tea = Team.objects.get(team=t_name.replace("_"," "))
+    players = Player.objects.all().filter(team=tea)
+    player_names = sorted([x.name for x in players])
+    p = zip(player_names,['../players/' + x.replace(" ","_") for x in player_names])
+    context_dict = {    
+        'team' : tea.team,
+        'division' : tea.division.division,
+        'division_url' : '../divisions/' + tea.division.division.replace(" ","_"),
+        'timage' : '../' + tea.timage,
+        'state' : tea.state,
+        'city' : tea.city,
+        'stadium' : tea.stadium,
+        'simage' : tea.simage,
+        'coach' : tea.coach,
+        'established' : tea.established,
+        'cchamps' : tea.cchamps,
+        'schamps' : tea.schamps,
+        'pinfo' : p,
 
-def nfceast(request):
-    template = loader.get_template('nfceast.html')
-    return HttpResponse(template.render())
-
-
-def nfcsouth(request):
-    template = loader.get_template('nfcsouth.html')
-    return HttpResponse(template.render())
+    }
+    return render_to_response('team_template.html', context_dict, context)
 
 def dallascowboys(request):
     template = loader.get_template('dallascowboys.html')

@@ -24,15 +24,24 @@ urlpatterns = [
     url(r'^about$', views.about),
     url(r'^$', views.home),
 
+    #this is the parent divisions url
+    url(r'^divisions/$', views.divisions, name='divisions'),
+    #this one is a for a specfic division
+    url(r'^divisions/(?P<d_name>\w+)/$', views.division), 
 
-    url(r'^divisions/afceast$', views.afceast),
-    url(r'^divisions/afcsouth$', views.division, kwargs={'d_name':'AFC South'}),
-    url(r'^divisions/nfceast$', views.nfceast),
-    url(r'^divisions/nfcsouth$', views.nfcsouth),
+    #url(r'^divisions/afceast$', views.afceast),
+    #url(r'^divisions/afcsouth$', views.division, kwargs={'d_name':'AFC South'}),
+    #url(r'^divisions/nfceast$', views.nfceast),
+    #url(r'^divisions/nfcsouth$', views.nfcsouth),
     
-    url(r'^teams/dallascowboys$', views.dallascowboys),
-    url(r'^teams/houstontexans$', views.houstontexans),
-    url(r'^teams/tbbuccaneers$', views.tbbuccaneers),
+   #this is the parent teams url
+    url(r'^teams/$', views.teams, name='teams'),
+    #this one is a for a specfic team
+    url(r'^teams/(?P<t_name>\w+)/$', views.team), 
+
+    #url(r'^teams/dallascowboys$', views.dallascowboys),
+    #url(r'^teams/houstontexans$', views.houstontexans),
+    #url(r'^teams/tbbuccaneers$', views.tbbuccaneers),
 
     url(r'^players/DuaneBrown$', views.duanebrown),
     url(r'^players/LarryEnglish$', views.larryenglish),
