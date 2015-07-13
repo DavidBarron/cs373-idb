@@ -20,25 +20,25 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^home.html$', views.home),
-    url(r'^about.html$', views.about),
+    url(r'^home$', views.home),
+    url(r'^about$', views.about),
     url(r'^$', views.home),
 
 
-    url(r'^afceast.html$', views.afceast),
-    url(r'^afcsouth.html$', views.afcsouth),
-    url(r'^nfceast.html$', views.nfceast),
-    url(r'^nfcsouth.html$', views.nfcsouth),
+    url(r'^divisions/afceast$', views.afceast),
+    url(r'^divisions/afcsouth$', views.division, kwargs={'d_name':'AFC South'}),
+    url(r'^divisions/nfceast$', views.nfceast),
+    url(r'^divisions/nfcsouth$', views.nfcsouth),
     
-    url(r'^dallascowboys.html$', views.dallascowboys),
-    url(r'^houstontexans.html$', views.houstontexans),
-    url(r'^tbbuccaneers.html$', views.tbbuccaneers),
+    url(r'^teams/dallascowboys$', views.dallascowboys),
+    url(r'^teams/houstontexans$', views.houstontexans),
+    url(r'^teams/tbbuccaneers$', views.tbbuccaneers),
 
-    url(r'^DuaneBrown.html$', views.duanebrown),
-    url(r'^LarryEnglish.html$', views.larryenglish),
-    url(r'^TonyRomo.html$', views.tonyromo),
+    url(r'^players/DuaneBrown$', views.duanebrown),
+    url(r'^players/LarryEnglish$', views.larryenglish),
+    url(r'^players/TonyRomo$', views.tonyromo),
 
-    url(r'^divisions.html$', views.divisions),
-    url(r'^teams.html$', views.teams),
-    url(r'^players.html$', views.players),
+    url(r'^divisions/$', views.divisions),
+    url(r'^teams/$', views.teams),
+    url(r'^players/$', views.players),
 ]
