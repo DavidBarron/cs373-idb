@@ -26,7 +26,7 @@ urlpatterns = [
 
 
     url(r'^divisions/afceast$', views.afceast),
-    url(r'^divisions/afcsouth$', views.division, kwargs={'d_name':'AFC South'}),
+    url(r'^divisions/(?P<d_name>\w+)/$', views.division),
     url(r'^divisions/nfceast$', views.nfceast),
     url(r'^divisions/nfcsouth$', views.nfcsouth),
     

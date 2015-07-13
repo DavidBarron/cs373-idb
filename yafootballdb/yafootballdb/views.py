@@ -36,7 +36,7 @@ def afceast(request):
 
 def division(request, d_name):
     context = RequestContext(request)
-    div = Division.objects.get(division=d_name)
+    div = Division.objects.get(division=d_name.replace('_',' '))
     teams = list(Team.objects.all().filter(division=div))
     context_dict = {
         'division' : div.division,
@@ -48,13 +48,13 @@ def division(request, d_name):
         'mchamps' : div.mchamps,
         'cnum' : div.cnum,
         'team0' : teams[0].team,
-        'team0url' : teams[0].team.replace(" ", "").lower() + ".html",
+        'team0url' : teams[0].team.replace(" ", "").lower(),
         'team1' : teams[1].team,
-        'team1url' : teams[1].team.replace(" ", "").lower() + ".html",
+        'team1url' : teams[1].team.replace(" ", "").lower(),
         'team2' : teams[2].team,
-        'team2url' : teams[2].team.replace(" ", "").lower() + ".html",
+        'team2url' : teams[2].team.replace(" ", "").lower(),
         'team3' : teams[3].team,
-        'team3url' : teams[3].team.replace(" ", "").lower() + ".html",
+        'team3url' : teams[3].team.replace(" ", "").lower(),
     }
     return render_to_response('division_template.html', context_dict, context)
 
