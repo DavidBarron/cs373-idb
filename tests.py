@@ -44,16 +44,17 @@ class testModels (TestCase):
 	Division attribute:
 	division,division_image,conference,league,sport,founded,teams,mst_rec_champ,mst_champs
 	'''
-	test_Division_dict1 = {"Pacific 420": ["AFC North",
-										   "static/images/afc_north.jpg",
-										   "American Football Conference",
-										   "static/images/afc.jpg",
-										   "1967",
-										   "Pittsburgh Steelers",
-										   "Pittsburgh Steelers",
-										   "19"
-										  ]}
-	Division.objects.create(
+	test_Division_dict1 = [
+						   "AFC North",
+						   "static/images/afc_north.jpg",
+							"American Football Conference",
+							"static/images/afc.jpg",
+							"1967",
+							"Pittsburgh Steelers",
+							"Pittsburgh Steelers",
+							"19"
+						  ]
+	a = Division.objects.create(
 						  division= test_Division_dict1[0]
 						  dimage=test_Division_dict[1]
 						  conference=test_Division_dict1[2]
@@ -64,16 +65,16 @@ class testModels (TestCase):
 						  cnum=test_Division_dict1[7]
 						 )
 
-	test_Division_dict2 = {"Illuminati Blaze it": ["AFC South",
-												   "static/images/afc_south.jpg",
-												   "American Football Conference",
-												   "static/images/afc.jpg",
-												   "2002",
-												   "Indianapolis Colts",
-												   "Indianapolis Colts",
-												   "9",
-												   ]}
-	Division.objects.create(
+	test_Division_dict2 = ["AFC South",
+						   "static/images/afc_south.jpg",
+						   "American Football Conference",
+						   "static/images/afc.jpg",
+						   "2002",
+						   "Indianapolis Colts",
+						   "Indianapolis Colts",
+						   "9"
+						  ]
+	b = Division.objects.create(
 						  division= test_Division_dict1[0]
 						  dimage=test_Division_dict[1]
 						  conference=test_Division_dict1[2]
@@ -84,16 +85,17 @@ class testModels (TestCase):
 						  cnum=test_Division_dict1[7]
 						 )
 
-	test_Division_dict3 = {"U WOT M8": ["AFC West",
-										"static/images/afc_west.jpg",
-										"American Football Conference",
-										"static/images/afc.jpg",
-										"1960",
-										"Denver Broncos",
-										"Oakland Raiders",
-										"15"
-									   ]}
-	Division.objects.create(
+	test_Division_dict3 = ["AFC West",
+						   "static/images/afc_west.jpg",
+						   "American Football Conference",
+						   "static/images/afc.jpg",
+						   "1960",
+						   "Denver Broncos",
+						   "Oakland Raiders",
+						   "15"
+						  ]
+
+	c = Division.objects.create(
 						  division= test_Division_dict1[0]
 						  dimage=test_Division_dict[1]
 						  conference=test_Division_dict1[2]
@@ -104,44 +106,41 @@ class testModels (TestCase):
 						  cnum=test_Division_dict1[7]
 						 )
 
-	def test_Division_model01(self):				
-		Division01 = Division.object.get(name="David Barron")				
-		self.assertEqual(Division01.name,test_Division_dict01[0])
-		self.assertEqual(Division01.team,test_Division_dict01[1])
-		self.assertEqual(Division01.number,test_Division_dict01[2])
-		self.assertEqual(Division01.position,test_Division_dict01[3])
-		self.assertEqual(Division01.height,test_Division_dict01[4])
-		self.assertEqual(Division01.weight,test_Division_dict01[5])
-		self.assertEqual(Division01.age,test_Division_dict01[6])
-		self.assertEqual(Division01.exp,test_Division_dict01[7])
-		self.assertEqual(Division01.college,test_Division_dict01[8])
-		self.assertEqual(Division01.image,test_Division_dict01[9])
+	def test_Division_model01(self):									
+		self.assertEqual(a.name,test_Division_dict01[0])
+		self.assertEqual(a.team,test_Division_dict01[1])
+		self.assertEqual(a.number,test_Division_dict01[2])
+		self.assertEqual(a.position,test_Division_dict01[3])
+		self.assertEqual(a.height,test_Division_dict01[4])
+		self.assertEqual(a.weight,test_Division_dict01[5])
+		self.assertEqual(a.age,test_Division_dict01[6])
+		self.assertEqual(a.exp,test_Division_dict01[7])
+		self.assertEqual(a.college,test_Division_dict01[8])
+		self.assertEqual(a.image,test_Division_dict01[9])
 
-	def test_Division_model02(self):		
-		Division02 = Division.object.get(name="Mount Doritos")
-		self.assertEqual(Division02.name,test_Division_dict02[0])
-		self.assertEqual(Division02.team,test_Division_dict02[1])
-		self.assertEqual(Division02.number,test_Division_dict02[2])
-		self.assertEqual(Division02.position,test_Division_dict02[3])
-		self.assertEqual(Division02.height,test_Division_dict02[4])
-		self.assertEqual(Division02.weight,test_Division_dict02[5])
-		self.assertEqual(Division02.age,test_Division_dict02[6])
-		self.assertEqual(Division02.exp,test_Division_dict02[7])
-		self.assertEqual(Division02.college,test_Division_dict02[8])
-		self.assertEqual(Division02.image,test_Division_dict02[9])
+	def test_Division_model02(self):				
+		self.assertEqual(b.name,test_Division_dict02[0])
+		self.assertEqual(b.team,test_Division_dict02[1])
+		self.assertEqual(b.number,test_Division_dict02[2])
+		self.assertEqual(b.position,test_Division_dict02[3])
+		self.assertEqual(b.height,test_Division_dict02[4])
+		self.assertEqual(b.weight,test_Division_dict02[5])
+		self.assertEqual(b.age,test_Division_dict02[6])
+		self.assertEqual(b.exp,test_Division_dict02[7])
+		self.assertEqual(b.college,test_Division_dict02[8])
+		self.assertEqual(b.image,test_Division_dict02[9])
 
-	def test_Division_model03(self):
-		Division03 = Division.object.get(name="Shrek Love")
-		self.assertEqual(Division03.name,test_Division_dict03[0])
-		self.assertEqual(Division03.team,test_Division_dict03[1])
-		self.assertEqual(Division03.number,test_Division_dict03[2])
-		self.assertEqual(Division03.position,test_Division_dict03[3])
-		self.assertEqual(Division03.height,test_Division_dict03[4])
-		self.assertEqual(Division03.weight,test_Division_dict03[5])
-		self.assertEqual(Division03.age,test_Division_dict03[6])
-		self.assertEqual(Division03.exp,test_Division_dict03[7])
-		self.assertEqual(Division03.college,test_Division_dict03[8])
-		self.assertEqual(Division03.image,test_Division_dict03[9])
+	def test_Division_model03(self):		
+		self.assertEqual(c.name,test_Division_dict03[0])
+		self.assertEqual(c.team,test_Division_dict03[1])
+		self.assertEqual(c.number,test_Division_dict03[2])
+		self.assertEqual(c.position,test_Division_dict03[3])
+		self.assertEqual(c.height,test_Division_dict03[4])
+		self.assertEqual(c.weight,test_Division_dict03[5])
+		self.assertEqual(c.age,test_Division_dict03[6])
+		self.assertEqual(c.exp,test_Division_dict03[7])
+		self.assertEqual(c.college,test_Division_dict03[8])
+		self.assertEqual(c.image,test_Division_dict03[9])
 
 	#---------------
 	# Team_model
@@ -173,7 +172,6 @@ class testModels (TestCase):
 						established=test_Team_dict1[8]
 						conference_champs=test_Team_dict1[9]
 						superbowl_champs=test_Team_dict1[10]
-
 					   )
 
 	test_Team_dict02 = {"Team02": ["New York Giants",
@@ -201,17 +199,18 @@ class testModels (TestCase):
 						superbowl_champs=test_Team_dict2[10]					   	
 				 	   )
 
-	test_Team_dict03 = {"Team03": [0,
-								   1,
-								   2,
-								   3,
-								   4,
-								   5,
-								   6,
-								   7,
-								   8,
-								   9,
-								   10]}
+	test_Team_dict03 = {"Team03": ["Philadelphia Eagles",
+								   "NFC East",
+								   "static/images/eagles.png",
+								   "PA",
+								   "Philadelphia",
+								   "Lincoln Financial Field",
+								   "https://upload.wikimedia.org/wikipedia/commons/7/71/Philly_%2845%29.JPG",
+								   "Chip Kelly",
+								   "1933",
+								   "3",
+								   "0"]}
+
 	Team.objects.create(team=test_Team_dict3[0]
 						team_image=test_Team_dict3[1]
 						division=test_Team_dict3[2]
