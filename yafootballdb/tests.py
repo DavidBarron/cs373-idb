@@ -54,9 +54,7 @@ class testModels (TestCase):
 							"Pittsburgh Steelers",
 							"19"
 						  ]
-	Division.objects.create(
-						  division=test_Division_dict1[0],
-						  dimage=test_Division_dict[1],
+	Division.objects.create(division=test_Division_dict1[0],dimage=test_Division_dict[1],
 						  conference=test_Division_dict1[2],
 						  cimage=test_Division_dict1[3],					  
 						  founded=test_Division_dict1[4],						  
