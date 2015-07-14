@@ -105,3 +105,6 @@ body {
 .teamlogo {
     background-size:100%;
 }
+.caption {
+  font-size: 1.5em;
+}
