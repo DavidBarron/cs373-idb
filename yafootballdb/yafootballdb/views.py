@@ -170,7 +170,7 @@ def player(request, p_name):
 
 #Error 404 page
 def handler404(request):
-    return render(request, '404.html')
+    return render(request, '404page.html')
 
 
 class DivisionList(generics.ListAPIView):
