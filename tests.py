@@ -33,109 +33,10 @@ except:
 from tastypie.test import ResourceTestCase
 
 import json
-import watson
 
 
 
 class testModels (TestCase):
-
-	#------------
-	# Player_model
-	#------------
-
-	'''
-	Player attribute:
-	name, team, number, position, height, weight, age, exp, college, image
-	'''
-	test_Player_dict01 = {"David Barron": ["Drew Brees",
-										   "Indianapolis Colts",
-										   "45","LS",
-										   "6-0",
-										   241,
-										   36,
-										   "15",
-										   "Western Washington",
-										   "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2580.png"]}
-	Player.objects.create(
-						  name="David Barron",
-						  team=test_Player_dict01["David Barron"][1],
-						  number=test_Player_dict01["David Barron"][2],
-						  position=test_Player_dict01["David Barron"][3],
-						  height=test_Player_dict01["David Barron"][4],
-						  weight=test_Player_dict01["David Barron"][5],
-						  age=test_Player_dict01["David Barron"][6],
-						  experience=test_Player_dict01["David Barron"][7],
-						  college=test_Player_dict01["David Barron"][8],
-						  player_image=test_Player_dict01["David Barron"][9]
-						 )
-
-	test_Player_dict02 = {"Mount Doritos": ["Mount Doritos","Illuminati","420","DT","4'20",69.420,69,"R","University of What Mate","http://www.xxxDDDDWOTDDDDxxx.com"]}
-	Player.objects.create(
-						  name="Mount Doritos",
-						  team=test_Player_dict02["Mount Doritos"][1],
-						  number=test_Player_dict02["Mount Doritos"][2],
-						  position=test_Player_dict02["Mount Doritos"][3],
-						  height=test_Player_dict02["Mount Doritos"][4],
-						  weight=test_Player_dict02["Mount Doritos"][5],
-						  age=test_Player_dict02["Mount Doritos"][6],
-						  experience=test_Player_dict02["Mount Doritos"][7],
-						  college=test_Player_dict02["Mount Doritos"][8],
-						  player_image=test_Player_dict02["Mount Doritos"][9]
-						 )
-
-	test_Player_dict03 = {"Shrek Love": ["Shrek Love","Fight","360","DT","4'32",374.25,"R","University of Phoenix","www.uop.com/images"]}
-	Player.objects.create(
-						  name="Shrek Love",
-						  team=test_Player_dict03["Shrek Love"][1],
-						  number=test_Player_dict03["Shrek Love"][2],
-						  position=test_Player_dict03["Shrek Love"][3],
-						  height=test_Player_dict03["Shrek Love"][4],
-						  weight=test_Player_dict03["Shrek Love"][5],
-						  age=test_Player_dict03["Shrek Love"][6],
-						  experience=test_Player_dict03["Shrek Love"][7],
-						  college=test_Player_dict03["Shrek Love"][8],
-						  player_image=test_Player_dict03["Shrek Love"][9]
-						 )
-
-	def test_Player_model01(self):				
-		Player01 = Player.object.get(name="David Barron")				
-		self.assertEqual(Player01.name,test_Player_dict01[0])
-		self.assertEqual(Player01.team,test_Player_dict01[1])
-		self.assertEqual(Player01.number,test_Player_dict01[2])
-		self.assertEqual(Player01.position,test_Player_dict01[3])
-		self.assertEqual(Player01.height,test_Player_dict01[4])
-		self.assertEqual(Player01.weight,test_Player_dict01[5])
-		self.assertEqual(Player01.age,test_Player_dict01[6])
-		self.assertEqual(Player01.exp,test_Player_dict01[7])
-		self.assertEqual(Player01.college,test_Player_dict01[8])
-		self.assertEqual(Player01.image,test_Player_dict01[9])
-
-	def test_Player_model02(self):		
-		Player02 = Player.object.get(name="Mount Doritos")
-		self.assertEqual(Player02.name,test_Player_dict02[0])
-		self.assertEqual(Player02.team,test_Player_dict02[1])
-		self.assertEqual(Player02.number,test_Player_dict02[2])
-		self.assertEqual(Player02.position,test_Player_dict02[3])
-		self.assertEqual(Player02.height,test_Player_dict02[4])
-		self.assertEqual(Player02.weight,test_Player_dict02[5])
-		self.assertEqual(Player02.age,test_Player_dict02[6])
-		self.assertEqual(Player02.exp,test_Player_dict02[7])
-		self.assertEqual(Player02.college,test_Player_dict02[8])
-		self.assertEqual(Player02.image,test_Player_dict02[9])
-
-	def test_Player_model03(self):
-		Player03 = Player.object.get(name="Shrek Love")
-		self.assertEqual(Player03.name,test_Player_dict03[0])
-		self.assertEqual(Player03.team,test_Player_dict03[1])
-		self.assertEqual(Player03.number,test_Player_dict03[2])
-		self.assertEqual(Player03.position,test_Player_dict03[3])
-		self.assertEqual(Player03.height,test_Player_dict03[4])
-		self.assertEqual(Player03.weight,test_Player_dict03[5])
-		self.assertEqual(Player03.age,test_Player_dict03[6])
-		self.assertEqual(Player03.exp,test_Player_dict03[7])
-		self.assertEqual(Player03.college,test_Player_dict03[8])
-		self.assertEqual(Player03.image,test_Player_dict03[9])		
-
 	#---------------
 	# Division_model
 	#---------------
@@ -144,7 +45,7 @@ class testModels (TestCase):
 	division,division_image,conference,league,sport,founded,teams,mst_rec_champ,mst_champs
 	'''
 	test_Division_dict1 = {"Pacific 420": [0,
-										   1,
+										   "asdad",
 										   2,
 										   3,
 										   4,
@@ -154,18 +55,17 @@ class testModels (TestCase):
 										   8]}
 	Division.objects.create(
 						  division= test_Division_dict1[0]
-						  division_image=test_Division_dict[1]
+						  dimage=test_Division_dict[1]
 						  conference=test_Division_dict1[2]
-						  league=test_Division_dict1[3]
-						  sport=test_Division_dict1[4]
-						  founded=test_Division_dict1[5]
-						  teams=test_Division_dict1[6]
-						  most_recent_champ=test_Division_dict1[7]
-						  most_champs=test_Division_dict1[8]
+						  cimage=test_Division_dict1[3]						  
+						  founded=test_Division_dict1[4]						  
+						  rchamp=test_Division_dict1[5]
+						  mchamps=test_Division_dict1[6]
+						  cnum=test_Division_dict1[7]
 						 )
 
 	test_Division_dict2 = {"Illuminati Blaze it": [0,
-												   1,
+												   "asdasd",
 												   2,
 												   3,
 												   4,
@@ -174,19 +74,18 @@ class testModels (TestCase):
 												   7,
 												   8]}
 	Division.objects.create(
-						  division= test_Division_dict2[0]
-						  division_image=test_Division_dict2[1]
-						  conference=test_Division_dict2[2]
-						  league=test_Division_dict2[3]
-						  sport=test_Division_dict2[4]
-						  founded=test_Division_dict2[5]
-						  teams=test_Division_dict2[6]
-						  most_recent_champ=test_Division_dict2[7]
-						  most_champs=test_Division_dict2[8]
+						  division= test_Division_dict1[0]
+						  dimage=test_Division_dict[1]
+						  conference=test_Division_dict1[2]
+						  cimage=test_Division_dict1[3]						  
+						  founded=test_Division_dict1[4]						  
+						  rchamp=test_Division_dict1[5]
+						  mchamps=test_Division_dict1[6]
+						  cnum=test_Division_dict1[7]
 						 )
 
 	test_Division_dict3 = {"U WOT M8": [0,
-										1,
+										"asdasd",
 										2,
 										3,
 										4,
@@ -195,15 +94,14 @@ class testModels (TestCase):
 										7,
 										8]}
 	Division.objects.create(
-						  division= test_Division_dict3[0]
-						  division_image=test_Division_dict3[1]
-						  conference=test_Division_dict3[2]
-						  league=test_Division_dict3[3]
-						  sport=test_Division_dict3[4]
-						  founded=test_Division_dict3[5]
-						  teams=test_Division_dict3[6]
-						  most_recent_champ=test_Division_dict3[7]
-						  most_champs=test_Division_dict3[8]
+						  division= test_Division_dict1[0]
+						  dimage=test_Division_dict[1]
+						  conference=test_Division_dict1[2]
+						  cimage=test_Division_dict1[3]						  
+						  founded=test_Division_dict1[4]						  
+						  rchamp=test_Division_dict1[5]
+						  mchamps=test_Division_dict1[6]
+						  cnum=test_Division_dict1[7]
 						 )
 
 	def test_Division_model01(self):				
@@ -243,10 +141,8 @@ class testModels (TestCase):
 		self.assertEqual(Division03.age,test_Division_dict03[6])
 		self.assertEqual(Division03.exp,test_Division_dict03[7])
 		self.assertEqual(Division03.college,test_Division_dict03[8])
-		self.assertEqual(Division03.image,test_Division_dict03[9])		
+		self.assertEqual(Division03.image,test_Division_dict03[9])
 
-
-	
 	#---------------
 	# Team_model
 	#---------------
@@ -370,6 +266,107 @@ class testModels (TestCase):
 		self.assertEqual(Team03.established,test_Team_dict03[7])
 		self.assertEqual(Team03.conference_champs,test_Team_dict03[8])
 		self.assertEqual(Team03.superbowl_champs,test_Team_dict03[9])
+
+
+	#------------
+	# Player_model
+	#------------
+
+	'''
+	Player attribute:
+	name, team, number, position, height, weight, age, exp, college, image
+	'''
+	test_Player_dict01 = {"David Barron": ["Drew Brees",
+										   "Indianapolis Colts",
+										   "45","LS",
+										   "6-0",
+										   241,
+										   36,
+										   "15",
+										   "Western Washington",
+										   "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2580.png"]}
+	Player.objects.create(
+						  name="David Barron",
+						  team=test_Player_dict01["David Barron"][1],
+						  number=test_Player_dict01["David Barron"][2],
+						  position=test_Player_dict01["David Barron"][3],
+						  height=test_Player_dict01["David Barron"][4],
+						  weight=test_Player_dict01["David Barron"][5],
+						  age=test_Player_dict01["David Barron"][6],
+						  experience=test_Player_dict01["David Barron"][7],
+						  college=test_Player_dict01["David Barron"][8],
+						  pimage=test_Player_dict01["David Barron"][9]
+						 )
+
+	test_Player_dict02 = {"Mount Doritos": ["Mount Doritos","Illuminati","420","DT","4'20",69.420,69,"R","University of What Mate","http://www.xxxDDDDWOTDDDDxxx.com"]}
+	Player.objects.create(
+						  name="Mount Doritos",
+						  team=test_Player_dict02["Mount Doritos"][1],
+						  number=test_Player_dict02["Mount Doritos"][2],
+						  position=test_Player_dict02["Mount Doritos"][3],
+						  height=test_Player_dict02["Mount Doritos"][4],
+						  weight=test_Player_dict02["Mount Doritos"][5],
+						  age=test_Player_dict02["Mount Doritos"][6],
+						  experience=test_Player_dict02["Mount Doritos"][7],
+						  college=test_Player_dict02["Mount Doritos"][8],
+						  pimage=test_Player_dict02["Mount Doritos"][9]
+						 )
+
+	test_Player_dict03 = {"Shrek Love": ["Shrek Love","Fight","360","DT","4'32",374.25,"R","University of Phoenix","www.uop.com/images"]}
+	Player.objects.create(
+						  name="Shrek Love",
+						  team=test_Player_dict03["Shrek Love"][1],
+						  number=test_Player_dict03["Shrek Love"][2],
+						  position=test_Player_dict03["Shrek Love"][3],
+						  height=test_Player_dict03["Shrek Love"][4],
+						  weight=test_Player_dict03["Shrek Love"][5],
+						  age=test_Player_dict03["Shrek Love"][6],
+						  experience=test_Player_dict03["Shrek Love"][7],
+						  college=test_Player_dict03["Shrek Love"][8],
+						  pimage=test_Player_dict03["Shrek Love"][9]
+						 )
+
+	def test_Player_model01(self):				
+		Player01 = Player.object.get(name="David Barron")				
+		self.assertEqual(Player01.name,test_Player_dict01[0])
+		self.assertEqual(Player01.team,test_Player_dict01[1])
+		self.assertEqual(Player01.number,test_Player_dict01[2])
+		self.assertEqual(Player01.position,test_Player_dict01[3])
+		self.assertEqual(Player01.height,test_Player_dict01[4])
+		self.assertEqual(Player01.weight,test_Player_dict01[5])
+		self.assertEqual(Player01.age,test_Player_dict01[6])
+		self.assertEqual(Player01.exp,test_Player_dict01[7])
+		self.assertEqual(Player01.college,test_Player_dict01[8])
+		self.assertEqual(Player01.image,test_Player_dict01[9])
+
+	def test_Player_model02(self):		
+		Player02 = Player.object.get(name="Mount Doritos")
+		self.assertEqual(Player02.name,test_Player_dict02[0])
+		self.assertEqual(Player02.team,test_Player_dict02[1])
+		self.assertEqual(Player02.number,test_Player_dict02[2])
+		self.assertEqual(Player02.position,test_Player_dict02[3])
+		self.assertEqual(Player02.height,test_Player_dict02[4])
+		self.assertEqual(Player02.weight,test_Player_dict02[5])
+		self.assertEqual(Player02.age,test_Player_dict02[6])
+		self.assertEqual(Player02.exp,test_Player_dict02[7])
+		self.assertEqual(Player02.college,test_Player_dict02[8])
+		self.assertEqual(Player02.image,test_Player_dict02[9])
+
+	def test_Player_model03(self):
+		Player03 = Player.object.get(name="Shrek Love")
+		self.assertEqual(Player03.name,test_Player_dict03[0])
+		self.assertEqual(Player03.team,test_Player_dict03[1])
+		self.assertEqual(Player03.number,test_Player_dict03[2])
+		self.assertEqual(Player03.position,test_Player_dict03[3])
+		self.assertEqual(Player03.height,test_Player_dict03[4])
+		self.assertEqual(Player03.weight,test_Player_dict03[5])
+		self.assertEqual(Player03.age,test_Player_dict03[6])
+		self.assertEqual(Player03.exp,test_Player_dict03[7])
+		self.assertEqual(Player03.college,test_Player_dict03[8])
+		self.assertEqual(Player03.image,test_Player_dict03[9])		
+
+	
+	
 
 
 
