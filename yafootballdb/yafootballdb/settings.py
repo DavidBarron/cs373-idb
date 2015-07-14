@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'polls',
     'yafbdb',
+    'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -69,6 +70,11 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
+    'PAGE_SIZE': 10
+}
 
 WSGI_APPLICATION = 'yafootballdb.wsgi.application'
 

@@ -44,16 +44,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="home.html"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
+          <a class="navbar-brand" href="../"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="divisions.html">Divisions</a></li>
-            <li><a href="teams.html">Teams</a></li>
-            <li><a href="players.html">Players</a></li>
+            <li><a href="../divisions/">Divisions</a></li>
+            <li><a href="../teams/">Teams</a></li>
+            <li><a href="../players/">Players</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-right"><a href="about.html">About</a></li>
+            <li class="navbar-right"><a href="../about">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -82,33 +82,17 @@
                 </tr>
               </thead>
               <tbody>
+              {% for team, teamurl, div, divurl, city, state, stad, coach, est in tinfo %}
                 <tr>
-                  <th><a href="dallascowboys.html">Dallas Cowboys</a></th>
-                  <th><a href="nfceast.html">NFC East</a></th>
-                  <th>Arlington</th>
-                  <th>Texas</th>
-                  <th>AT&T Stadium</th>
-                  <th>Jason Garrett</th>
-                  <th>1960</th>
+                  <th><a href="{{teamurl}}">{{team}}</a></th>
+                  <th><a href="{{divurl}}">{{div}}</a></th>
+                  <th>{{city}}</th>
+                  <th>{{state}}</th>
+                  <th>{{stad}}</th>
+                  <th>{{coach}}</th>
+                  <th>{{est}}</th>
                 </tr>
-                <tr>
-                  <th><a href="houstontexans.html">Houston Texans</a></th>
-                  <th><a href="afcsouth.html">AFC South</a></th>
-                  <th>Houston</th>
-                  <th>Texas</th>
-                  <th>NRG Stadium</th>
-                  <th>Bill O'Brien</th>
-                  <th>2002</th>
-                </tr>
-                 <tr>
-                  <th><a href="tbbuccaneers.html">Tampa Bay Buccaneers</a></th>
-                  <th><a href="nfcsouth.html">NFC South</a></th>
-                  <th>Tampa Bay</th>
-                  <th>Florida</th>
-                  <th>Raymond James Stadium</th>
-                  <th>Lovie Smith</th>
-                  <th>1976</th>
-                </tr>
+              {% endfor %}
               </tbody>
             </table>
           </div>

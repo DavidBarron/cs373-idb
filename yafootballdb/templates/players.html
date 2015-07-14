@@ -44,16 +44,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="home.html"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
+          <a class="navbar-brand" href="../"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="divisions.html">Divisions</a></li>
-            <li><a href="teams.html">Teams</a></li>
-            <li><a href="players.html">Players</a></li>
+            <li><a href="../divisions/">Divisions</a></li>
+            <li><a href="../teams/">Teams</a></li>
+            <li><a href="../players/">Players</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-right"><a href="about.html">About</a></li>
+            <li class="navbar-right"><a href="../about">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -83,16 +83,18 @@
                 </tr>
               </thead>
               <tbody>
+              {% for pla, plaurl, num, tea, teaurl, pos, col, hei, wei, seasons in pinfo %}
                 <tr>
-                  <th><a href="DuaneBrown.html">Duane Brown</a></th>
-                  <th>76</th>
-                  <th><a href="houstontexans.html">Houston Texans</a></th>
-                  <th>Tackle</th>
-                  <th>Virginia Tech</th>
-                  <th>6'4"</th>
-                  <th>303 lb</th>
-                  <th>8</th>
+                  <th><a href="{{plaurl}}">{{pla}}</a></th>
+                  <th>{{num}}</th>
+                  <th><a href="{{teaurl}}">{{tea}}</a></th>
+                  <th>{{pos}}</th>
+                  <th>{{col}}</th>
+                  <th>{{hei}}</th>
+                  <th>{{wei}}</th>
+                  <th>{{seasons}}</th>
                 </tr>
+              {% endfor %}
                 <tr>
                   <th><a href="LarryEnglish.html">Larry English</a></th>
                   <th>57</th>

@@ -8,9 +8,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../../favicon.ico">
 
-    <title>Tony Romo</title>
+    <title>{{team}}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'polls/dist/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -41,65 +41,79 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="home.html"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
+          <a class="navbar-brand" href="../../"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="divisions.html">Divisions</a></li>
-            <li><a href="teams.html">Teams</a></li>
-            <li><a href="players.html">Players</a></li>
+            <li><a href="../../divisions/">Divisions</a></li>
+            <li><a href="../../teams/">Teams</a></li>
+            <li><a href="../../players/">Players</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-right"><a href="about.html">About</a></li>
+            <li class="navbar-right"><a href="../../about">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="theme-showcase" role="main">
-
-      <div class="container jumbotron name-jumbo vertical-center">
-        <div class="col-md-8 player-name">
-          Tony Romo
+      <div>
+        <div class="container jumbotron vertical-center">
+          <div class="col-md-12 player-name" align="center">
+            {{team}}
+          </div>
         </div>
-        <div class="col-md-4">
-            <div class="player-number">No. 9</div>
-            <div class="player-team"><a href="dallascowboys.html">Dallas Cowboys</a></div>
+
+        <div class="container jumbotron stats">
+          <div class="col-md-4">
+            <img src="{{timage}}" class="img-responsive center-block">
+          </div>
+          <div class="col-md-8">
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <th>State</th>
+                  <th>{{state}}</th>
+                </tr>
+                <tr>
+                  <th>City</th>
+                  <th>{{city}}</th>
+                </tr>
+                <tr>
+                  <th>Stadium</th>
+                  <th>{{stadium}}</br><img src="{{simage}}" class="img-responsive center-block"></th>
+                </tr>
+                <tr>
+                  <th>Coach</th>
+                  <th>{{coach}}</th>
+                </tr>
+                <tr>
+                  <th>Established</th>
+                  <th>{{established}}</th>
+                </tr>
+                <tr>
+                  <th>Conference Championships</th>
+                  <th>{{cchamps}}</th>
+                </tr>
+                <tr>
+                  <th>Super Bowl Championships</th>
+                  <th>{{schamps}}</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container jumbotron roster">
+          <div class="roster-title">Roster</div>
+          <div>
+            {% for x, y in pinfo %}
+            <div><a href="{{y}}">{{x}}</a></div>
+            {% endfor %}
+          </div>
+
         </div>
       </div>
-
-      <div class="container jumbotron stats">
-        <div class="col-md-4">
-          <img src="{% static 'images/romo.png' %}" class="img-responsive center-block">
-        </div>
-        <div class="col-md-8">
-          <table class="table table-hover">
-            <tbody>
-              <tr>
-                <th>Position</th>
-                <th>Quarterback</th>
-              </tr>
-              <tr>
-                <th>Height</th>
-                <th>6 ft 2 in</th>
-              </tr>
-              <tr>
-                <th>Weight</th>
-                <th>230 lb</th>
-              </tr>
-              <tr>
-                <th>Seasons Played</th>
-                <th>13</th>
-              </tr>
-              <tr>
-                <th>College</th>
-                <th>Eastern Illinois</th>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
     </div><!-- /.container -->
 
 

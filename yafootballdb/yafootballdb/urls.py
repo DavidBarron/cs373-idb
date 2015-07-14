@@ -15,15 +15,20 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from rest_framework import routers
 
 from . import views
+
+router = routers.DefaultRouter()
+router.register(r'api/divisions', views.DivisionViewSet)
+router.register(r'api/teams', views.TeamViewSet)
+router.register(r'api/players', views.PlayerViewSet)
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^home$', views.home),
     url(r'^about$', views.about),
     url(r'^$', views.home),
-
 
     url(r'^divisions/afceast$', views.afceast),
     url(r'^divisions/(?P<d_name>\w+)/$', views.division),
@@ -39,6 +44,20 @@ urlpatterns = [
     url(r'^players/TonyRomo$', views.tonyromo),
 
     url(r'^divisions/$', views.divisions),
+    #this one is a for a specfic division
+    url(r'^divisions/(?P<d_name>\w+)/$', views.division), 
+    
+   #this is the parent teams url
     url(r'^teams/$', views.teams),
+    #this one is a for a specfic team
+    url(r'^teams/(?P<t_name>\w+)/$', views.team), 
+
+   #this is the parent players url
     url(r'^players/$', views.players),
+    #this one is a for a specfic player
+    url(r'^players/(?P<p_name>\w+)/$', views.player), 
+
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+
 ]
