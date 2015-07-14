@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets
+from rest_framework import generics
 from yafbdb.serializers import *
+from rest_framework.decorators import api_view
 
 # Create your views here.
 
@@ -148,20 +150,26 @@ def player(request, p_name):
     }
     return render_to_response('player_template.html', context_dict, context)
 
-class DivisionViewSet(viewsets.ModelViewSet) :
-    """
-    """
+class DivisionList(generics.ListAPIView):
     queryset = Division.objects.all()
     serializer_class = DivisionSerializer
 
-class TeamViewSet(viewsets.ModelViewSet) :
-    """
-    """
+class DivisionDetail(generics.RetrieveAPIView):
+    queryset = Division.objects.all()
+    serializer_class = DivisionSerializer
+
+class TeamList(generics.ListAPIView):
     queryset = Team.objects.all()
     serializer_class = TeamSerializer
 
-class PlayerViewSet(viewsets.ModelViewSet) :
-    """
-    """
+class TeamDetail(generics.RetrieveAPIView):
+    queryset = Team.objects.all()
+    serializer_class = TeamSerializer
+
+class PlayerList(generics.ListAPIView):
+    queryset = Player.objects.all()
+    serializer_class = PlayerSerializer
+
+class PlayerDetail(generics.RetrieveAPIView):
     queryset = Player.objects.all()
     serializer_class = PlayerSerializer
