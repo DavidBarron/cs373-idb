@@ -1,8 +1,8 @@
 from django.shortcuts import render
-#from rest_framework import viewsets
-#from rest_framework import generics
-#from yafbdb.serializers import *
-#from rest_framework.decorators import api_view
+from rest_framework import viewsets
+from rest_framework import generics
+from yafbdb.serializers import *
+from rest_framework.decorators import api_view
 
 # Create your views here.
 
@@ -172,26 +172,26 @@ def handler404(request):
     return render(request, '404page.html')
 
 
-# class DivisionList(generics.ListAPIView):
-#     queryset = Division.objects.all()
-#     serializer_class = DivisionSerializer
+class DivisionList(generics.ListAPIView):
+    queryset = Division.objects.all()
+    serializer_class = DivisionSerializer
 
-# class DivisionDetail(generics.RetrieveAPIView):
-#     queryset = Division.objects.all()
-#     serializer_class = DivisionSerializer
+class DivisionDetail(generics.RetrieveAPIView):
+    queryset = Division.objects.all()
+    serializer_class = DivisionSerializer
 
-# class TeamList(generics.ListAPIView):
-#     queryset = Team.objects.all()
-#     serializer_class = TeamSerializer
+class TeamList(generics.ListAPIView):
+    queryset = Team.objects.all()
+    serializer_class = TeamSerializer
 
-# class TeamDetail(generics.RetrieveAPIView):
-#     queryset = Team.objects.all()
-#     serializer_class = TeamSerializer
+class TeamDetail(generics.RetrieveAPIView):
+    queryset = Team.objects.all()
+    serializer_class = TeamSerializer
 
-# class PlayerList(generics.ListAPIView):
-#     queryset = Player.objects.all()
-#     serializer_class = PlayerSerializer
+class PlayerList(generics.ListAPIView):
+    queryset = Player.objects.all()
+    serializer_class = PlayerSerializer
 
-# class PlayerDetail(generics.RetrieveAPIView):
-#     queryset = Player.objects.all()
-#     serializer_class = PlayerSerializer
+class PlayerDetail(generics.RetrieveAPIView):
+    queryset = Player.objects.all()
+    serializer_class = PlayerSerializer
