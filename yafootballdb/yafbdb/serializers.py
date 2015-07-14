@@ -7,7 +7,6 @@ class DivisionSerializer(serializers.HyperlinkedModelSerializer):
         model = Division
         fields = ('division', 'dimage', 'conference', 'cimage', 'founded', 'rchamp', 'mchamps', 'cnum')
 
-
 class TeamSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Team
