@@ -27,7 +27,7 @@ def divisions(request):
     context_tup = tuple()
     for div in divs :
         context_tup += ((div.division,
-                        '/' + div.division.replace(" ","_"),
+                        '/divisions/' + div.division.replace(" ","_"),
                         div.conference,
                         div.founded,
                         div.rchamp,
@@ -93,13 +93,13 @@ def division(request, d_name):
         'mchamps' : div.mchamps,
         'cnum' : div.cnum,
         'team0' : teams[0].team,
-        'team0url' : teams[0].team.replace(" ", "_").lower(),
+        'team0url' : '../../teams/' + teams[0].team.replace(" ", "_"),
         'team1' : teams[1].team,
-        'team1url' : teams[1].team.replace(" ", "_").lower(),
+        'team1url' : '../../teams/' + teams[1].team.replace(" ", "_"),
         'team2' : teams[2].team,
-        'team2url' : teams[2].team.replace(" ", "_").lower(),
+        'team2url' : '../../teams/' + teams[2].team.replace(" ", "_"),
         'team3' : teams[3].team,
-        'team3url' : teams[3].team.replace(" ", "_").lower(),
+        'team3url' : '../../teams/' + teams[3].team.replace(" ", "_"),
     }
     return render_to_response('division_template.html', context_dict, context)
 
