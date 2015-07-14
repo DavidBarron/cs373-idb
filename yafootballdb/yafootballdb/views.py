@@ -128,8 +128,7 @@ def team(request, t_name):
             'team' : tea.team,
             'division' : tea.division.division,
             'division_url' : '../../divisions/' + tea.division.division.replace(" ","_"),
-            #'timage' : '../' + tea.timage,
-            'timage' : 'https://raw.githubusercontent.com/DavidBarron/cs373-idb/david/yafootballdb/polls/static/images/' + tea.timage,
+            'timage' : '/' + tea.timage,
             'state' : tea.state,
             'city' : tea.city,
             'stadium' : tea.stadium,
@@ -168,7 +167,7 @@ def player(request, p_name):
 
 #Error 404 page
 def handler404(request):
-    return render(request, '404.html')
+    return render(request, '404page.html')
 
 class DivisionViewSet(viewsets.ModelViewSet) :
     """
