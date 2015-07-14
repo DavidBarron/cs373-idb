@@ -44,15 +44,15 @@ class testModels (TestCase):
 	Division attribute:
 	division,division_image,conference,league,sport,founded,teams,mst_rec_champ,mst_champs
 	'''
-	test_Division_dict1 = {"Pacific 420": [0,
-										   "asdad",
-										   2,
-										   3,
-										   4,
-										   5,
-										   6,
-										   7,
-										   8]}
+	test_Division_dict1 = {"Pacific 420": ["AFC North",
+										   "static/images/afc_north.jpg",
+										   "American Football Conference",
+										   "static/images/afc.jpg",
+										   "1967",
+										   "Pittsburgh Steelers",
+										   "Pittsburgh Steelers",
+										   "19"
+										  ]}
 	Division.objects.create(
 						  division= test_Division_dict1[0]
 						  dimage=test_Division_dict[1]
@@ -64,15 +64,15 @@ class testModels (TestCase):
 						  cnum=test_Division_dict1[7]
 						 )
 
-	test_Division_dict2 = {"Illuminati Blaze it": [0,
-												   "asdasd",
-												   2,
-												   3,
-												   4,
-												   5,
-												   6,
-												   7,
-												   8]}
+	test_Division_dict2 = {"Illuminati Blaze it": ["AFC South",
+												   "static/images/afc_south.jpg",
+												   "American Football Conference",
+												   "static/images/afc.jpg",
+												   "2002",
+												   "Indianapolis Colts",
+												   "Indianapolis Colts",
+												   "9",
+												   ]}
 	Division.objects.create(
 						  division= test_Division_dict1[0]
 						  dimage=test_Division_dict[1]
@@ -84,15 +84,15 @@ class testModels (TestCase):
 						  cnum=test_Division_dict1[7]
 						 )
 
-	test_Division_dict3 = {"U WOT M8": [0,
-										"asdasd",
-										2,
-										3,
-										4,
-										5,
-										6,
-										7,
-										8]}
+	test_Division_dict3 = {"U WOT M8": ["AFC West",
+										"static/images/afc_west.jpg",
+										"American Football Conference",
+										"static/images/afc.jpg",
+										"1960",
+										"Denver Broncos",
+										"Oakland Raiders",
+										"15"
+									   ]}
 	Division.objects.create(
 						  division= test_Division_dict1[0]
 						  dimage=test_Division_dict[1]
