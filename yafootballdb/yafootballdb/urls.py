@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from rest_framework import routers
 
 from . import views
+
+router = routers.DefaultRouter()
+router.register(r'api/divisions', views.DivisionViewSet)
+router.register(r'api/teams', views.TeamViewSet)
+router.register(r'api/players', views.PlayerViewSet)
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -38,4 +44,8 @@ urlpatterns = [
     url(r'^players/$', views.players),
     #this one is a for a specfic player
     url(r'^players/(?P<p_name>\w+)/$', views.player), 
+
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+
 ]

@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from rest_framework import viewsets
+from yafbdb.serializers import *
 
 # Create your views here.
 
@@ -113,7 +115,8 @@ def team(request, t_name):
         'team' : tea.team,
         'division' : tea.division.division,
         'division_url' : '../../divisions/' + tea.division.division.replace(" ","_"),
-        'timage' : '../' + tea.timage,
+        #'timage' : '../' + tea.timage,
+        'timage' : 'https://raw.githubusercontent.com/DavidBarron/cs373-idb/david/yafootballdb/polls/static/images/' + tea.timage,
         'state' : tea.state,
         'city' : tea.city,
         'stadium' : tea.stadium,
@@ -145,3 +148,20 @@ def player(request, p_name):
     }
     return render_to_response('player_template.html', context_dict, context)
 
+class DivisionViewSet(viewsets.ModelViewSet) :
+    """
+    """
+    queryset = Division.objects.all()
+    serializer_class = DivisionSerializer
+
+class TeamViewSet(viewsets.ModelViewSet) :
+    """
+    """
+    queryset = Team.objects.all()
+    serializer_class = TeamSerializer
+
+class PlayerViewSet(viewsets.ModelViewSet) :
+    """
+    """
+    queryset = Player.objects.all()
+    serializer_class = PlayerSerializer

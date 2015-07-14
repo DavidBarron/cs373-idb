@@ -13,7 +13,7 @@ class TeamSerializer(serializers.HyperlinkedModelSerializer):
         model = Team
         fields = ('team', 'division', 'timage', 'state', 'city', 'stadium', 'simage', 'coach', 'established', 'cchamps', 'schamps')
 
-class TeamSerializer(serializers.HyperlinkedModelSerializer):
+class PlayerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Team
+        model = Player
         fields = ('name', 'team', 'number', 'position', 'height', 'weight', 'age', 'experience', 'college', 'pimage')
