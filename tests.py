@@ -157,21 +157,21 @@ class testModels (TestCase):
 								   "AT&T Stadium",
 								   "https://upload.wikimedia.org/wikipedia/commons/2/29/Cowboys_stadium.JPG",
 								   "Jason Garrett",
-								   1960,
-								   10,
-								   5]}
+								   "1960",
+								   "10",
+								   "5"]}
 
-	Team.objects.create(team=test_Team_dict1[0]
-						team_image=test_Team_dict1[1]
-						division=test_Team_dict1[2]
-						state=test_Team_dict1[3]
-						city=test_Team_dict1[4]
-						stadium=test_Team_dict1[5]
-						stadium_image=test_Team_dict1[6]
-						coach=test_Team_dict1[7]
-						established=test_Team_dict1[8]
-						conference_champs=test_Team_dict1[9]
-						superbowl_champs=test_Team_dict1[10]
+	Team.objects.create(team=test_Team_dict1["Team01"][0]
+						team_image=test_Team_dict1["Team01"][1]
+						division=test_Team_dict1["Team01"][2]
+						state=test_Team_dict1["Team01"][3]
+						city=test_Team_dict1["Team01"][4]
+						stadium=test_Team_dict1["Team01"][5]
+						stadium_image=test_Team_dict1["Team01"][6]
+						coach=test_Team_dict1["Team01"][7]
+						established=test_Team_dict1["Team01"][8]
+						conference_champs=test_Team_dict1["Team01"][9]
+						superbowl_champs=test_Team_dict1["Team01"][10]
 					   )
 
 	test_Team_dict02 = {"Team02": ["New York Giants",
@@ -182,21 +182,21 @@ class testModels (TestCase):
 								   "MetLife Stadium",
 								   "https://upload.wikimedia.org/wikipedia/commons/4/46/New_Meadowlands_Stadium_Mezz_Corner.jpg",
 								   "Tom Coughlin",
-								   1925,
-								   11,
-								   4]}
+								   "1925",
+								   "11",
+								   "4"]}
 
-	Team.objects.create(team=test_Team_dict2[0]
-						team_image=test_Team_dict2[1]
-						division=test_Team_dict2[2]
-						state=test_Team_dict2[3]
-						city=test_Team_dict2[4]
-						stadium=test_Team_dict2[5]
-						stadium_image=test_Team_dict2[6]
-						coach=test_Team_dict2[7]
-						established=test_Team_dict2[8]
-						conference_champs=test_Team_dict2[9]
-						superbowl_champs=test_Team_dict2[10]					   	
+	Team.objects.create(team=test_Team_dict2["Team02"][0]
+						team_image=test_Team_dict2["Team02"][1]
+						division=test_Team_dict2["Team02"][2]
+						state=test_Team_dict2["Team02"][3]
+						city=test_Team_dict2["Team02"][4]
+						stadium=test_Team_dict2["Team02"][5]
+						stadium_image=test_Team_dict2["Team02"][6]
+						coach=test_Team_dict2["Team02"][7]
+						established=test_Team_dict2["Team02"][8]
+						conference_champs=test_Team_dict2["Team02"][9]
+						superbowl_champs=test_Team_dict2["Team02"][10]					   	
 				 	   )
 
 	test_Team_dict03 = {"Team03": ["Philadelphia Eagles",
@@ -211,17 +211,17 @@ class testModels (TestCase):
 								   "3",
 								   "0"]}
 
-	Team.objects.create(team=test_Team_dict3[0]
-						team_image=test_Team_dict3[1]
-						division=test_Team_dict3[2]
-						state=test_Team_dict3[3]
-						city=test_Team_dict3[4]
-						stadium=test_Team_dict3[5]
-						stadium_image=test_Team_dict3[6]
-						coach=test_Team_dict3[7]
-						established=test_Team_dict3[8]
-						conference_champs=test_Team_dict3[9]
-						superbowl_champs=test_Team_dict3[10]
+	Team.objects.create(team=test_Team_dict3["Team03"][0]
+						team_image=test_Team_dict3["Team03"][1]
+						division=test_Team_dict3["Team03"][2]
+						state=test_Team_dict3["Team03"][3]
+						city=test_Team_dict3["Team03"][4]
+						stadium=test_Team_dict3["Team03"][5]
+						stadium_image=test_Team_dict3["Team03"][6]
+						coach=test_Team_dict3["Team03"][7]
+						established=test_Team_dict3["Team03"][8]
+						conference_champs=test_Team_dict3["Team03"][9]
+						superbowl_champs=test_Team_dict3["Team03"][10]
 						 )
 
 	def test_Team_model01(self):				
