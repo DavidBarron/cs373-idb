@@ -28,7 +28,7 @@ IDB.log:
 test: test.out
 
 test.out: tests.py
-	coverage run    --branch yafootballdb/manage.py shell < tests.py > tests.out 2>&1
-	coverag3 report -m                      >> tests.out
+	coverage3 run    --branch manage.py shell < tests.py > tests.out 2>&1
+	coverage3 report -m                      >> tests.out
 	cat tests.out
 
