@@ -1,4 +1,8 @@
 from django.db import models
+import sys
+
+print ("Debug in process")
+print ("sys.path")
 
 
 class Division(models.Model):
