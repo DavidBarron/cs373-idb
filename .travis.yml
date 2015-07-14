@@ -5,6 +5,8 @@ language: python
 python:
     - "3.4"
 
+sudo: required
+
 before_install:
     - sudo apt-get update
 
@@ -12,6 +14,9 @@ install:
     - pip install --upgrade pip
     - pip install coverage
     - sudo apt-get install python-numpy
+    - sudo pip install Django
+    - pip install djangorestframework
+    - pip install psycopg2
 
 before_script:
     - uname -a
