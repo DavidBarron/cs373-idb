@@ -82,33 +82,17 @@
                 </tr>
               </thead>
               <tbody>
+              {% for team, teamurl, div, divurl, city, state, stad, coach, est in tinfo %}
                 <tr>
-                  <th><a href="dallascowboys.html">Dallas Cowboys</a></th>
-                  <th><a href="nfceast.html">NFC East</a></th>
-                  <th>Arlington</th>
-                  <th>Texas</th>
-                  <th>AT&T Stadium</th>
-                  <th>Jason Garrett</th>
-                  <th>1960</th>
+                  <th><a href="{{teamurl}}">{{team}}</a></th>
+                  <th><a href="{{divurl}}">{{div}}</a></th>
+                  <th>{{city}}</th>
+                  <th>{{state}}</th>
+                  <th>{{stad}}</th>
+                  <th>{{coach}}</th>
+                  <th>{{est}}</th>
                 </tr>
-                <tr>
-                  <th><a href="houstontexans.html">Houston Texans</a></th>
-                  <th><a href="afcsouth.html">AFC South</a></th>
-                  <th>Houston</th>
-                  <th>Texas</th>
-                  <th>NRG Stadium</th>
-                  <th>Bill O'Brien</th>
-                  <th>2002</th>
-                </tr>
-                 <tr>
-                  <th><a href="tbbuccaneers.html">Tampa Bay Buccaneers</a></th>
-                  <th><a href="nfcsouth.html">NFC South</a></th>
-                  <th>Tampa Bay</th>
-                  <th>Florida</th>
-                  <th>Raymond James Stadium</th>
-                  <th>Lovie Smith</th>
-                  <th>1976</th>
-                </tr>
+              {% endfor %}
               </tbody>
             </table>
           </div>

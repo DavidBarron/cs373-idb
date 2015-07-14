@@ -81,30 +81,16 @@
                 </tr>
               </thead>
               <tbody>
+              {% for div, divurl, conf, foun, rchamp, rchampurl, mchamp, mchampurl, cnum in dinfo %}
                 <tr>
-                  <th><a href="afcsouth.html">AFC South</a></th>
-                  <th>American Football Conference</th>
-                  <th>2002</th>
-                  <th>Indianapolis Colts</th>
-                  <th>Indianapolis Colts</th>
-                  <th>9</th>
+                  <th><a href="{{divurl}}">{{div}}</a></th>
+                  <th>{{conf}}</th>
+                  <th>{{foun}}</th>
+                  <th><a href="{{rchampurl}}">{{rchamp}}</a></th>
+                  <th><a href="{{mchampurl}}">{{mchamp}}</a></th>
+                  <th>{{cnum}}</th>                  
                 </tr>
-                <tr>
-                  <th><a href="nfceast.html">NFC East</a></th>
-                  <th>National Football Conference</th>
-                  <th>1967</th>
-                  <th><a href="dallascowboys.html">Dallas Cowboys</a></th>
-                  <th><a href="dallascowboys.html">Dallas Cowboys</a></th>
-                  <th>21</th>
-                </tr>
-                <tr>
-                  <th><a href="nfcsouth.html">NFC South</a></th>
-                  <th>National Football Conference</th>
-                  <th>2002</th>
-                  <th>Carolina Panthers</th>
-                  <th>Carolina Panthers</th>
-                  <th>4</th>
-                </tr>
+              {% endfor %}
               </tbody>
             </table>
           </div>

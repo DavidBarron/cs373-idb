@@ -22,16 +22,62 @@ def about(request):
 
 
 def divisions(request):
-    template = loader.get_template('divisions.html')
-    return HttpResponse(template.render())
+    context = RequestContext(request)
+    divs = Division.objects.all()
+    context_tup = tuple()
+    for div in divs :
+        context_tup += ((div.division,
+                        '/' + div.division.replace(" ","_"),
+                        div.conference,
+                        div.founded,
+                        div.rchamp,
+                        '../teams/' + div.rchamp.replace(" ","_"),
+                        div.mchamps,
+                        '../teams/' + div.mchamps.replace(" ","_"),
+                        div.cnum),)
+    context_dict = {
+        'dinfo' : context_tup
+    }
+    return render_to_response('divisions.html', context_dict, context)
 
 def teams(request):
-    template = loader.get_template('teams.html')
-    return HttpResponse(template.render())
+    context = RequestContext(request)
+    teas = Team.objects.all()
+    context_tup = tuple()
+    for tea in teas :
+        context_tup += ((tea.team,
+                        '../teams/' + tea.team.replace(" ","_"),
+                        tea.division.division,
+                        '../divisions/' + tea.division.division.replace(" ","_"),
+                        tea.city,
+                        tea.state,
+                        tea.stadium,
+                        tea.coach,
+                        tea.established),)
+    context_dict = {
+        'tinfo' : context_tup
+    }
+    return render_to_response('teams.html', context_dict, context)
 
 def players(request):
-    template = loader.get_template('players.html')
-    return HttpResponse(template.render())
+    context = RequestContext(request)
+    plas = Player.objects.all()
+    context_tup = tuple()
+    for pla in plas :
+        context_tup += ((pla.name,
+                        '/players/' + pla.name.replace(" ","_"),
+                        pla.number,
+                        pla.team.team,
+                        '../teams/' + pla.team.team.replace(" ","_"),
+                        pla.position,
+                        pla.college,
+                        pla.height,
+                        pla.weight,
+                        pla.experience),)
+    context_dict = {
+        'pinfo' : context_tup
+    }
+    return render_to_response('players.html', context_dict, context)
 
 def division(request, d_name):
     context = RequestContext(request)
@@ -62,11 +108,11 @@ def team(request, t_name):
     tea = Team.objects.get(team=t_name.replace("_"," "))
     players = Player.objects.all().filter(team=tea)
     player_names = sorted([x.name for x in players])
-    p = zip(player_names,['../players/' + x.replace(" ","_") for x in player_names])
+    p = zip(player_names,['../../players/' + x.replace(" ","_") for x in player_names])
     context_dict = {    
         'team' : tea.team,
         'division' : tea.division.division,
-        'division_url' : '../divisions/' + tea.division.division.replace(" ","_"),
+        'division_url' : '../../divisions/' + tea.division.division.replace(" ","_"),
         'timage' : '../' + tea.timage,
         'state' : tea.state,
         'city' : tea.city,
@@ -81,30 +127,21 @@ def team(request, t_name):
     }
     return render_to_response('team_template.html', context_dict, context)
 
-def dallascowboys(request):
-    template = loader.get_template('dallascowboys.html')
-    return HttpResponse(template.render())
+def player(request, p_name):
+    context = RequestContext(request)
+    pla = Player.objects.get(name=p_name.replace("_"," "))
+    context_dict = {    
+        'name' : pla.name,
+        'team' : pla.team,
+        'team_url' : '../../teams/' + pla.team.team.replace(" ","_"),
+        'number' : pla.number,
+        'position' : pla.position,
+        'height' : pla.height,
+        'weight' : pla.weight,
+        'age' : pla.age,
+        'experience' : pla.experience,
+        'college' : pla.college,
+        'pimage' : pla.pimage,
+    }
+    return render_to_response('player_template.html', context_dict, context)
 
-def houstontexans(request):
-    template = loader.get_template('houstontexans.html')
-    return HttpResponse(template.render())
-
-def tbbuccaneers(request):
-    template = loader.get_template('tbbuccaneers.html')
-    return HttpResponse(template.render())
-
-def duanebrown(request):
-    template = loader.get_template('DuaneBrown.html')
-    return HttpResponse(template.render())
-
-def larryenglish(request):
-    template = loader.get_template('LarryEnglish.html')
-    return HttpResponse(template.render())
-
-def tbbuccaneers(request):
-    template = loader.get_template('tbbuccaneers.html')
-    return HttpResponse(template.render())
-
-def tonyromo(request):
-    template = loader.get_template('TonyRomo.html')
-    return HttpResponse(template.render())

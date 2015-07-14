@@ -83,16 +83,18 @@
                 </tr>
               </thead>
               <tbody>
+              {% for pla, plaurl, num, tea, teaurl, pos, col, hei, wei, seasons in pinfo %}
                 <tr>
-                  <th><a href="DuaneBrown.html">Duane Brown</a></th>
-                  <th>76</th>
-                  <th><a href="houstontexans.html">Houston Texans</a></th>
-                  <th>Tackle</th>
-                  <th>Virginia Tech</th>
-                  <th>6'4"</th>
-                  <th>303 lb</th>
-                  <th>8</th>
+                  <th><a href="{{plaurl}}">{{pla}}</a></th>
+                  <th>{{num}}</th>
+                  <th><a href="{{teaurl}}">{{tea}}</a></th>
+                  <th>{{pos}}</th>
+                  <th>{{col}}</th>
+                  <th>{{hei}}</th>
+                  <th>{{wei}}</th>
+                  <th>{{seasons}}</th>
                 </tr>
+              {% endfor %}
                 <tr>
                   <th><a href="LarryEnglish.html">Larry English</a></th>
                   <th>57</th>
