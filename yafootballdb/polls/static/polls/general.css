@@ -102,3 +102,6 @@ body {
 .about-main img{
   border-radius: 6px;
 }
+.teamlogo {
+    background-size:100%;
+}
