@@ -57,4 +57,7 @@ urlpatterns = [
 
     url(r'^api/players/$', views.PlayerList.as_view()),
     url(r'^api/players/(?P<pk>[0-9]+)/$', views.PlayerDetail.as_view())
+
+    #Error 404
+    url(r'./$', views.handler404, name='handler404'),
 ]
