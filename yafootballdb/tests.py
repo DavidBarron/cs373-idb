@@ -30,8 +30,6 @@ try:
 except:
     from urllib2 import *
 
-from tastypie.test import ResourceTestCase
-
 import json
 
 
