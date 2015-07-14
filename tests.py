@@ -1,5 +1,5 @@
 # -------------------------------
-# Created by Kiu Fung "Nicolas" Lam
+# Created by XXX
 # June 2015
 # -------------------------------
 
@@ -54,15 +54,13 @@ class testModels (TestCase):
 							"Pittsburgh Steelers",
 							"19"
 						  ]
-	a = Division.objects.create(
-						  division= test_Division_dict1[0]
-						  dimage=test_Division_dict[1]
-						  conference=test_Division_dict1[2]
-						  cimage=test_Division_dict1[3]						  
-						  founded=test_Division_dict1[4]						  
-						  rchamp=test_Division_dict1[5]
-						  mchamps=test_Division_dict1[6]
-						  cnum=test_Division_dict1[7]
+	Division.objects.create(division=test_Division_dict1[0],dimage=test_Division_dict[1],
+						  conference=test_Division_dict1[2],
+						  cimage=test_Division_dict1[3],					  
+						  founded=test_Division_dict1[4],						  
+						  rchamp=test_Division_dict1[5],
+						  mchamps=test_Division_dict1[6],
+						  cnum=test_Division_dict1[7],
 						 )
 
 	test_Division_dict2 = ["AFC South",
@@ -75,14 +73,14 @@ class testModels (TestCase):
 						   "9"
 						  ]
 	b = Division.objects.create(
-						  division= test_Division_dict1[0]
-						  dimage=test_Division_dict[1]
-						  conference=test_Division_dict1[2]
-						  cimage=test_Division_dict1[3]						  
-						  founded=test_Division_dict1[4]						  
-						  rchamp=test_Division_dict1[5]
-						  mchamps=test_Division_dict1[6]
-						  cnum=test_Division_dict1[7]
+						  division= test_Division_dict1[0],
+						  dimage=test_Division_dict[1],
+						  conference=test_Division_dict1[2],
+						  cimage=test_Division_dict1[3],				  
+						  founded=test_Division_dict1[4],						  
+						  rchamp=test_Division_dict1[5],
+						  mchamps=test_Division_dict1[6],
+						  cnum=test_Division_dict1[7],
 						 )
 
 	test_Division_dict3 = ["AFC West",
@@ -96,14 +94,14 @@ class testModels (TestCase):
 						  ]
 
 	c = Division.objects.create(
-						  division= test_Division_dict1[0]
-						  dimage=test_Division_dict[1]
-						  conference=test_Division_dict1[2]
-						  cimage=test_Division_dict1[3]						  
-						  founded=test_Division_dict1[4]						  
-						  rchamp=test_Division_dict1[5]
-						  mchamps=test_Division_dict1[6]
-						  cnum=test_Division_dict1[7]
+						  division= test_Division_dict1[0],
+						  dimage=test_Division_dict[1],
+						  conference=test_Division_dict1[2],
+						  cimage=test_Division_dict1[3]	,					  
+						  founded=test_Division_dict1[4],						  
+						  rchamp=test_Division_dict1[5],
+						  mchamps=test_Division_dict1[6],
+						  cnum=test_Division_dict1[7],
 						 )
 
 	def test_Division_model01(self):									
@@ -161,17 +159,17 @@ class testModels (TestCase):
 								   "10",
 								   "5"]}
 
-	Team.objects.create(team=test_Team_dict1["Team01"][0]
-						team_image=test_Team_dict1["Team01"][1]
-						division=test_Team_dict1["Team01"][2]
-						state=test_Team_dict1["Team01"][3]
-						city=test_Team_dict1["Team01"][4]
-						stadium=test_Team_dict1["Team01"][5]
-						stadium_image=test_Team_dict1["Team01"][6]
-						coach=test_Team_dict1["Team01"][7]
-						established=test_Team_dict1["Team01"][8]
-						conference_champs=test_Team_dict1["Team01"][9]
-						superbowl_champs=test_Team_dict1["Team01"][10]
+	Team.objects.create(team=test_Team_dict1["Team01"][0],
+						team_image=test_Team_dict1["Team01"][1],
+						division=test_Team_dict1["Team01"][2],
+						state=test_Team_dict1["Team01"][3],
+						city=test_Team_dict1["Team01"][4],
+						stadium=test_Team_dict1["Team01"][5],
+						stadium_image=test_Team_dict1["Team01"][6],
+						coach=test_Team_dict1["Team01"][7],
+						established=test_Team_dict1["Team01"][8],
+						conference_champs=test_Team_dict1["Team01"][9],
+						superbowl_champs=test_Team_dict1["Team01"][10],
 					   )
 
 	test_Team_dict02 = {"Team02": ["New York Giants",
@@ -186,17 +184,17 @@ class testModels (TestCase):
 								   "11",
 								   "4"]}
 
-	Team.objects.create(team=test_Team_dict2["Team02"][0]
-						team_image=test_Team_dict2["Team02"][1]
-						division=test_Team_dict2["Team02"][2]
-						state=test_Team_dict2["Team02"][3]
-						city=test_Team_dict2["Team02"][4]
-						stadium=test_Team_dict2["Team02"][5]
-						stadium_image=test_Team_dict2["Team02"][6]
-						coach=test_Team_dict2["Team02"][7]
-						established=test_Team_dict2["Team02"][8]
-						conference_champs=test_Team_dict2["Team02"][9]
-						superbowl_champs=test_Team_dict2["Team02"][10]					   	
+	Team.objects.create(team=test_Team_dict2["Team02"][0],
+						team_image=test_Team_dict2["Team02"][1],
+						division=test_Team_dict2["Team02"][2],
+						state=test_Team_dict2["Team02"][3],
+						city=test_Team_dict2["Team02"][4],
+						stadium=test_Team_dict2["Team02"][5],
+						stadium_image=test_Team_dict2["Team02"][6],
+						coach=test_Team_dict2["Team02"][7],
+						established=test_Team_dict2["Team02"][8],
+						conference_champs=test_Team_dict2["Team02"][9],
+						superbowl_champs=test_Team_dict2["Team02"][10]	,				   	
 				 	   )
 
 	test_Team_dict03 = {"Team03": ["Philadelphia Eagles",
@@ -211,17 +209,17 @@ class testModels (TestCase):
 								   "3",
 								   "0"]}
 
-	Team.objects.create(team=test_Team_dict3["Team03"][0]
-						team_image=test_Team_dict3["Team03"][1]
-						division=test_Team_dict3["Team03"][2]
-						state=test_Team_dict3["Team03"][3]
-						city=test_Team_dict3["Team03"][4]
-						stadium=test_Team_dict3["Team03"][5]
-						stadium_image=test_Team_dict3["Team03"][6]
-						coach=test_Team_dict3["Team03"][7]
-						established=test_Team_dict3["Team03"][8]
-						conference_champs=test_Team_dict3["Team03"][9]
-						superbowl_champs=test_Team_dict3["Team03"][10]
+	Team.objects.create(team=test_Team_dict3["Team03"][0],
+						team_image=test_Team_dict3["Team03"][1],
+						division=test_Team_dict3["Team03"][2],
+						state=test_Team_dict3["Team03"][3],
+						city=test_Team_dict3["Team03"][4],
+						stadium=test_Team_dict3["Team03"][5],
+						stadium_image=test_Team_dict3["Team03"][6],
+						coach=test_Team_dict3["Team03"][7],
+						established=test_Team_dict3["Team03"][8],
+						conference_champs=test_Team_dict3["Team03"][9],
+						superbowl_champs=test_Team_dict3["Team03"][10],
 						 )
 
 	def test_Team_model01(self):				
