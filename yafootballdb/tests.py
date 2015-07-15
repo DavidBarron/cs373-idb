@@ -569,5 +569,127 @@ class testModels (TestCase):
 		self.assertEqual(Player01.college,ply_dict[8])
 		self.assertEqual(Player01.pimage,ply_dict[9])
 		
+
+
+class APItests(unittest.TestCase):
+	#Retrieve the url from local server
+	url =  "http://yetanotherfootballdb.me/"
+	def test_div_api(self):		
+		request = Request(self.url+"api/divisions")
+		response = urlopen(request)
+		response_body = response.read().decode("utf-8")
+		self.assertEqual(response.getcode(), 200)
+		response_data = loads(response_body)		
+		res_obj = response_data["results"]
+		exp_obj =[
+	    {
+	        "division": "AFC North",
+	        "dimage": "static/images/afc_north.jpg",
+	        "conference": "American Football Conference",
+	        "cimage": "static/images/afc.jpg",
+	        "founded": "1967",
+	        "rchamp": "Pittsburgh Steelers",
+	        "mchamps": "Pittsburgh Steelers",
+	        "cnum": "19"
+	    },
+	    {
+	        "division": "AFC South",
+	        "dimage": "static/images/afc_south.jpg",
+	        "conference": "American Football Conference",
+	        "cimage": "static/images/afc.jpg",
+	        "founded": "2002",
+	        "rchamp": "Indianapolis Colts",
+	        "mchamps": "Indianapolis Colts",
+	        "cnum": "9"
+	    },
+	    {
+	        "division": "AFC East",
+	        "dimage": "static/images/afc_east.jpg",
+	        "conference": "American Football Conference",
+	        "cimage": "static/images/afc.jpg",
+	        "founded": "1960",
+	        "rchamp": "New England Patriots",
+	        "mchamps": "New England Patriots",
+	        "cnum": "17"
+	    },
+	    {
+	        "division": "AFC West",
+	        "dimage": "static/images/afc_west.jpg",
+	        "conference": "American Football Conference",
+	        "cimage": "static/images/afc.jpg",
+	        "founded": "1960",
+	        "rchamp": "Denver Broncos",
+	        "mchamps": "Oakland Raiders",
+	        "cnum": "15"
+	    },
+	    {
+	        "division": "NFC North",
+	        "dimage": "static/images/nfc_north.jpg",
+	        "conference": "National Football Conference",
+	        "cimage": "static/images/nfc.jpg",
+	        "founded": "1967",
+	        "rchamp": "Green Bay Packers",
+	        "mchamps": "Minnesota Vikings",
+	        "cnum": "18"
+	    },
+	    {
+	        "division": "NFC South",
+	        "dimage": "static/images/nfc_south.jpg",
+	        "conference": "National Football Conference",
+	        "cimage": "static/images/nfc.jpg",
+	        "founded": "2002",
+	        "rchamp": "Carolina Panthers",
+	        "mchamps": "Carolina Panthers",
+	        "cnum": "4"
+	    },
+	    {
+	        "division": "NFC East",
+	        "dimage": "static/images/nfc_east.jpg",
+	        "conference": "National Football Conference",
+	        "cimage": "static/images/nfc.jpg",
+	        "founded": "1967",
+	        "rchamp": "Dallas Cowboys",
+	        "mchamps": "Dallas Cowboys",
+	        "cnum": "21"
+	    },
+	    {
+	        "division": "NFC West",
+	        "dimage": "static/images/nfc_west.jpg",
+	        "conference": "National Football Conference",
+	        "cimage": "static/images/nfc.jpg",
+	        "founded": "1967",
+	        "rchamp": "Seattle Seahawks",
+	        "mchamps": "San Francisco 49ers",
+	        "cnum": "19"
+	    }
+		]
+		#Division
+		for obj in res_obj:
+		    for key in obj:
+		        if type(obj[key]) == list:
+		        	obj[key] = sorted(obj[key])
+
+		for obj in exp_obj:
+		    for key in obj:
+		        if type(obj[key]) == list:
+		        	obj[key] = sorted(obj[key])
+
+		for obj in res_obj:
+		    #Veriying whether the all of the itmes in the JSON
+		    self.assertTrue(obj in exp_obj)
+
+
+		#Teams
+
+		#Players
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__" :
 	main()
