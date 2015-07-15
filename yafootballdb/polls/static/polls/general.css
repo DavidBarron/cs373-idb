@@ -77,10 +77,10 @@ body {
 .splash-jumbo {
 	background-color: #000000;
 	border-radius: 0px;
-  	font-family: "Futura",Arial,sans-serif;
-    margin: auto;
-    width: 70em;
-    height: 20em;
+  font-family: "Futura",Arial,sans-serif;
+  margin: auto;
+  width: auto;
+  height: 20em;
 
     position: absolute;
     top:0;
