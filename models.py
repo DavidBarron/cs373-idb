@@ -47,7 +47,6 @@ class Team(models.Model):
     def __str__(self) :
         return self.team
 
-
 class Player(models.Model):
     """
         Model for a Player. Attributes conatined are: player name, team, number, position, height,
