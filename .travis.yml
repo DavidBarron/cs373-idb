@@ -5,6 +5,8 @@ language: python
 python:
     - "3.4"
 
+sudo: required
+
 before_install:
     - sudo apt-get update
 
@@ -12,6 +14,9 @@ install:
     - pip install --upgrade pip
     - pip install coverage
     - sudo apt-get install python-numpy
+    - sudo pip install Django
+    - pip install djangorestframework
+    - pip install psycopg2
 
 before_script:
     - uname -a
@@ -20,7 +25,8 @@ before_script:
     - pip3 freeze
     - python3 --version
     - coverage3 --version
-    - python3 -c "import numpy; print(numpy.__version__)"
 
 script:
     - make check
+    - make test
+    - cat tests.out
