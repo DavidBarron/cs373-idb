@@ -28,5 +28,4 @@ before_script:
 
 script:
     - make check
-    - make test
-    - cat tests.out
+
