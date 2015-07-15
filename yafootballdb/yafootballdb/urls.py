@@ -1,5 +1,4 @@
 """yafootballdb URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
 Examples:
@@ -46,6 +45,9 @@ urlpatterns = [
     url(r'^players/(?P<p_name>\w+)/$', views.player), 
 
     url(r'^', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+
+    #Error 404
+    url(r'./$', views.handler404, name='handler404'),
 
 ]

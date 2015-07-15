@@ -65,10 +65,13 @@
         </div>
 
         <div class="container jumbotron stats">
+          <div class="row">
           <div class="col-md-4">
-            <img src="{{timage}}" class="img-responsive center-block">
+            <div class="teamlogo">
+              <img src="{{timage}}" class="img-responsive center-block">
+            </div>
           </div>
-          <div class="col-md-8">
+                    <div class="col-md-8">
             <table class="table table-hover">
               <tbody>
                 <tr>
@@ -81,7 +84,7 @@
                 </tr>
                 <tr>
                   <th>Stadium</th>
-                  <th>{{stadium}}</br><img src="{{simage}}" class="img-responsive center-block"></th>
+                  <th>{{stadium}}</th>
                 </tr>
                 <tr>
                   <th>Coach</th>
@@ -102,13 +105,27 @@
               </tbody>
             </table>
           </div>
+          </div>
+          <div class="align-center height:">
+            <div class="teamlogo">
+              <img src="{{simage}}" class="img-responsive center-block" width=600px>
+              </a>
+              </br>
+              </br>
+              <div class="caption" align="center">
+                {{stadium}}
+              </br>
+              <a href="http://google.com/maps/place/{{stadium}}">Map</a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="container jumbotron roster">
           <div class="roster-title">Roster</div>
           <div>
             {% for x, y in pinfo %}
-            <div><a href="{{y}}">{{x}}</a></div>
+            <div class="rnames"><a href="{{y}}">{{x}}</a></div>
             {% endfor %}
           </div>
 
