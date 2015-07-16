@@ -14,7 +14,7 @@ for player_cache in players_cache:
     w = player_cache["team"]
     print(w)
     q = 0
-    q =Player(name=player_cache["pname"],
+    q =Player(name=player_cache["pname"].replace(".","")..replace("'","").replace("-",""),
         team=Team.objects.get(team=player_cache["team"]),
         #team=player_cache["team"],
         number=player_cache["number"],
@@ -25,7 +25,11 @@ for player_cache in players_cache:
         experience=player_cache["experience"],
         college=player_cache["college"],
         pimage=player_cache["pimage"])
-    q.save()
+    try:
+        Player.objects.get(name=player_cache["pname"].replace(".","")..replace("'","").replace("-",""))
+        q.save()
+    except:
+        pass
 
 """
 for player_cache in players_cache:
