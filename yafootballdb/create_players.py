@@ -14,8 +14,8 @@ for player_cache in players_cache:
     w = player_cache["team"]
     print(w)
     q = 0
-    q =Player(name=player_cache["pname"].replace(".","")..replace("'","").replace("-",""),
-        team=Team.objects.get(team=player_cache["team"]),
+    q =Player(name=player_cache["pname"].replace(".","").replace("'","").replace("-",""),
+        team=Team.objects.get(team=player_cache["team"].replace(".","")),
         #team=player_cache["team"],
         number=player_cache["number"],
         position=player_cache["position"],
@@ -26,10 +26,9 @@ for player_cache in players_cache:
         college=player_cache["college"],
         pimage=player_cache["pimage"])
     try:
-        Player.objects.get(name=player_cache["pname"].replace(".","")..replace("'","").replace("-",""))
-        q.save()
+        Player.objects.get(name=player_cache["pname"].replace(".","").replace("'","").replace("-",""))
     except:
-        pass
+        q.save()
 
 """
 for player_cache in players_cache:
