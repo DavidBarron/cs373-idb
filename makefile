@@ -9,6 +9,7 @@ FILES :=                \
     models.py           \
     tests.py            \
     UML.pdf             \
+    tests.out			\
 
 all:
 
@@ -23,3 +24,11 @@ models.html: models.py
 
 IDB.log:
 	git log > IDB.log
+
+test: test.out
+
+test.out: tests.py
+	coverage3 run    --branch yafootballdb/manage.py shell < tests.py > tests.out 2>&1
+	coverage3 report -m                      >> tests.out
+	cat tests.out
+

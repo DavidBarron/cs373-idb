@@ -1,9 +1,14 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: http://www.yetanotherfootballdb.me
 
-# YetAnotherNFLDB
+# YetAnotherFootballDB
 
-YetAnotherNFLDB is a simple API that allows customers to view simple information about NFL divisions, teams, and players.  
+YetAnotherFootballDB is a simple API that allows customers to view simple information about NFL divisions, teams, and players. 
+
+http://www.yetanotherfootballdb.me
+http://www.yetanotherfootballdb.me/api/divisions
+http://www.yetanotherfootballdb.me/api/teams
+http://www.yetanotherfootballdb.me/api/players
 
 # Group Divisions
 
@@ -20,13 +25,14 @@ YetAnotherNFLDB is a simple API that allows customers to view simple information
 
         [
             {
-                "Conference": "American Football Conference",
-                "League": "National Football League",
-                "Sport": "American football",
-                "Founded": "1960 (as the American Football League Eastern Division)",
-                "No. of teams": ["Buffalo Bills", "Miami Dolphins", "New England Patriots", "New York Jets"],
-                "Most recent champion(s)": "New England Patriots",
-                "Most titles": " New England Patriots"
+                "division": "NFC West",
+                "dimage": "static/images/nfc_west.jpg",
+                "conference": "National Football Conference",
+                "cimage": "static/images/nfc.jpg",
+                "founded": "1967",
+                "rchamp": "Seattle Seahawks",
+                "mchamps": "San Francisco 49ers",
+                "cnum": "19"
             },
             {
                 "etc..."
@@ -44,13 +50,14 @@ A single Division object with all its details
 + Response 200 (application/json)
 
              {
-                "Conference": "American Football Conference",
-                "League": "National Football League",
-                "Sport": "American football",
-                "Founded": "1960 (as the American Football League Eastern Division)",
-                "No. of teams": ["Buffalo Bills", "Miami Dolphins", "New England Patriots", "New York Jets"],
-                "Most recent champion(s)": "New England Patriots",
-                "Most titles": " New England Patriots"
+                "division": "NFC West",
+                "dimage": "static/images/nfc_west.jpg",
+                "conference": "National Football Conference",
+                "cimage": "static/images/nfc.jpg",
+                "founded": "1967",
+                "rchamp": "Seattle Seahawks",
+                "mchamps": "San Francisco 49ers",
+                "cnum": "19"
             }
 
 
@@ -68,13 +75,17 @@ A single Division object with all its details
 
         [
             {
-                "team": "New England Patriots",
-                "division": "AFC East",
-                "state": "Massachusetts",
-                "city": "Foxborough",
-                "stadium": "Gillette Stadium",
-                "coach": "Bill Belichick",
-                "established": "1960"
+                "team": "Dallas Cowboys",
+                "division": "http://www.yetanotherfootballdb.me/api/divisions/7/",
+                "timage": "static/images/cowyboys.png",
+                "state": "TX",
+                "city": "Arlington",
+                "stadium": "AT&T Stadium",
+                "simage": "https://upload.wikimedia.org/wikipedia/commons/2/29/Cowboys_stadium.JPG",
+                "coach": "Jason Garrett",
+                "established": "1960",
+                "cchamps": "10",
+                "schamps": "5"
             },
             {
                 "etc..." : "more"
@@ -94,13 +105,17 @@ A single Team object with all its details
 
 
         {
-            "team": "New England Patriots",
-            "division": "AFC East",
-            "state": "Massachusetts",
-            "city": "Foxborough",
-            "stadium": "Gillette Stadium",
-            "coach": "Bill Belichick",
-            "established": "1960"
+                "team": "Dallas Cowboys",
+                "division": "http://www.yetanotherfootballdb.me/api/divisions/7/",
+                "timage": "static/images/cowyboys.png",
+                "state": "TX",
+                "city": "Arlington",
+                "stadium": "AT&T Stadium",
+                "simage": "https://upload.wikimedia.org/wikipedia/commons/2/29/Cowboys_stadium.JPG",
+                "coach": "Jason Garrett",
+                "established": "1960",
+                "cchamps": "10",
+                "schamps": "5"
         }
  
 
@@ -118,16 +133,16 @@ A single Team object with all its details
 
         [
             {
-            "name": "Bailey, Dan",
-            "team": "Dallas Cowboys",
-            "number": "5",
-            "position": "K",
-            "height": "6'0",
-            "weight": "195",
-            "age": "27",
-            "experience": "5",
-            "college": "Oklahoma State",
-            "player_image": "http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/bai159977_15.png"
+                "name": "Drew Brees",
+                "team": "http://www.yetanotherfootballdb.me/api/teams/15/",
+                "number": "9",
+                "position": "QB",
+                "height": "6-0",
+                "weight": "209",
+                "age": "36",
+                "experience": "15",
+                "college": "Purdue",
+                "pimage": "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2580.png"
             },
             {
                 etc...
@@ -144,14 +159,14 @@ A single Player object with all its details
 + Response 200 (application/json)
 
         {
-            "name": "Bailey, Dan",
-            "team": "Dallas Cowboys",
-            "number": "5",
-            "position": "K",
-            "height": "6'0",
-            "weight": "195",
-            "age": "27",
-            "experience": "5",
-            "college": "Oklahoma State",
-            "player_image": "http://www.dallascowboys.com/sites/dallascowboys.com/files/styles/312x312/public/bai159977_15.png"
+            "name": "Drew Brees",
+            "team": "http://yetanotherfootballdb.me/api/teams/15/",
+            "number": "9",
+            "position": "QB",
+            "height": "6-0",
+            "weight": "209",
+            "age": "36",
+            "experience": "15",
+            "college": "Purdue",
+            "pimage": "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2580.png"
         }

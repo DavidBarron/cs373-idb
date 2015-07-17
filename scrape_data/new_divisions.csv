@@ -1,0 +1,9 @@
+division,dimage,conference,cimage,founded,rchamp,mchamps,cnum
+AFC North,static/images/afc_north.jpg,American Football Conference,static/images/afc.jpg,1967,Pittsburgh Steelers,Pittsburgh Steelers,19
+AFC South,static/images/afc_south.jpg,American Football Conference,static/images/afc.jpg,2002,Indianapolis Colts,Indianapolis Colts,9
+AFC East,static/images/afc_east.jpg,American Football Conference,static/images/afc.jpg,1960,New England Patriots,New England Patriots,17
+AFC West,static/images/afc_west.jpg,American Football Conference,static/images/afc.jpg,1960,Denver Broncos,Oakland Raiders and San Diego Chargers,15
+NFC North,static/images/nfc_north.jpg,National Football Conference,static/images/nfc.jpg,1967,Green Bay Packers,Minnesota Vikings,18
+NFC South,static/images/nfc_south.jpg,National Football Conference,static/images/nfc.jpg,2002,Carolina Panthers,Carolina Panthers,4
+NFC East,static/images/nfc_east.jpg,National Football Conference,static/images/nfc.jpg,1967,Dallas Cowboys,Dallas Cowboys,21
+NFC West,static/images/nfc_west.jpg,National Football Conference,static/images/nfc.jpg,1967,Seattle Seahawks,San Francisco 49ers,19

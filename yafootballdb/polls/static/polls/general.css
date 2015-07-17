@@ -1,7 +1,8 @@
 body {
   padding-top: 70px;
   padding-bottom: 30px;
-  background-image: url('images/Football_GridBG.jpg');
+  background-image: url("../images/Football_GridBG.jpg");
+  background-size: 100%;
   background-attachment: fixed;
   }
 
@@ -35,7 +36,7 @@ body {
 .roster-title{
 	font-weight: bold;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .jumbotron {
@@ -76,10 +77,10 @@ body {
 .splash-jumbo {
 	background-color: #000000;
 	border-radius: 0px;
-  	font-family: "Futura",Arial,sans-serif;
-    margin: auto;
-    width: 70em;
-    height: 20em;
+  font-family: "Futura",Arial,sans-serif;
+  margin: auto;
+  width: auto;
+  height: 20em;
 
     position: absolute;
     top:0;
@@ -100,4 +101,14 @@ body {
 
 .about-main img{
   border-radius: 6px;
+}
+.teamlogo {
+    background-size:100%;
+}
+.caption {
+  font-size: 1.5em;
+}
+.rnames {
+  font-size: 1.5em;
+  text-align: center;
 }

@@ -2,6 +2,7 @@ body {
   padding-top: 70px;
   padding-bottom: 30px;
   background-image: url("../images/Football_GridBG.jpg");
+  background-size: 100%;
   background-attachment: fixed;
   }
 
@@ -100,4 +101,11 @@ body {
 
 .about-main img{
   border-radius: 6px;
+}
+element {
+    width: 200px;
+    height: 200px;
+}
+.img-circle {
+    border-radius: 50%;
 }

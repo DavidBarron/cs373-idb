@@ -1,5 +1,4 @@
 """yafootballdb URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
 Examples:
@@ -15,30 +14,40 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from rest_framework import routers
 
 from . import views
 
+router = routers.DefaultRouter()
+router.register(r'api/divisions', views.DivisionViewSet)
+router.register(r'api/teams', views.TeamViewSet)
+router.register(r'api/players', views.PlayerViewSet)
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^home.html$', views.home),
-    url(r'^about.html$', views.about),
+    url(r'^home$', views.home),
+    url(r'^about$', views.about),
     url(r'^$', views.home),
 
-
-    url(r'^afceast.html$', views.afceast),
-    url(r'^afcsouth.html$', views.afcsouth),
-    url(r'^nfceast.html$', views.nfceast),
-    url(r'^nfcsouth.html$', views.nfcsouth),
+    #this is the parent divisions url
+    url(r'^divisions/$', views.divisions),
+    #this one is a for a specfic division
+    url(r'^divisions/(?P<d_name>\w+)/$', views.division), 
     
-    url(r'^dallascowboys.html$', views.dallascowboys),
-    url(r'^houstontexans.html$', views.houstontexans),
-    url(r'^tbbuccaneers.html$', views.tbbuccaneers),
+   #this is the parent teams url
+    url(r'^teams/$', views.teams),
+    #this one is a for a specfic team
+    url(r'^teams/(?P<t_name>\w+)/$', views.team), 
 
-    url(r'^DuaneBrown.html$', views.duanebrown),
-    url(r'^LarryEnglish.html$', views.larryenglish),
-    url(r'^TonyRomo.html$', views.tonyromo),
+   #this is the parent players url
+    url(r'^players/$', views.players),
+    #this one is a for a specfic player
+    url(r'^players/(?P<p_name>\w+)/$', views.player), 
 
-    url(r'^divisions.html$', views.divisions),
-    url(r'^teams.html$', views.teams),
-    url(r'^players.html$', views.players),
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+
+    #Error 404
+    url(r'./$', views.handler404, name='handler404'),
+
 ]
