@@ -1,33 +1,33 @@
-team,division,timage,state,city,stadium,simage,coach,established,cchamps,schamps
-Dallas Cowboys,NFC East,static/images/cowyboys.png,TX,Arlington,AT&T Stadium,https://upload.wikimedia.org/wikipedia/commons/2/29/Cowboys_stadium.JPG,Jason Garrett,1960,10,5
-New York Giants,NFC East,static/images/giants.png,NJ,East Rutherford,MetLife Stadium,https://upload.wikimedia.org/wikipedia/commons/4/46/New_Meadowlands_Stadium_Mezz_Corner.jpg,Tom Coughlin,1925,11,4
-Philadelphia Eagles,NFC East,static/images/eagles.png,PA,Philadelphia,Lincoln Financial Field,https://upload.wikimedia.org/wikipedia/commons/7/71/Philly_%2845%29.JPG,Chip Kelly,1933,3,0
-Washington Redskins,NFC East,static/images/redskins.png,VA,Ashburn,FedExField,https://upload.wikimedia.org/wikipedia/commons/0/07/FedExField01.jpg,Jay Gruden,1932,5,3
-Arizona Cardinals,NFC West,static/images/cardinals.png,AZ,Glendale,University of Phoenix Stadium,https://upload.wikimedia.org/wikipedia/commons/4/42/Cardinals_stadium_crop.jpg,Bruce Arians,1898,1,0
-San Francisco 49ers,NFC West,static/images/49ers.png,CA,Santa Clara,Levi's Stadium,https://upload.wikimedia.org/wikipedia/commons/5/58/Broncos_vs_49ers_preseason_game_at_Levi%27s_Stadium.jpg,Jim Tomsula,1946,6,5
-Seattle Seahawks,NFC West,static/images/seahawks.png,WA,Seattle,CenturyLink Field,https://upload.wikimedia.org/wikipedia/commons/5/53/Qwest_Field_North.jpg,Pete Carroll,1974,3,1
-St. Louis Rams,NFC West,static/images/rams.png,MO,St. Louis,Edward Jones Dome,https://upload.wikimedia.org/wikipedia/commons/d/d4/Edward_Jones_Dome_KM.jpg,Jeff Fisher,1936,6,1
-Chicago Bears,NFC North,static/images/bears.png,IL,Chicago,Soldier Field,https://upload.wikimedia.org/wikipedia/commons/c/c7/Soldier_field_2006.jpg,John Fox,1919,4,1
-Detroit Lions,NFC North,static/images/lions.png,MI,Detroit,Ford Field,https://upload.wikimedia.org/wikipedia/commons/9/90/Ford-Field-September-10-2006.jpg,Jim Caldwell,1930,4,0
-Green Bay Packers,NFC North,static/images/packers.png,WI,Green Bay,Lambeau Field,https://upload.wikimedia.org/wikipedia/commons/e/e3/Lambeau_Field.jpg,Mike McCarthy,1919,2,9
-Minnesota Vikings,NFC North,static/images/vikings.png,MN,Minneapolis,TCF Bank Stadium,https://upload.wikimedia.org/wikipedia/commons/1/16/TCF_Bank_Stadium.JPG,Mike Zimmer,1961,4,0
-Atlanta Falcons,NFC South,static/images/falcons.png,GA,Atlanta,Georgia Dome,http://www.digitizedchaos.com/wp-content/uploads/2011/10/10132011_big.jpg,Dan Quinn,1965,1,0
-Carolina Panthers,NFC South,static/images/panthers.png,NC,Charlotte,Bank of America Stadium,https://upload.wikimedia.org/wikipedia/commons/a/aa/Bank_of_America_Stadium.jpg,Ron Rivera,1993,1,0
-New Orleans Saints,NFC South,static/images/saints.png,LA,New Orleans,Mercedes-Benz Superdome,https://upload.wikimedia.org/wikipedia/commons/d/d8/Superdome_from_Garage.jpg,Sean Payton,1966,1,1
-Tampa Bay Buccaneers,NFC South,static/images/buccaneers.png,FL,Tampa,Raymond James Stadium,https://upload.wikimedia.org/wikipedia/commons/b/b2/Raymond_James_Stadium_aerial.jpg,Lovie Smith,1976,1,1
-Tennessee Titans,AFC South,static/images/titans.png,TN,Nashville,Nissan Stadium,https://upload.wikimedia.org/wikipedia/commons/6/64/LP_Field_2009_crop.jpg,Ken Whisenhunt,1960,1,0
-Jacksonville Jaguars,AFC South,static/images/jaguars.png,FL,Jacksonville,EverBank Field,https://upload.wikimedia.org/wikipedia/commons/a/a8/EverBankField2014.jpg,Gus Bradley,1993,0,0
-Indianapolis Colts,AFC South,static/images/colts.png,IN,Indianapolis,Lucas Oil Stadium,https://upload.wikimedia.org/wikipedia/commons/c/ce/Lucas_Oil_stadium.JPG,Chuck Pagano,1953,7,2
-Houston Texans,AFC South,static/images/texans.png,TX,Houston,NRG Stadium,https://upload.wikimedia.org/wikipedia/commons/6/6a/Reliantstadium.jpg,Bill O'Brien,2002,0,0
-Pittsburgh Steelers,AFC North,static/images/steelers.png,PA,Pittsburgh,Heinz Field,https://upload.wikimedia.org/wikipedia/commons/3/30/Heinz_Field_%282005%29.jpg,Mike Tomlin,1933,8,6
-Cleveland Browns,AFC North,static/images/browns.png,OH,Cleveland,FirstEnergy Stadium,https://upload.wikimedia.org/wikipedia/commons/3/37/FirstEnergy_Stadium_2013.jpg,Mike Pettine,1946,11,0
-Cincinnati Bengals,AFC North,static/images/bengals.png,OH,Cincinnati,Paul Brown Stadium,https://upload.wikimedia.org/wikipedia/commons/7/71/Cincinnati-paul-brown-stadium.jpg,Marvin Lewis,1968,2,0
-Baltimore Ravens,AFC North,static/images/ravens.png,MD,Baltimore,M&T Bank Stadium,https://upload.wikimedia.org/wikipedia/commons/d/dc/M%26T_Bank_Stadium_DoD.jpg,John Harbaugh,1996,2,2
-San Diego Chargers,AFC West,static/images/chargers.png,CA,San Diego,Qualcomm Stadium,https://upload.wikimedia.org/wikipedia/commons/0/05/Qualcomm_Stadium.jpg,Mike McCoy,1959,1,0
-Oakland Raiders,AFC West,static/images/raiders.png,CA,Oakland,O.co Coliseum,https://upload.wikimedia.org/wikipedia/commons/b/b6/Oakland_Coliseum_field_from_Mt._Davis.JPG,Jack Del Rio,1960,4,3
-Kansas City Chiefs,AFC West,static/images/chiefs.png,MO,Kansas City,Arrowhead Stadium,https://upload.wikimedia.org/wikipedia/commons/a/ac/Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg,Andy Reid,1960,0,1
-Denver Broncos,AFC West,static/images/broncos.png,CO,Denver,Sports Authority Field at Mile High,https://upload.wikimedia.org/wikipedia/commons/d/de/Sports_Authority_Field_at_Mile_High_AFC_Championship_game.jpg,Gary Kubiak,1960,7,2
-New York Jets,AFC East,static/images/jets.png,NJ,East Rutherford,MetLife Stadium,https://upload.wikimedia.org/wikipedia/commons/4/46/New_Meadowlands_Stadium_Mezz_Corner.jpg,Todd Bowles,1959,0,1
-New England Patriots,AFC East,static/images/patriots.png,MA,Foxborough,Gillette Stadium,https://upload.wikimedia.org/wikipedia/commons/9/9c/Gillette_Stadium02.jpg,Bill Belichick,1960,8,4
-Miami Dolphins,AFC East,static/images/dolphins.png,FL,Miami Gardens,Sun Life Stadium,https://upload.wikimedia.org/wikipedia/commons/0/04/Dolphin_Stadium.jpg,Joe Philbin,1966,5,2
-Buffalo Bills,AFC East,static/images/bills.png,NY,Orchard Park,Ralph Wilson Stadium,https://upload.wikimedia.org/wikipedia/commons/3/35/Bills.jpg,Rex ryan,1960,4,0
+team,division,timage,state,city,stadium,simage,coach,established,cchamps,schamps,twitter
+Dallas Cowboys,NFC East,static/images/cowyboys.png,TX,Arlington,AT&T Stadium,https://upload.wikimedia.org/wikipedia/commons/2/29/Cowboys_stadium.JPG,Jason Garrett,1960,10,5,dallascowboys
+New York Giants,NFC East,static/images/giants.png,NJ,East Rutherford,MetLife Stadium,https://upload.wikimedia.org/wikipedia/commons/4/46/New_Meadowlands_Stadium_Mezz_Corner.jpg,Tom Coughlin,1925,11,4,Giants
+Philadelphia Eagles,NFC East,static/images/eagles.png,PA,Philadelphia,Lincoln Financial Field,https://upload.wikimedia.org/wikipedia/commons/7/71/Philly_%2845%29.JPG,Chip Kelly,1933,3,0,Eagles
+Washington Redskins,NFC East,static/images/redskins.png,VA,Ashburn,FedExField,https://upload.wikimedia.org/wikipedia/commons/0/07/FedExField01.jpg,Jay Gruden,1932,5,3,Redskins
+Arizona Cardinals,NFC West,static/images/cardinals.png,AZ,Glendale,University of Phoenix Stadium,https://upload.wikimedia.org/wikipedia/commons/4/42/Cardinals_stadium_crop.jpg,Bruce Arians,1898,1,0,AZCardinals
+San Francisco 49ers,NFC West,static/images/49ers.png,CA,Santa Clara,Levi's Stadium,https://upload.wikimedia.org/wikipedia/commons/5/58/Broncos_vs_49ers_preseason_game_at_Levi%27s_Stadium.jpg,Jim Tomsula,1946,6,5,49ers
+Seattle Seahawks,NFC West,static/images/seahawks.png,WA,Seattle,CenturyLink Field,https://upload.wikimedia.org/wikipedia/commons/5/53/Qwest_Field_North.jpg,Pete Carroll,1974,3,1,Seahawks
+St. Louis Rams,NFC West,static/images/rams.png,MO,St. Louis,Edward Jones Dome,https://upload.wikimedia.org/wikipedia/commons/d/d4/Edward_Jones_Dome_KM.jpg,Jeff Fisher,1936,6,1,STLouisRams
+Chicago Bears,NFC North,static/images/bears.png,IL,Chicago,Soldier Field,https://upload.wikimedia.org/wikipedia/commons/c/c7/Soldier_field_2006.jpg,John Fox,1919,4,1,ChicagoBears
+Detroit Lions,NFC North,static/images/lions.png,MI,Detroit,Ford Field,https://upload.wikimedia.org/wikipedia/commons/9/90/Ford-Field-September-10-2006.jpg,Jim Caldwell,1930,4,0,Lions
+Green Bay Packers,NFC North,static/images/packers.png,WI,Green Bay,Lambeau Field,https://upload.wikimedia.org/wikipedia/commons/e/e3/Lambeau_Field.jpg,Mike McCarthy,1919,2,9,packers
+Minnesota Vikings,NFC North,static/images/vikings.png,MN,Minneapolis,TCF Bank Stadium,https://upload.wikimedia.org/wikipedia/commons/1/16/TCF_Bank_Stadium.JPG,Mike Zimmer,1961,4,0,Vikings
+Atlanta Falcons,NFC South,static/images/falcons.png,GA,Atlanta,Georgia Dome,http://www.digitizedchaos.com/wp-content/uploads/2011/10/10132011_big.jpg,Dan Quinn,1965,1,0,AtlantaFalcons
+Carolina Panthers,NFC South,static/images/panthers.png,NC,Charlotte,Bank of America Stadium,https://upload.wikimedia.org/wikipedia/commons/a/aa/Bank_of_America_Stadium.jpg,Ron Rivera,1993,1,0,Panthers
+New Orleans Saints,NFC South,static/images/saints.png,LA,New Orleans,Mercedes-Benz Superdome,https://upload.wikimedia.org/wikipedia/commons/d/d8/Superdome_from_Garage.jpg,Sean Payton,1966,1,1,Saints
+Tampa Bay Buccaneers,NFC South,static/images/buccaneers.png,FL,Tampa,Raymond James Stadium,https://upload.wikimedia.org/wikipedia/commons/b/b2/Raymond_James_Stadium_aerial.jpg,Lovie Smith,1976,1,1,TBBuccaneers
+Tennessee Titans,AFC South,static/images/titans.png,TN,Nashville,Nissan Stadium,https://upload.wikimedia.org/wikipedia/commons/6/64/LP_Field_2009_crop.jpg,Ken Whisenhunt,1960,1,0,Titans
+Jacksonville Jaguars,AFC South,static/images/jaguars.png,FL,Jacksonville,EverBank Field,https://upload.wikimedia.org/wikipedia/commons/a/a8/EverBankField2014.jpg,Gus Bradley,1993,0,0,Jaguars
+Indianapolis Colts,AFC South,static/images/colts.png,IN,Indianapolis,Lucas Oil Stadium,https://upload.wikimedia.org/wikipedia/commons/c/ce/Lucas_Oil_stadium.JPG,Chuck Pagano,1953,7,2,Colts
+Houston Texans,AFC South,static/images/texans.png,TX,Houston,NRG Stadium,https://upload.wikimedia.org/wikipedia/commons/6/6a/Reliantstadium.jpg,Bill O'Brien,2002,0,0,HoustonTexans
+Pittsburgh Steelers,AFC North,static/images/steelers.png,PA,Pittsburgh,Heinz Field,https://upload.wikimedia.org/wikipedia/commons/3/30/Heinz_Field_%282005%29.jpg,Mike Tomlin,1933,8,6,steelers
+Cleveland Browns,AFC North,static/images/browns.png,OH,Cleveland,FirstEnergy Stadium,https://upload.wikimedia.org/wikipedia/commons/3/37/FirstEnergy_Stadium_2013.jpg,Mike Pettine,1946,11,0,Browns
+Cincinnati Bengals,AFC North,static/images/bengals.png,OH,Cincinnati,Paul Brown Stadium,https://upload.wikimedia.org/wikipedia/commons/7/71/Cincinnati-paul-brown-stadium.jpg,Marvin Lewis,1968,2,0,Bengals
+Baltimore Ravens,AFC North,static/images/ravens.png,MD,Baltimore,M&T Bank Stadium,https://upload.wikimedia.org/wikipedia/commons/d/dc/M%26T_Bank_Stadium_DoD.jpg,John Harbaugh,1996,2,2,Ravens
+San Diego Chargers,AFC West,static/images/chargers.png,CA,San Diego,Qualcomm Stadium,https://upload.wikimedia.org/wikipedia/commons/0/05/Qualcomm_Stadium.jpg,Mike McCoy,1959,1,0,Chargers
+Oakland Raiders,AFC West,static/images/raiders.png,CA,Oakland,O.co Coliseum,https://upload.wikimedia.org/wikipedia/commons/b/b6/Oakland_Coliseum_field_from_Mt._Davis.JPG,Jack Del Rio,1960,4,3,RAIDERS
+Kansas City Chiefs,AFC West,static/images/chiefs.png,MO,Kansas City,Arrowhead Stadium,https://upload.wikimedia.org/wikipedia/commons/a/ac/Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg,Andy Reid,1960,0,1,KCChiefs
+Denver Broncos,AFC West,static/images/broncos.png,CO,Denver,Sports Authority Field at Mile High,https://upload.wikimedia.org/wikipedia/commons/d/de/Sports_Authority_Field_at_Mile_High_AFC_Championship_game.jpg,Gary Kubiak,1960,7,2,Broncos
+New York Jets,AFC East,static/images/jets.png,NJ,East Rutherford,MetLife Stadium,https://upload.wikimedia.org/wikipedia/commons/4/46/New_Meadowlands_Stadium_Mezz_Corner.jpg,Todd Bowles,1959,0,1,nyjets
+New England Patriots,AFC East,static/images/patriots.png,MA,Foxborough,Gillette Stadium,https://upload.wikimedia.org/wikipedia/commons/9/9c/Gillette_Stadium02.jpg,Bill Belichick,1960,8,4,Patriots
+Miami Dolphins,AFC East,static/images/dolphins.png,FL,Miami Gardens,Sun Life Stadium,https://upload.wikimedia.org/wikipedia/commons/0/04/Dolphin_Stadium.jpg,Joe Philbin,1966,5,2,MiamiDolphins
+Buffalo Bills,AFC East,static/images/bills.png,NY,Orchard Park,Ralph Wilson Stadium,https://upload.wikimedia.org/wikipedia/commons/3/35/Bills.jpg,Rex ryan,1960,4,0,buffalobills
