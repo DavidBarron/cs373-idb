@@ -3,6 +3,12 @@ from rest_framework import viewsets
 from yafbdb.serializers import *
 import os
 
+from json import dumps, loads
+try:
+    from urllib.request import urlopen, Request
+except:
+    from urllib2 import *
+
 # Create your views here.
 
 from django.http import HttpResponse
@@ -11,6 +17,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from yafbdb.models import *
 from time import sleep
+import random
 
 #def home(request):
 #    template = loader.get_template('home.html')
@@ -101,6 +108,37 @@ def players(request):
     except:
         return handler404(request)
 
+def other_api(request):
+    # try:
+        context = RequestContext(request)
+
+        url =  "http://8bytedining.me/"
+        request = Request(url+"api/recipes")    
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8") 
+        response_data = loads(response_body)
+
+        context_tup = tuple()
+        # for recipe in response_data:
+        #     context_tup += ((
+        #                     recipe["name"],
+        #                     recipe["img"],
+        #                     "http://8bytedining.me/recipes" + recipe["recipe_id"]
+        #                     ),)
+
+        #Pick random numbers of index
+        for x in range(5):
+            recipe = response_data[random.randint(0, 499)] 
+            context_tup += ((
+                            recipe["name"],
+                            recipe["img"],
+                            "http://8bytedining.me/recipes/" + recipe["recipe_id"]
+                            ),) 
+        context_dict = {'recipe_info' : context_tup}
+        return render_to_response('other_api_page.html', context_dict, context)
+    # except:
+        # return handler404(request)
+
 def division(request, d_name):
     try:
         context = RequestContext(request)
@@ -127,6 +165,7 @@ def division(request, d_name):
         return render_to_response('division_template.html', context_dict, context)
     except:
         return handler404(request)
+
 
 def team(request, t_name):
     try:
@@ -175,6 +214,7 @@ def player(request, p_name):
         return render_to_response('player_template.html', context_dict, context)
     except:
         return handler404(request)
+
 
 #Error 404 page
 def handler404(request):

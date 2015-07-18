@@ -30,6 +30,8 @@ urlpatterns = [
     url(r'^tests$', views.tests),
     url(r'^$', views.home),
 
+    url(r'^other$', views.other_api),
+
     #this is the parent divisions url
     url(r'^divisions/$', views.divisions),
     #this one is a for a specfic division

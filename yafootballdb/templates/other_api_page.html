@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Other API</title>
+    <title>Mum I am hungry.....</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'polls/dist/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -63,7 +63,7 @@
       <div>
         <div class="container jumbotron vertical-center">
           <div class="col-md-12 player-name"  align="center">
-            Arists and Their Spotify Links
+            In case you hungry
           </div>
         </div>
         <div class="container jumbotron">
@@ -72,19 +72,15 @@
             <table class="table table-hover sortable">
               <thead>
                 <tr>
-                  <th>Division</th>
-                  <th>Conference</th>
-                  <th>Year Founded</th>
-                  <th>Most Recent Champion</th>
-                  <th>Most Division Titles (team)</th>
-                  <th>Most Division Titles (#)</th>
+                  <th>Food</th>
+                  <th>Picture</th>                  
                 </tr>
               </thead>
               <tbody>
-              {% for full_name, spotify_artist_url in artist_info%}
+              {% for name, img, recipe_id in recipe_info%}
                 <tr>
-                  <th>{{full}}</th>
-                  <th><iframe src="https://embed.spotify.com/?uri={{spotify_artist_url}}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></th>                  
+                  <th>{{name}}</th>
+                  <th><a href="{{recipe_id}}"><img src="{{img}}"></a></th>
                 </tr>
               {% endfor %}
               </tbody>
