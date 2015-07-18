@@ -25,10 +25,14 @@ def about(request):
     return HttpResponse(template.render())
 
 def tests(request):
-    template = loader.get_template('blank.html')
+    context = RequestContext(request)
     os.system("python3 manage.py test > myTest.out 2>&1")
-    sleep(5)
-    return HttpResponse(template.render())
+    sleep(1)
+    testFile = open("myTest.out")
+    s = testFile.read()
+    testFile.close()
+    context_dict = { "results" : s }
+    return render_to_response('tests.html', context_dict, context)
 
 def divisions(request):
     try:
