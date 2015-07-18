@@ -11,7 +11,7 @@ assert(len(teams_cache) != 0)
 for team_cache in teams_cache:
     print(team_cache)
     q = 0
-    q =Team(team=team_cache["team"],
+    q =Team(team=team_cache["team"].replace(".","").replace("'","").replace("-",""),
         division=Division.objects.get(division=team_cache["division"]),
         timage=team_cache["timage"],
         state=team_cache["state"],

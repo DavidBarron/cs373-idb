@@ -1,3 +1,603 @@
+commit a659a04bfa3fc9efad946ce856e6c7e91fb85c17
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 21:10:13 2015 -0500
+
+    test.out
+
+commit b21c3ca3e4a907c0f64942c47b72e822fc83a812
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 21:04:04 2015 -0500
+
+    remove the testing
+
+commit 5f994d5044c7ac389909094f32c56e015d6fab11
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 21:02:12 2015 -0500
+
+    Replace the one from ayfootballdb
+
+commit 5e4539f6055bcb3ca26d5cf9cdda1a40416a5b2e
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 21:00:37 2015 -0500
+
+    Finish API test
+
+commit 191fafde66153a4b8478ebdd42027643144678de
+Merge: 6932383 e8ac3f4
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 20:46:57 2015 -0500
+
+    Merge branch 'master' of https://github.com/DavidBarron/cs373-idb
+
+commit 693238397418b022375580c7ba4e56a8dfb11964
+Merge: 4bf2f8d 5ba0d23
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 20:45:29 2015 -0500
+
+    Merge branch 'master' into david
+
+commit 5ba0d235187e3960b75fa696eecb667f4e318163
+Merge: 07dceae 4bf2f8d
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 20:32:00 2015 -0500
+
+    Merge branch 'master' into david
+
+commit 4bf2f8d9699641ad664962e2c83d3f5a97164d2b
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 20:19:10 2015 -0500
+
+    edited sources on home page
+
+commit b56c3f0ae0d9448a8554c9e7dd745ebfcff04c4b
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 20:09:05 2015 -0500
+
+    fixed link for apiary on about page
+
+commit e8ac3f44908ae12bfcbe1acf97ef62c212895aef
+Author: David Barron <david.barron91@gmail.com>
+Date:   Tue Jul 14 20:07:28 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 84a9c08919b9f5c06e829305dc32583b0ac7e4fe
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 20:03:30 2015 -0500
+
+    updated about page
+
+commit 7d301b6696d09e4fe731cceb6d02d9d04c681cf8
+Merge: 07dceae e58702c
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 19:35:47 2015 -0500
+
+    Merge branch 'dev-nic'
+
+commit e58702c05b7d11e8afaa9fb702f81e0dc96ae83e
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 19:35:24 2015 -0500
+
+    finish Models
+
+commit a1084a05d9013c80a350707a37e9072edf9d7a7d
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 19:29:35 2015 -0500
+
+    Finish imp. Models
+
+commit 07dceae8a88b4bc1ac01e371cc589cfa529ae273
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 19:29:27 2015 -0500
+
+    Update to models.html
+
+commit 25c71894837aaf5e4a4280c484971e3b84f3f632
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 19:25:27 2015 -0500
+
+    Update to UML by LUIS
+
+commit 94cd8d4c021a76c0cd408d50370fe2b58a2df1f0
+Merge: 532bae3 d2a1c9f
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 19:12:06 2015 -0500
+
+    merging from master
+
+commit 532bae35c20e709e0f725093abf8e61a0f012053
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 19:03:22 2015 -0500
+
+    Updated to Apiary
+
+commit 4f36a20cfbb0c0afe3bb003fb36e62a2d475829a
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 18:43:11 2015 -0500
+
+    Readded 404 error page and fixed team images for really real this time
+
+commit c1001f7ee68d900d9dbaa53d2aabe3e5e77675fa
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 14 18:36:03 2015 -0500
+
+    readded 404 info in urls and views
+
+commit efd12b2e51bef8384c0a8b5936785d453405528d
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 17:43:08 2015 -0500
+
+    Getting API to just work again
+
+commit 477e28aa3d234a9a506162f2c11243f80a7d78d8
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 17:36:09 2015 -0500
+
+    center aligned roster names
+
+commit 19cfb10bd00b385f1b164cf96be597b295e3d9de
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 17:24:55 2015 -0500
+
+    moved stadium image and linked to map
+
+commit 96138f5b6a9717bca71847b55a90cd9e309482dc
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 17:03:52 2015 -0500
+
+    change back to yafootballdb
+
+commit 83c4544f6f54ea959fd85a3474b7d936278e5a57
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:55:39 2015 -0500
+
+    fix dir to manage.py
+
+commit 1893e60bf3169de5064e5b5f124266caf1a4c179
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:51:32 2015 -0500
+
+    fix syn error, add coverage3
+
+commit d9980b2b3ac0fbe254e02fcf2302a0a4f04a8bc2
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 16:50:39 2015 -0500
+
+    fixed settings, urls, and views
+
+commit f4e70b8e689818fc53167dce230a52fd142a7e17
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:47:58 2015 -0500
+
+    Fix dir error for makefile, remove debug line
+
+commit 8faa6ff8b7676ce7829fe1e98a18cc3f21adc2ed
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:46:08 2015 -0500
+
+    Run test inside the Django shell
+
+commit 22f4892e14fb6a0519f51c7dc71cfa49c04bbab3
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:43:16 2015 -0500
+
+    Include debug path
+
+commit 14eba9f3bf023b4275e017df2d7ee2b4cfeedcf9
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:36:02 2015 -0500
+
+    Change loc.
+
+commit bcc2059931b5745cb65fe7523d1fdb2a10e35361
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:25:55 2015 -0500
+
+    Fix par. pos.
+
+commit c2050b5a8ca14358c47db21a00f978d92d8f3356
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:21:45 2015 -0500
+
+    Space up
+
+commit d42ef8c1dcd5b01184865ddbd805f59753225555
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 16:21:27 2015 -0500
+
+    changed logo sizes
+
+commit 1a59f9ecf3b071632085eede6b1007f6b6343fe9
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:17:10 2015 -0500
+
+    Space up
+
+commit b720901a56b9e84bdd9bee3de58753bb32ba3492
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 16:02:47 2015 -0500
+
+    include cat tests.out
+
+commit 530a25af45a01bb5ad5028c31ba30276a5ecdbb8
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 15:58:30 2015 -0500
+
+    Include make test
+
+commit 21e5117312627d3c35b4851595d0e0fdfcddf6cf
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 15:56:47 2015 -0500
+
+    logo pictures
+
+commit 2ed712b988edec76e2990c13473f3d8dffaa028b
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 15:44:23 2015 -0500
+
+    move makefile to yafootballdb
+
+commit 3c7d1ecc545b63b40eca60fce5a1412add0833d6
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 15:43:52 2015 -0500
+
+    Move tests.py to yafootballdb
+
+commit a150f06978862acc1feab489beb222b19f4d48d8
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 15:43:08 2015 -0500
+
+    Testing Travis
+
+commit 9b349241acca9824e586ee53f621cf335825538e
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 15:40:03 2015 -0500
+
+    Still fixing logos
+
+commit 2d529017de7ded7d3d010b366707e5276ac589ed
+Merge: 6c27c27 92f2845
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 15:31:06 2015 -0500
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 92f28457165068d046f3a1cbf2b1609a4049de0b
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 15:30:30 2015 -0500
+
+    fixed logos
+
+commit 6c27c27222f33dad63f2b1b5630bde81e405a11a
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 15:22:33 2015 -0500
+
+    fixed the url forwarding to 404 page
+
+commit 930afcbdf3da637df16b31d98bc72ae253c4b677
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 15:14:25 2015 -0500
+
+    Finish imp three models test
+
+commit ac9a581da2f2ee4fce1486a5d00bf77f1f5eadde
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 14 15:10:34 2015 -0500
+
+    added 404 links in views.py and urls.py
+
+commit 16717aafaa76cfc24cd921ae944b303c0c69baa8
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 14 15:06:15 2015 -0500
+
+    fixed links on 404 page
+
+commit 4f87769af832555f8fe2715d250af0e35f2f0033
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 15:02:03 2015 -0500
+
+    Add back keyset to get the coo.sponding. items
+
+commit b98ca0434320cb256096107dc2ae37f86bc09116
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 14 15:00:06 2015 -0500
+
+    created 404 page
+
+commit 18a5063e77dc62ab147d8ee2f86b9be5b67b7593
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 14:53:36 2015 -0500
+
+    Change test format for Division
+
+commit 6b94aa668211fe3ce2849e37867e0c4edec2b464
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 14:31:44 2015 -0500
+
+    Pump real data for testing Division model
+
+commit b4552949e1ab0927027468c4b23ec9e6bfbef0f5
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 14:30:47 2015 -0500
+
+    Fixed API to only allow GET
+
+commit 128fb0457cd2ac7a4655aa1fe97485c2d3a23956
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 14:25:57 2015 -0500
+
+    fixed background image tiling
+
+commit 99b09b236f80fd800d7a84cce1168f3e4c4c4af6
+Author: samador88 <Sam@wireless-10-147-154-186.public.utexas.edu>
+Date:   Tue Jul 14 14:16:39 2015 -0500
+
+    fixed team logo pictures
+
+commit 9b7006e2d1e922c4d50237b2794111e65261fd9a
+Merge: d2a1c9f 5b381ec
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 14:09:52 2015 -0500
+
+    Merge branch 'david' into dev-nic
+
+commit 5b381ecf2217a7bc3029056ceb796276a7d5c6eb
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 14 14:07:18 2015 -0500
+
+    fixed issue with static players still being added
+
+commit d2a1c9f037e23c9e263ce4600382265ad7c6bab5
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 13:53:56 2015 -0500
+
+    Hard merge David's urls.py
+
+commit c33720e208931f65da9c812cd9d2c85b03adb99d
+Merge: 8940604 59a2e47
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 13:45:10 2015 -0500
+
+    Merge with David
+
+commit 894060416d0fa4d8ca39ed4133a0d44f8ea01f08
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 13:37:37 2015 -0500
+
+    (1) Adjust models order for models.py, (2) correct variable name for Division models
+
+commit 6971fd06b071824cc74bc0115dc8c90bb4358783
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 13:37:01 2015 -0500
+
+    Spacing
+
+commit 7fd571625bf88e391eeaf35000589c90c780a877
+Author: NL <nickylam125@gmail.com>
+Date:   Tue Jul 14 13:35:34 2015 -0500
+
+    Incluude make test
+
+commit 59a2e47861bb62d7f7a4970576fe405283810fec
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Tue Jul 14 13:09:40 2015 -0500
+
+    Initial set up of API
+
+commit ef24ae4cc79ddc332b7df1c377b58fc36789455f
+Author: saNed <this.is.saned@gmail.com>
+Date:   Tue Jul 14 12:27:02 2015 -0500
+
+    created serializers
+
+commit 40e1cd34ac8039167a6550b2b9d9541a3fdebd07
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 13 23:57:02 2015 -0500
+
+    Fixes to division urls
+
+commit 7c11b9df9ad88fbb1a394f3bfaf76bbb105b9a9f
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 13 20:51:25 2015 -0500
+
+    Added new division json
+
+commit 0e957cda361dcfaa0fafff6973d735c54c905690
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 13 20:42:07 2015 -0500
+
+    Basic set up of everything, not pretty, close #59
+
+commit c22dcf33d597620bd03d57262c13ba9e75180259
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 13 18:24:09 2015 -0500
+
+    Basic set up for division and player pages
+
+commit fd9dccdc20a865c90e68f5cdb24889ad0d90bc39
+Author: saNed <this.is.saned@gmail.com>
+Date:   Mon Jul 13 16:37:07 2015 -0500
+
+    changes to url structre
+
+commit 30b7e6cd180cbf28f016dab961ebe2f27daae69c
+Merge: 2727ee0 88611b5
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 13 15:51:05 2015 -0500
+
+    Merge branch 'dev-nic' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 2727ee0a01c4f2424183bb43094c35f2a1948255
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 13 15:44:00 2015 -0500
+
+    Hopefully final changes to database scripts
+
+commit 67e9574576f7c5a673526079221eba9dccd6a132
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Mon Jul 13 15:35:16 2015 -0500
+
+    Yet another fix to the division database scripts
+
+commit eb871abb7e3933a0299a9d895739333071def958
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 11:15:00 2015 -0500
+
+    corrected files for postgresql
+
+commit 88611b56fbc243d4dbf55f3e0d080884ed9c6c19
+Author: saNed <this.is.saned@gmail.com>
+Date:   Sun Jul 12 19:24:37 2015 -0500
+
+    added division template
+
+commit 1eee14c11800292c81b54f72422f4078d5aef44c
+Author: NL <nickylam125@gmail.com>
+Date:   Sun Jul 12 16:49:04 2015 -0500
+
+    Working on transferring real data
+
+commit a1b47b1e34bc35b75219a2080735fb6e7d064a27
+Merge: 5899217 9441c16
+Author: samador88 <Sam@wireless-10-147-177-148.public.utexas.edu>
+Date:   Sun Jul 12 16:38:43 2015 -0500
+
+    Merge branch 'dev-nic' of https://github.com/DavidBarron/cs373-idb into david
+
+commit 9441c161acae903832e255fb7f1dfab8169a4b7d
+Author: NL <nickylam125@gmail.com>
+Date:   Sun Jul 12 16:36:51 2015 -0500
+
+    Change Team02 to real data from JSon
+
+commit 9370fead2dcd93f131da121de8ba801ef0f4841c
+Author: NL <nickylam125@gmail.com>
+Date:   Sun Jul 12 16:31:59 2015 -0500
+
+    Use real data from JON
+
+commit 58992173c2ac67513d09d37cf9787ca490baab83
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Sun Jul 12 15:44:25 2015 -0500
+
+    changed photo layout on about page
+
+commit 7147119420bd25188e2640863c463d518709f8f5
+Author: saNed <this.is.saned@gmail.com>
+Date:   Sun Jul 12 15:42:51 2015 -0500
+
+    uploaded create_players and teams
+
+commit f056009cb8c629905338f256e600daf086f435d1
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Sun Jul 12 15:15:15 2015 -0500
+
+    changed template files to accomodate data
+
+commit a05a24febddadb14b645fb76ea4f02261248e03e
+Merge: 8383119 a8c96f4
+Author: saNed <this.is.saned@gmail.com>
+Date:   Sat Jul 11 18:27:27 2015 -0500
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into dev-nic
+
+commit a8c96f40e3eff25348c2068d3874852ec695d847
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Sat Jul 11 18:21:45 2015 -0500
+
+    Fixed teams.json attributes, added division
+
+commit 8383119ce1eeeba5b5c54dec69939a6fa64d30e7
+Author: saNed <this.is.saned@gmail.com>
+Date:   Sat Jul 11 18:07:54 2015 -0500
+
+    connected DB
+
+commit 579773b7e09e80dc597798fbdbab6cc2f3cea86b
+Author: saNed <this.is.saned@gmail.com>
+Date:   Sat Jul 11 16:49:44 2015 -0500
+
+    modified models.py
+
+commit 775af4d4ea536bd8ccfcd3ce7271b5bca76ef225
+Author: saNed <this.is.saned@gmail.com>
+Date:   Sat Jul 11 16:25:29 2015 -0500
+
+    created create_divisions.py
+
+commit 6563dbd4f07f26b01b182e6ee83b0ef227362486
+Merge: 9c40730 6e5a554
+Author: saNed <this.is.saned@gmail.com>
+Date:   Sat Jul 11 16:24:55 2015 -0500
+
+    Merge branch 'david' of https://github.com/DavidBarron/cs373-idb into dev-nic
+
+commit 9c40730450d9a111ab8c363c9d035f82d8075bab
+Author: NL <nickylam125@gmail.com>
+Date:   Sat Jul 11 16:16:35 2015 -0500
+
+    Draft DATABASE section
+
+commit 6e5a554c98db3414038270d0f4cd2120d166ec71
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Sat Jul 11 15:07:07 2015 -0500
+
+    added teams data
+
+commit fa08e915270ff95c9089524dd43f6829bc3632e0
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Sat Jul 11 15:01:53 2015 -0500
+
+    teams data
+
+commit 13a0c4ff733bd14302d01ab95d6436c768778cae
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Sat Jul 11 14:27:53 2015 -0500
+
+    Updates to division json
+
+commit f870a079c66f04431949b6d998144b3cdc308793
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Sat Jul 11 14:11:04 2015 -0500
+
+    Fix players json formatting
+
+commit eead4a68030d05eb6b4878c969fa0959ef29d1ed
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Sat Jul 11 13:33:34 2015 -0500
+
+    Added json_data folder
+
+commit 3f95f6f0ecd2a1e47cbcbb541dc7221e3e6a997f
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Sat Jul 11 13:25:21 2015 -0500
+
+    Stuff...
+
+commit 3c8b54657559d467e9a908495781d5bc123fb820
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Sat Jul 11 13:23:55 2015 -0500
+
+    changed logo pic names
+
+commit 43da96671013a8a6518f0edff989794d459d4269
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Fri Jul 10 15:23:07 2015 -0500
+
+    Added team pics
+
+commit 33d4b8964cfeb2114f57d9fe6c619c8b3bb150c4
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Fri Jul 10 14:46:29 2015 -0500
+
+    Added Division pics
+
+commit 900b9e2fee9f2f1c303fc905507b44ae0d471cb3
+Author: DavidBarron <david.barron91@gmail.com>
+Date:   Wed Jul 8 16:35:12 2015 -0500
+
+    Added models.html and updated log
+
 commit 91160e571c5eb476f03482637502373480708d25
 Author: samador88 <Sam@wireless-10-147-199-211.public.utexas.edu>
 Date:   Tue Jul 7 21:53:35 2015 -0500
