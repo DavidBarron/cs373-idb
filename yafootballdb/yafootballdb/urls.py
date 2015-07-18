@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^home$', views.home),
     url(r'^about$', views.about),
+    url(r'^tests$', views.tests),
     url(r'^$', views.home),
 
     #this is the parent divisions url

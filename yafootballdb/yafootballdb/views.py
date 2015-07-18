@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from yafbdb.serializers import *
+import os
 
 # Create your views here.
 
@@ -9,6 +10,7 @@ from django.template import loader
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from yafbdb.models import *
+from time import sleep
 
 #def home(request):
 #    template = loader.get_template('home.html')
@@ -22,6 +24,11 @@ def about(request):
     template = loader.get_template('about.html')
     return HttpResponse(template.render())
 
+def tests(request):
+    template = loader.get_template('blank.html')
+    os.system("python3 manage.py test > myTest.out 2>&1")
+    sleep(5)
+    return HttpResponse(template.render())
 
 def divisions(request):
     try:
