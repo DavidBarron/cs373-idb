@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>{{team}}</title>
+    <title>Divisions</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'polls/dist/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -22,6 +22,9 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Script for sortable table -->
+    <script src="{% static 'polls/sorttable.js' %}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,16 +44,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../../"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
+          <a class="navbar-brand" href="../"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../../divisions/">Divisions</a></li>
-            <li><a href="../../teams/">Teams</a></li>
-            <li><a href="../../players/">Players</a></li>
+            <li><a href="../divisions/">Divisions</a></li>
+            <li><a href="../teams/">Teams</a></li>
+            <li><a href="../players/">Players</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-right"><a href="../../about">About</a></li>
+            <li class="navbar-right"><a href="about">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -59,80 +62,38 @@
     <div class="theme-showcase" role="main">
       <div>
         <div class="container jumbotron vertical-center">
-          <div class="col-md-12 player-name" align="center">
-            {{team}}
+          <div class="col-md-12 player-name"  align="center">
+            Divisions
           </div>
         </div>
-
-        <div class="container jumbotron stats">
-          <div class="row">
-          <div class="col-md-4">
-            <div class="teamlogo">
-              <img src="{{timage}}" class="img-responsive center-block">
-            </div>
-          </div>
-                    <div class="col-md-8">
-            <table class="table table-hover">
+        <div class="container jumbotron">
+        <div class="container stats">
+          <div class="col-md-8 col-md-offset-2">
+            <table class="table table-hover sortable">
+              <thead>
+                <tr>
+                  <th>Division</th>
+                  <th>Conference</th>
+                  <th>Year Founded</th>
+                  <th>Most Recent Champion</th>
+                  <th>Most Division Titles (team)</th>
+                  <th>Most Division Titles (#)</th>
+                </tr>
+              </thead>
               <tbody>
+              {% for div, divurl, conf, foun, rchamp, rchampurl, mchamp, mchampurl, cnum in dinfo %}
                 <tr>
-                  <th>State</th>
-                  <th>{{state}}</th>
+                  <th><a href="{{divurl}}">{{div}}</a></th>
+                  <th>{{conf}}</th>
+                  <th>{{foun}}</th>
+                  <th><a href="{{rchampurl}}">{{rchamp}}</a></th>
+                  <th><a href="{{mchampurl}}">{{mchamp}}</a></th>
+                  <th>{{cnum}}</th>                  
                 </tr>
-                <tr>
-                  <th>City</th>
-                  <th>{{city}}</th>
-                </tr>
-                <tr>
-                  <th>Stadium</th>
-                  <th>{{stadium}}</th>
-                </tr>
-                <tr>
-                  <th>Coach</th>
-                  <th>{{coach}}</th>
-                </tr>
-                <tr>
-                  <th>Established</th>
-                  <th>{{established}}</th>
-                </tr>
-                <tr>
-                  <th>Conference Championships</th>
-                  <th>{{cchamps}}</th>
-                </tr>
-                <tr>
-                  <th>Super Bowl Championships</th>
-                  <th>{{schamps}}</th>
-                </tr>
-                <tr>
-                  <th>Twitter</th>
-                  <th><a class="twitter-timeline"  data-widget-id="{widget_id}"  href="https://twitter.com/{{twitter}}"  data-screen-name="{screen_name}"></a><th>
-                </tr>
+              {% endfor %}
               </tbody>
             </table>
           </div>
-          </div>
-          <div class="align-center height:">
-            <div class="teamlogo">
-              <img src="{{simage}}" class="img-responsive center-block" width=600px>
-              </a>
-              </br>
-              </br>
-              <div class="caption" align="center">
-                {{stadium}}
-              </br>
-              <a href="http://google.com/maps/place/{{stadium}}">Map</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container jumbotron roster">
-          <div class="roster-title">Roster</div>
-          <div>
-            {% for x, y in pinfo %}
-            <div class="rnames"><a href="{{y}}">{{x}}</a></div>
-            {% endfor %}
-          </div>
-
         </div>
       </div>
     </div><!-- /.container -->
