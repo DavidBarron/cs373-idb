@@ -1,0 +1,10 @@
+/usr/lib/python3.4/importlib/_bootstrap.py:321: RemovedInDjango19Warning: django.utils.unittest will be removed in Django 1.9.
+  return f(*args, **kwds)
+
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 0.328s
+
+OK
+Creating test database for alias 'default'...
+Destroying test database for alias 'default'...

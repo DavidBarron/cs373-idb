@@ -5,6 +5,7 @@
 
 from io       import StringIO
 from unittest import main, TestCase
+from time import sleep
 
 # Create your tests here.
 import os
@@ -43,7 +44,7 @@ class testModels (TestCase):
 	division,division_image,conference,league,sport,founded,teams,mst_rec_champ,mst_champs
 	'''
 
-	print(Division.objects.all())
+	#print(Division.objects.all())
 
 	def test_Division_model01(self):		
 		test_Division_dict01 = [
@@ -692,4 +693,5 @@ class APItests(unittest.TestCase):
 
 
 if __name__ == "__main__" :
+    #print ("RUNNING FROM MAIN")
 	main()
