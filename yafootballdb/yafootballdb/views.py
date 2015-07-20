@@ -135,6 +135,8 @@ def team(request, t_name):
         players = Player.objects.all().filter(team=tea)
         player_names = sorted([x.name for x in players])
         p = zip(player_names,['../../players/' + x.replace(" ","_") for x in player_names])
+        twid = tea.twitter.replace(";"," ").replace("&"," ").replace("\""," ").split()
+        twin = tea.twitter.replace("/"," ").replace("\""," ").split()
         context_dict = {    
             'team' : tea.team,
             'division' : tea.division.division,
@@ -149,7 +151,8 @@ def team(request, t_name):
             'cchamps' : tea.cchamps,
             'schamps' : tea.schamps,
             'pinfo' : p,
-
+            'twiid' : twid[6],
+            'twinn' : twin[6],
         }
         return render_to_response('team_template.html', context_dict, context)
     except:

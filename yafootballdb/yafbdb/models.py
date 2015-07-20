@@ -41,6 +41,7 @@ class Team(models.Model):
     established = models.CharField(max_length=200,default="default")
     cchamps = models.CharField(max_length=200,default="default")
     schamps = models.CharField(max_length=200,default="default")
+    twitter = models.CharField(max_length=3000,default="default")
     #players
 
 

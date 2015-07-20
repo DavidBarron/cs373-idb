@@ -1,7 +1,7 @@
 from yafbdb.models import *
 import json
 
-with open('../json_data/teams.json') as f:
+with open('../json_data/teams2.json') as f:
 	teams_cache = json.load(f)
 	assert hasattr(teams_cache,'__iter__')
 	print (len(teams_cache))
@@ -21,7 +21,8 @@ for team_cache in teams_cache:
         coach=team_cache["coach"],
         established=team_cache["established"],
         cchamps=team_cache["cchamps"],
-        schamps=team_cache["schamps"])
+        schamps=team_cache["schamps"],
+        twitter=team_cache["twitter"])
     q.save()
 
 #for team_cache in teams_cache:
