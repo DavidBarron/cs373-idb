@@ -3,7 +3,7 @@
 
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.328s
+Ran 10 tests in 0.224s
 
 OK
 Creating test database for alias 'default'...
