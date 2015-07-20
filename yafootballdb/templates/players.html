@@ -18,8 +18,8 @@
     <link href="https://googledrive.com/host/0B9krI4oNidjiNW9NZld5aFFUWGc/" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <!-- teams.css -->
-    <link href="https://googledrive.com/host/0B9krI4oNidjiOVVlUEhGb3NUSDQ/" rel="stylesheet">
+    <!-- players.css -->
+    <link href="https://googledrive.com/host/0B9krI4oNidjiV3BfcW1pcWdYT2c/" rel="stylesheet">
 
     <!-- Script for sortable table -->
     <script src="https://googledrive.com/host/0B9krI4oNidjiRWFnOGxyZlM4SUk/"></script>
@@ -79,8 +79,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Teams</h1>
-                        <h3>Quickly find facts about every NFL team!</h3>
+                        <h1>Players</h1>
+                        <h3>This is a list of all the players in the NFL and some important facts about them!</h3>
                         <hr class="intro-divider">
                     </div>
                 </div>
@@ -101,30 +101,32 @@
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <div class="clearfix"></div>
-       <div class="container stats">
+        <div class="container stats">
           <div class="col-md-8 col-md-offset-2">
             <table class="table table-hover table-bordered sortable">
               <thead>
                 <tr style="cursor:pointer">
+                  <th>Player</th>
+                  <th>Number</th>
                   <th>Team</th>
-                  <th>Division</th>
-                  <th>City</th>
-                  <th>State</th>
-                  <th>Stadium</th>
-                  <th>Coach</th>
-                  <th>Year Established</th>
+                  <th>Position</th>
+                  <th>College</th>
+                  <th>Height</th>
+                  <th>Weight</th>
+                  <th>Seasons Played</th>
                 </tr>
               </thead>
               <tbody>
-              {% for team, teamurl, div, divurl, city, state, stad, coach, est in tinfo %}
+              {% for pla, plaurl, num, tea, teaurl, pos, col, hei, wei, seasons in pinfo %}
                 <tr>
-                  <th><a href="{{teamurl}}" style="color:black">{{team}}</a></th>
-                  <th><a href="{{divurl}}" style="color:black">{{div}}</a></th>
-                  <th>{{city}}</th>
-                  <th>{{state}}</th>
-                  <th>{{stad}}</th>
-                  <th>{{coach}}</th>
-                  <th>{{est}}</th>
+                  <th><a href="{{plaurl}}" style="color:black">{{pla}}</a></th>
+                  <th>{{num}}</th>
+                  <th><a href="{{teaurl}}" style="color:black">{{tea}}</a></th>
+                  <th>{{pos}}</th>
+                  <th>{{col}}</th>
+                  <th>{{hei}}</th>
+                  <th>{{wei}}</th>
+                  <th>{{seasons}}</th>
                 </tr>
               {% endfor %}
               </tbody>
@@ -139,9 +141,7 @@
 
     </div>
     <!-- /.content-section-a -->
-
-
-        <!-- Footer -->
+         <!-- Footer -->
     <footer>
         <div class="container" align = "center">
             <div class="row">
@@ -170,7 +170,7 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
+     <!-- jQuery -->
     <script src="https://googledrive.com/host/0B9krI4oNidjiQWYxLVNFc3FuZzA/"></script>
 
     <!-- Bootstrap Core JavaScript -->
