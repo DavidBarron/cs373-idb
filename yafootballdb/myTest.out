@@ -3,8 +3,10 @@
 
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.224s
+Ran 10 tests in 0.292s
 
 OK
+Eminem
 Creating test database for alias 'default'...
 Destroying test database for alias 'default'...
+r 'no' to cancel: yes' if you would like to try deleting the test database 'test_mydb2', or 'no' to cancel: 
