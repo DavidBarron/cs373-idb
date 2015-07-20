@@ -39,6 +39,7 @@ def tests(request):
     testFile = open("myTest.out")
     s = testFile.read()
     testFile.close()
+    #p = os.popen("python3 manage.py test > myTest.out 2>&1","r")
     context_dict = { "results" : s }
     return render_to_response('tests.html', context_dict, context)
 

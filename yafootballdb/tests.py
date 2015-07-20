@@ -571,7 +571,6 @@ class testModels (TestCase):
 		self.assertEqual(Player01.pimage,ply_dict[9])
 		
 
-
 class APItests(unittest.TestCase):
 	#Retrieve the url from local server
 	url =  "http://yetanotherfootballdb.me/"
@@ -679,19 +678,56 @@ class APItests(unittest.TestCase):
 		    #Veriying whether the all of the itmes in the JSON
 		    self.assertTrue(obj in exp_obj)
 
+class APItests2(unittest.TestCase):
+    #Retrieve the url from local server
+    url =  "http://yetanotherfootballdb.me/"
+    def test_team_api1(self):
+        request = Request(self.url+"api/teams/1")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "Dallas Cowboys")
+        self.assertEqual(response_data["state"], "TX")
+        self.assertEqual(response_data["city"], "Arlington")
+        self.assertEqual(response_data["stadium"], "AT&T Stadium")
+        self.assertEqual(response_data["coach"], "Jason Garrett")
+        self.assertEqual(response_data["established"], "1960")
+        self.assertEqual(response_data["cchamps"], "10")
+        self.assertEqual(response_data["schamps"], "5")
+        
+    def test_team_api2(self):
+        request = Request(self.url+"api/teams/2")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "New York Giants")
+        self.assertEqual(response_data["state"], "NJ")
+        self.assertEqual(response_data["city"], "East Rutherford")
+        self.assertEqual(response_data["stadium"], "MetLife Stadium")
+        self.assertEqual(response_data["coach"], "Tom Coughlin")
+        self.assertEqual(response_data["established"], "1925")
+        self.assertEqual(response_data["cchamps"], "11")
+        self.assertEqual(response_data["schamps"], "4")
 
-		#Teams
+    def test_team_api3(self):
+        request = Request(self.url+"api/teams/3")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "Philadelphia Eagles")
+        self.assertEqual(response_data["state"], "PA")
+        self.assertEqual(response_data["city"], "Philadelphia")
+        self.assertEqual(response_data["stadium"], "Lincoln Financial Field")
+        self.assertEqual(response_data["coach"], "Chip Kelly")
+        self.assertEqual(response_data["established"], "1933")
+        self.assertEqual(response_data["cchamps"], "3")
+        self.assertEqual(response_data["schamps"], "0")
+
 
 		#Players
 
-
-
-
-
-
-
-
-
 if __name__ == "__main__" :
-    #print ("RUNNING FROM MAIN")
 	main()
