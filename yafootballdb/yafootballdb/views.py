@@ -34,6 +34,7 @@ def about(request):
 def tests(request):
     context = RequestContext(request)
     os.system("python3 manage.py test > myTest.out 2>&1")
+    #os.system("ls > myTest.out 2>&1")
     sleep(1)
     testFile = open("myTest.out")
     s = testFile.read()
