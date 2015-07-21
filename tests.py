@@ -330,6 +330,75 @@ class testModels (TestCase):
 		self.assertEqual(b.cchamps,team_dict["Team01"][9])
 		self.assertEqual(b.schamps,team_dict["Team01"][10])
 
+#######################
+################################################################################
+
+        def test_Team_model04(self):
+                div_dic = ["NFC North",
+                                                   "static/images/nfc_north.jpg",
+                                                   "National Football Conference",
+                                                   "static/images/nfc.jpg",
+                                                   "1967",
+                                                   "Green Bay Packers",
+                                                   "Minnesota Vikings",
+                                                   "18"
+                                                  ]
+
+                a = Division(
+                                                        division=div_dic[0],
+                                                        dimage=div_dic[1],
+                                                        conference=div_dic[2],
+                                                        cimage=div_dic[3],
+                                                        founded=div_dic[4],
+                                                        rchamp=div_dic[5],
+                                                        mchamps=div_dic[6],
+                                                        cnum=div_dic[7]
+                                                )
+                a.save()
+
+                 team_dict = {"Team01": ["Detroit Lions",
+                                                                           "static/images/lions.png",
+                                                                           "NFC North",
+                                                                           "MI",
+                                                                           "Detroit",
+                                                                           "Ford Field",
+                                                                           "https://upload.wikimedia.org/wikipedia/commons/9/90/Ford-Field-September-10-2006.jpg",
+                                                                           "Jim Caldwell",
+                                                                           "1930",
+                                                                           "4",
+                                                                           "0"
+                                                                          ]}
+
+                b = Team(team=team_dict["Team01"][0],
+                                                        timage=team_dict["Team01"][1],
+                                                        division=a,
+                                                        state=team_dict["Team01"][3],
+                                                        city=team_dict["Team01"][4],
+                                                        stadium=team_dict["Team01"][5],
+                                                        simage=team_dict["Team01"][6],
+                                                        coach=team_dict["Team01"][7],
+                                                        established=team_dict["Team01"][8],
+                                                        cchamps=team_dict["Team01"][9],
+                                                        schamps=team_dict["Team01"][10],
+                                                        )
+
+                self.assertEqual(b.team,team_dict["Team01"][0])
+                self.assertEqual(b.timage,team_dict["Team01"][1])
+                self.assertEqual(b.division.division,team_dict["Team01"][2])
+                self.assertEqual(b.state,team_dict["Team01"][3])
+                self.assertEqual(b.city,team_dict["Team01"][4])
+                self.assertEqual(b.stadium,team_dict["Team01"][5])
+                self.assertEqual(b.simage,team_dict["Team01"][6])
+                self.assertEqual(b.coach,team_dict["Team01"][7])
+                self.assertEqual(b.established,team_dict["Team01"][8])
+                self.assertEqual(b.cchamps,team_dict["Team01"][9])
+                self.assertEqual(b.schamps,team_dict["Team01"][10])
+
+
+                                                  
+#############################################################
+
+
 	def test_Player_model01(self):
 		div_dic = ["AFC West",
 						   "static/images/afc_west.jpg",
@@ -877,5 +946,7 @@ class APItests3(unittest.TestCase):
         self.assertEqual(response_data["experience"], "7")
         self.assertEqual(response_data["college"], "Illinois")
        	self.assertEqual(response_data["pimage"], "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/12424.png")
+
+
 if __name__ == "__main__" :
 	main()
