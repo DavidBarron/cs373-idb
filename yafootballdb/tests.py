@@ -731,7 +731,7 @@ class APItests3(unittest.TestCase):
     #Retrieve the url from local server
     url =  "http://yetanotherfootballdb.me/"
     def test_team_api1(self):
-        request = Request(self.url+"api/teams/1")
+        request = Request(self.url+"api/teams/32")
         response = urlopen(request)
         response_body = response.read().decode("utf-8")
         self.assertEqual(response.getcode(), 200)
@@ -746,7 +746,7 @@ class APItests3(unittest.TestCase):
         self.assertEqual(response_data["schamps"], "0")
         
     def test_team_api2(self):
-        request = Request(self.url+"api/teams/2")
+        request = Request(self.url+"api/teams/31")
         response = urlopen(request)
         response_body = response.read().decode("utf-8")
         self.assertEqual(response.getcode(), 200)
@@ -761,7 +761,7 @@ class APItests3(unittest.TestCase):
         self.assertEqual(response_data["schamps"], "2")
 
     def test_team_api3(self):
-        request = Request(self.url+"api/teams/3")
+        request = Request(self.url+"api/teams/29")
         response = urlopen(request)
         response_body = response.read().decode("utf-8")
         self.assertEqual(response.getcode(), 200)
