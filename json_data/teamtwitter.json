@@ -1,0 +1,130 @@
+[
+  {
+    "team":"Dallas Cowboys",
+    "twitter":"dallascowboys"
+  },
+  {
+    "team":"New York Giants",
+    "twitter":"Giants"
+  },
+  {
+    "team":"Philadelphia Eagles",
+    "twitter":"Eagles"
+  },
+  {
+    "team":"Washington Redskins",
+    "twitter":"Redskins"
+  },
+  {
+    "team":"Arizona Cardinals",
+    "twitter":"AZCardinals"
+  },
+  {
+    "team":"San Francisco 49ers",
+    "twitter":"49ers"
+  },
+  {
+    "team":"Seattle Seahawks",
+    "twitter":"Seahawks"
+  },
+  {
+    "team":"St Louis Rams",
+    "twitter":"STLouisRams"
+  },
+  {
+    "team":"Chicago Bears",
+    "twitter":"ChicagoBears"
+  },
+  {
+    "team":"Detroit Lions",
+    "twitter":"Lions"
+  },
+  {
+    "team":"Green Bay Packers",
+    "twitter":"packers"
+  },
+  {
+    "team":"Minnesota Vikings",
+    "twitter":"Vikings"
+  },
+  {
+    "team":"Atlanta Falcons",
+    "twitter":"AtlantaFalcons"
+  },
+  {
+    "team":"Carolina Panthers",
+    "twitter":"Panthers"
+  },
+  {
+    "team":"New Orleans Saints",
+    "twitter":"Saints"
+  },
+  {
+    "team":"Tampa Bay Buccaneers",
+    "twitter":"TBBuccaneers"
+  },
+  {
+    "team":"Tennessee Titans",
+    "twitter":"Titans"
+  },
+  {
+    "team":"Jacksonville Jaguars",
+    "twitter":"Jaguars"
+  },
+  {
+    "team":"Indianapolis Colts",
+    "twitter":"Colts"
+  },
+  {
+    "team":"Houston Texans",
+    "twitter":"HoustonTexans"
+  },
+  {
+    "team":"Pittsburgh Steelers",
+    "twitter":"steelers"
+  },
+  {
+    "team":"Cleveland Browns",
+    "twitter":"Browns"
+  },
+  {
+    "team":"Cincinnati Bengals",
+    "twitter":"Bengals"
+  },
+  {
+    "team":"Baltimore Ravens",
+    "twitter":"Ravens"
+  },
+  {
+    "team":"San Diego Chargers",
+    "twitter":"Chargers"
+  },
+  {
+    "team":"Oakland Raiders",
+    "twitter":"RAIDERS"
+  },
+  {
+    "team":"Kansas City Chiefs",
+    "twitter":"KCChiefs"
+  },
+  {
+    "team":"Denver Broncos",
+    "twitter":"Broncos"
+  },
+  {
+    "team":"New York Jets",
+    "twitter":"nyjets"
+  },
+  {
+    "team":"New England Patriots",
+    "twitter":"Patriots"
+  },
+  {
+    "team":"Miami Dolphins",
+    "twitter":"MiamiDolphins"
+  },
+  {
+    "team":"Buffalo Bills",
+    "twitter":"buffalobills"
+  }
+]

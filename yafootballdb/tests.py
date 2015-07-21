@@ -571,7 +571,6 @@ class testModels (TestCase):
 		self.assertEqual(Player01.pimage,ply_dict[9])
 		
 
-
 class APItests(unittest.TestCase):
 	#Retrieve the url from local server
 	url =  "http://yetanotherfootballdb.me/"
@@ -679,19 +678,204 @@ class APItests(unittest.TestCase):
 		    #Veriying whether the all of the itmes in the JSON
 		    self.assertTrue(obj in exp_obj)
 
+class APItests2(unittest.TestCase):
+    #Retrieve the url from local server
+    url =  "http://yetanotherfootballdb.me/"
+    def test_team_api1(self):
+        request = Request(self.url+"api/teams/1")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "Dallas Cowboys")
+        self.assertEqual(response_data["state"], "TX")
+        self.assertEqual(response_data["city"], "Arlington")
+        self.assertEqual(response_data["stadium"], "AT&T Stadium")
+        self.assertEqual(response_data["coach"], "Jason Garrett")
+        self.assertEqual(response_data["established"], "1960")
+        self.assertEqual(response_data["cchamps"], "10")
+        self.assertEqual(response_data["schamps"], "5")
+        
+    def test_team_api2(self):
+        request = Request(self.url+"api/teams/2")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "New York Giants")
+        self.assertEqual(response_data["state"], "NJ")
+        self.assertEqual(response_data["city"], "East Rutherford")
+        self.assertEqual(response_data["stadium"], "MetLife Stadium")
+        self.assertEqual(response_data["coach"], "Tom Coughlin")
+        self.assertEqual(response_data["established"], "1925")
+        self.assertEqual(response_data["cchamps"], "11")
+        self.assertEqual(response_data["schamps"], "4")
 
-		#Teams
+    def test_team_api3(self):
+        request = Request(self.url+"api/teams/3")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "Philadelphia Eagles")
+        self.assertEqual(response_data["state"], "PA")
+        self.assertEqual(response_data["city"], "Philadelphia")
+        self.assertEqual(response_data["stadium"], "Lincoln Financial Field")
+        self.assertEqual(response_data["coach"], "Chip Kelly")
+        self.assertEqual(response_data["established"], "1933")
+        self.assertEqual(response_data["cchamps"], "3")
+        self.assertEqual(response_data["schamps"], "0")
+
+
+class APItests3(unittest.TestCase):
+    #Retrieve the url from local server
+    url =  "http://yetanotherfootballdb.me/"
+    def test_team_api1(self):
+        request = Request(self.url+"api/teams/32")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "Buffalo Bills")
+        self.assertEqual(response_data["state"], "NY")
+        self.assertEqual(response_data["city"], "Orchard Park")
+        self.assertEqual(response_data["stadium"], "Ralph Wilson Stadium")
+        self.assertEqual(response_data["coach"], "Rex ryan")
+        self.assertEqual(response_data["established"], "1960")
+        self.assertEqual(response_data["cchamps"], "4")
+        self.assertEqual(response_data["schamps"], "0")
+        
+    def test_team_api2(self):
+        request = Request(self.url+"api/teams/31")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "Miami Dolphins")
+        self.assertEqual(response_data["state"], "FL")
+        self.assertEqual(response_data["city"], "Miami Gardens")
+        self.assertEqual(response_data["stadium"], "Sun Life Stadium")
+        self.assertEqual(response_data["coach"], "Joe Philbin")
+        self.assertEqual(response_data["established"], "1966")
+        self.assertEqual(response_data["cchamps"], "5")
+        self.assertEqual(response_data["schamps"], "2")
+
+    def test_team_api3(self):
+        request = Request(self.url+"api/teams/29")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "New York Jets")
+        self.assertEqual(response_data["state"], "NJ")
+        self.assertEqual(response_data["city"], "East Rutherford")
+        self.assertEqual(response_data["stadium"], "MetLife Stadium")
+        self.assertEqual(response_data["coach"], "Todd Bowles")
+        self.assertEqual(response_data["established"], "1959")
+        self.assertEqual(response_data["cchamps"], "0")
+        self.assertEqual(response_data["schamps"], "1")
 
 		#Players
+    def test_player_api1(self):
+        request = Request(self.url+"api/players/4")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["name"], "Luke McCown")
+        self.assertEqual(response_data["team"], "http://yetanotherfootballdb.me/api/teams/15/")
+        self.assertEqual(response_data["number"], "7")
+        self.assertEqual(response_data["position"], "QB")
+        self.assertEqual(response_data["height"], "6-4")
+        self.assertEqual(response_data["weight"], "217")
+        self.assertEqual(response_data["age"], "33")
+        self.assertEqual(response_data["experience"], "12")
+        self.assertEqual(response_data["college"], "Louisiana Tech")
+       	self.assertEqual(response_data["pimage"], "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/5631.png")
 
+    def test_player_api2(self):
+        request = Request(self.url+"api/players/300")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["name"], "Bear Pascoe")
+        self.assertEqual(response_data["team"], "http://yetanotherfootballdb.me/api/teams/9/")
+        self.assertEqual(response_data["number"], "87")
+        self.assertEqual(response_data["position"], "TE")
+        self.assertEqual(response_data["height"], "6-5")
+        self.assertEqual(response_data["weight"], "265")
+        self.assertEqual(response_data["age"], "29")
+        self.assertEqual(response_data["experience"], "6")
+        self.assertEqual(response_data["college"], "Fresno State")
+       	self.assertEqual(response_data["pimage"], "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/12548.png")
 
+    def test_player_api3(self):
+        request = Request(self.url+"api/players/93")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["name"], "Justin Drescher")
+        self.assertEqual(response_data["team"], "http://yetanotherfootballdb.me/api/teams/15/")
+        self.assertEqual(response_data["number"], "47")
+        self.assertEqual(response_data["position"], "LS")
+        self.assertEqual(response_data["height"], "6-1")
+        self.assertEqual(response_data["weight"], "235")
+        self.assertEqual(response_data["age"], "27")
+        self.assertEqual(response_data["experience"], "6")
+        self.assertEqual(response_data["college"], "Colorado")
+       	self.assertEqual(response_data["pimage"], "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/13559.png")
 
+    def test_player_api4(self):
+        request = Request(self.url+"api/players/456")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["name"], "Ryan Fitzpatrick")
+        self.assertEqual(response_data["team"], "http://yetanotherfootballdb.me/api/teams/29/")
+        self.assertEqual(response_data["number"], "14")
+        self.assertEqual(response_data["position"], "QB")
+        self.assertEqual(response_data["height"], "6-2")
+        self.assertEqual(response_data["weight"], "223")
+        self.assertEqual(response_data["age"], "32")
+        self.assertEqual(response_data["experience"], "11")
+        self.assertEqual(response_data["college"], "Harvard")
+       	self.assertEqual(response_data["pimage"], "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/8664.png")
 
+    def test_player_api5(self):
+        request = Request(self.url+"api/players/301")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["name"], "Dante Rosario")
+        self.assertEqual(response_data["team"], "http://yetanotherfootballdb.me/api/teams/9/")
+        self.assertEqual(response_data["number"], "88")
+        self.assertEqual(response_data["position"], "TE")
+        self.assertEqual(response_data["height"], "6-3")
+        self.assertEqual(response_data["weight"], "242")
+        self.assertEqual(response_data["age"], "30")
+        self.assertEqual(response_data["experience"], "9")
+        self.assertEqual(response_data["college"], "Oregon")
+       	self.assertEqual(response_data["pimage"], "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/10598.png")
 
-
-
-
-
+    def test_player_api6(self):
+        request = Request(self.url+"api/players/2880")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["name"], "Vontae Davis")
+        self.assertEqual(response_data["team"], "http://yetanotherfootballdb.me/api/teams/19/")
+        self.assertEqual(response_data["number"], "21")
+        self.assertEqual(response_data["position"], "CB")
+        self.assertEqual(response_data["height"], "5-11")
+        self.assertEqual(response_data["weight"], "207")
+        self.assertEqual(response_data["age"], "27")
+        self.assertEqual(response_data["experience"], "7")
+        self.assertEqual(response_data["college"], "Illinois")
+       	self.assertEqual(response_data["pimage"], "http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/12424.png")
 if __name__ == "__main__" :
-    #print ("RUNNING FROM MAIN")
 	main()
