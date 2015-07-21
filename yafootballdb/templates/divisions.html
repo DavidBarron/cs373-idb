@@ -21,8 +21,13 @@
     <!-- divisions.css -->
     <link href="https://googledrive.com/host/0B9krI4oNidjib0NTd0JkMGpnSjQ/" rel="stylesheet">
 
-    <!-- Script for sortable table -->
-    <script src="https://googledrive.com/host/0B9krI4oNidjiRWFnOGxyZlM4SUk/"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" 
+href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+<script type="text/javascript" 
+src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" 
+src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,18 +99,16 @@
 
     <!-- Page Content -->
 
-    <a  name="services"></a>
-    <div class="content-section-a">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>Divisions</h3>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <div class="clearfix"></div>
-                    <div class="container stats">
-          <div class="col-md-8 col-md-offset-2">
-            <table class="table table-hover table-bordered sortable">
+<div class="table-responsive">
+
+            <table class="display table" id="bootstrap-table">
               <thead>
-                <tr style="cursor:pointer">
+                <tr>
                   <th>Division</th>
                   <th>Conference</th>
                   <th>Year Founded</th>
@@ -117,29 +120,22 @@
               <tbody>
               {% for div, divurl, conf, foun, rchamp, rchampurl, mchamp, mchampurl, cnum in dinfo %}
                 <tr>
-                  <th><a href="{{divurl}}" style="color:black">{{div}}</a></th>
-                  <th>{{conf}}</th>
-                  <th>{{foun}}</th>
-                  <th><a href="{{rchampurl}}" style="color:black">{{rchamp}}</a></th>
-                  <th><a href="{{mchampurl}}" style="color:black">{{mchamp}}</a></th>
-                  <th>{{cnum}}</th>                  
+                  <td><a href="{{divurl}}" style="color:black">{{div}}</a></td>
+                  <td>{{conf}}</td>
+                  <td>{{foun}}</td>
+                  <td><a href="{{rchampurl}}" style="color:black">{{rchamp}}</a></td>
+                  <td><a href="{{mchampurl}}" style="color:black">{{mchamp}}</a></td>
+                  <td>{{cnum}}</td>                  
                 </tr>
               {% endfor %}
               </tbody>
             </table>
-          </div>
-      </div>
-                </div>
-            </div>
-
         </div>
-        <!-- /.container -->
-
+        </div>
     </div>
-    <!-- /.content-section-a -->
-
-
-        <!-- Footer -->
+</div>
+<br>
+<!-- Footer -->
     <footer>
         <div class="container" align = "center">
             <div class="row">
@@ -168,21 +164,19 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="https://googledrive.com/host/0B9krI4oNidjiQWYxLVNFc3FuZzA/"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://googledrive.com/host/0B9krI4oNidjiNmFMV0R4T2tBSkk/"></script>
+<script>
+$(document).ready( function(){
+    $('#bootstrap-table').dataTable({
+    "iDisplayLength": -1,
+    "aLengthMenu": [[-1], ["All"]]
+    });
+});
+</script>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript">
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
   (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
   e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);

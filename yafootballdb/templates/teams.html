@@ -21,8 +21,13 @@
     <!-- teams.css -->
     <link href="https://googledrive.com/host/0B9krI4oNidjiOVVlUEhGb3NUSDQ/" rel="stylesheet">
 
-    <!-- Script for sortable table -->
-    <script src="https://googledrive.com/host/0B9krI4oNidjiRWFnOGxyZlM4SUk/"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" 
+href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+<script type="text/javascript" 
+src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" 
+src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -92,20 +97,15 @@
     </div>
     <!-- /.intro-header -->
 
-    <!-- Page Content -->
+    <div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>Teams</h3>
+            <div class="table-responsive">
 
-    <a  name="services"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <div class="clearfix"></div>
-       <div class="container stats">
-          <div class="col-md-8 col-md-offset-2">
-            <table class="table table-hover table-bordered sortable">
+            <table class="display table" id="bootstrap-table">
               <thead>
-                <tr style="cursor:pointer">
+                <tr>
                   <th>Team</th>
                   <th>Division</th>
                   <th>City</th>
@@ -118,30 +118,23 @@
               <tbody>
               {% for team, teamurl, div, divurl, city, state, stad, coach, est in tinfo %}
                 <tr>
-                  <th><a href="{{teamurl}}" style="color:black">{{team}}</a></th>
-                  <th><a href="{{divurl}}" style="color:black">{{div}}</a></th>
-                  <th>{{city}}</th>
-                  <th>{{state}}</th>
-                  <th>{{stad}}</th>
-                  <th>{{coach}}</th>
-                  <th>{{est}}</th>
+                  <td><a href="{{teamurl}}" style="color:black">{{team}}</a></td>
+                  <td><a href="{{divurl}}" style="color:black">{{div}}</a></td>
+                  <td>{{city}}</td>
+                  <td>{{state}}</td>
+                  <td>{{stad}}</td>
+                  <td>{{coach}}</td>
+                  <td>{{est}}</td>
                 </tr>
               {% endfor %}
               </tbody>
             </table>
           </div>
         </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.content-section-a -->
-
-
-        <!-- Footer -->
+</div>
+<br>
+<!-- Footer -->
     <footer>
         <div class="container" align = "center">
             <div class="row">
@@ -170,21 +163,19 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="https://googledrive.com/host/0B9krI4oNidjiQWYxLVNFc3FuZzA/"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://googledrive.com/host/0B9krI4oNidjiNmFMV0R4T2tBSkk/"></script>
+<script>
+$(document).ready( function(){
+    $('#bootstrap-table').dataTable({
+    "iDisplayLength": 10,
+    "aLengthMenu": [[10, 15, 20, 25, -1], ["10", "15", "20", "25", "All"]]
+    });
+});
+</script>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript">
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
   (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
   e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
