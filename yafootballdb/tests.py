@@ -727,7 +727,75 @@ class APItests2(unittest.TestCase):
         self.assertEqual(response_data["schamps"], "0")
 
 
-		#Players
+class APItests3(unittest.TestCase):
+        #Retrieve the url from local server
+        url =  "http://yetanotherfootballdb.me/"
+        def test_div_api(self):
+                request = Request(self.url+"api/divisions")
+                response = urlopen(request)
+                response_body = response.read().decode("utf-8")
+                self.assertEqual(response.getcode(), 200)
+                response_data = loads(response_body)
+                res_obj = response_data["results"]
+                exp_obj =[
+            {
+                "division": "NFC North",
+                "dimage": "static/images/nfc_north.jpg",
+                "conference": "National Football Conference",
+                "cimage": "static/images/nfc.jpg",
+                "founded": "1967",
+                "rchamp": "Green Bay Packers",
+                "mchamps": "Minnesota Vikings",
+                "cnum": "18"
+            },
+             {
+                "division": "AFC East",
+                "dimage": "static/images/afc_east.jpg",
+                "conference": "American Football Conference",
+                "cimage": "static/images/afc.jpg",
+                "founded": "1960",
+                "rchamp": "New England Patriots",
+                "mchamps": "New England Patriots",
+                "cnum": "17"
+            },
+            {
+                "division": "AFC West",
+                "dimage": "static/images/afc_west.jpg",
+                "conference": "American Football Conference",
+                "cimage": "static/images/afc.jpg",
+                "founded": "1960",
+                "rchamp": "Denver Broncos",
+                "mchamps": "Oakland Raiders",
+                "cnum": "15"
+            },
+             {
+                "division": "AFC South",
+                "dimage": "static/images/afc_south.jpg",
+                "conference": "American Football Conference",
+                "cimage": "static/images/afc.jpg",
+                "founded": "2002",
+                "rchamp": "Indianapolis Colts",
+                "mchamps": "Indianapolis Colts",
+                "cnum": "9"
+            }
+             ]
+                #Division
+                for obj in res_obj:
+                    for key in obj:
+                        if type(obj[key]) == list:
+                                obj[key] = sorted(obj[key])
+
+                for obj in exp_obj:
+                    for key in obj:
+                        if type(obj[key]) == list:
+                                obj[key] = sorted(obj[key])
+
+                for obj in res_obj:
+                    #Veriying whether the all of the itmes in the JSON
+                    self.assertTrue(obj in exp_obj)
+
+#Players
+
 
 if __name__ == "__main__" :
 	main()
