@@ -1,10 +1,56 @@
-/usr/lib/python3.4/importlib/_bootstrap.py:321: RemovedInDjango19Warning: django.utils.unittest will be removed in Django 1.9.
-  return f(*args, **kwds)
-
-..........
+E
+======================================================================
+ERROR: tests (unittest.loader.ModuleImportFailure)
 ----------------------------------------------------------------------
-Ran 10 tests in 0.224s
+Traceback (most recent calTraceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/utils.py", line 62, in execute
+    return self.cursor.execute(sql)
+psycopg2.ProgrammingError: database "test_mydb2" already exists
 
-OK
-Creating test database for alias 'default'...
-Destroying test database for alias 'default'...
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/creation.py", line 450, in _create_test_db
+    "CREATE DATABASE %s %s" % (qn(test_database_name), suffix))
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/utils.py", line 62, in execute
+    return self.cursor.execute(sql)
+django.db.utils.ProgrammingError: database "test_mydb2" already exists
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 338, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 330, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/test.py", line 30, in run_from_argv
+    super(Command, self).run_from_argv(argv)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 390, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/test.py", line 74, in execute
+    super(Command, self).execute(*args, **options)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 441, in execute
+    output = self.handle(*args, **options)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/test.py", line 90, in handle
+    failures = test_runner.run_tests(test_labels)
+  File "/usr/local/lib/python3.4/dist-packages/django/test/runner.py", line 210, in run_tests
+    old_config = self.setup_databases()
+  File "/usr/local/lib/python3.4/dist-packages/django/test/runner.py", line 166, in setup_databases
+    **kwargs
+  File "/usr/local/lib/python3.4/dist-packages/django/test/runner.py", line 370, in setup_databases
+    serialize=connection.settings_dict.get("TEST", {}).get("SERIALIZE", True),
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/creation.py", line 354, in create_test_db
+    self._create_test_db(verbosity, autoclobber, keepdb)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/creation.py", line 462, in _create_test_db
+    "database '%s', or 'no' to cancel: " % test_database_name)
+OSError: [Errno 5] Input/output error
