@@ -728,6 +728,7 @@ class APItests2(unittest.TestCase):
 
 
 class APItests3(unittest.TestCase):
+<<<<<<< HEAD
         #Retrieve the url from local server
         url =  "http://yetanotherfootballdb.me/"
         def test_div_api(self):
@@ -796,6 +797,56 @@ class APItests3(unittest.TestCase):
 
 #Players
 
+=======
+    #Retrieve the url from local server
+    url =  "http://yetanotherfootballdb.me/"
+    def test_team_api1(self):
+        request = Request(self.url+"api/teams/1")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "Buffalo Bills")
+        self.assertEqual(response_data["state"], "NY")
+        self.assertEqual(response_data["city"], "Orchard Park")
+        self.assertEqual(response_data["stadium"], "Ralph Wilson Stadium")
+        self.assertEqual(response_data["coach"], "Rex ryan")
+        self.assertEqual(response_data["established"], "1960")
+        self.assertEqual(response_data["cchamps"], "4")
+        self.assertEqual(response_data["schamps"], "0")
+        
+    def test_team_api2(self):
+        request = Request(self.url+"api/teams/2")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "Miami Dolphins")
+        self.assertEqual(response_data["state"], "FL")
+        self.assertEqual(response_data["city"], "Miami Gardens")
+        self.assertEqual(response_data["stadium"], "Sun Life Stadium")
+        self.assertEqual(response_data["coach"], "Joe Philbin")
+        self.assertEqual(response_data["established"], "1966")
+        self.assertEqual(response_data["cchamps"], "5")
+        self.assertEqual(response_data["schamps"], "2")
+
+    def test_team_api3(self):
+        request = Request(self.url+"api/teams/3")
+        response = urlopen(request)
+        response_body = response.read().decode("utf-8")
+        self.assertEqual(response.getcode(), 200)
+        response_data = loads(response_body)        
+        self.assertEqual(response_data["team"], "New York Jets")
+        self.assertEqual(response_data["state"], "NJ")
+        self.assertEqual(response_data["city"], "East Rutherford")
+        self.assertEqual(response_data["stadium"], "MetLife Stadium")
+        self.assertEqual(response_data["coach"], "Todd Bowles")
+        self.assertEqual(response_data["established"], "1959")
+        self.assertEqual(response_data["cchamps"], "0")
+        self.assertEqual(response_data["schamps"], "1")
+
+		#Players
+>>>>>>> dev-Luis
 
 if __name__ == "__main__" :
 	main()
