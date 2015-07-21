@@ -5,19 +5,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="shortcut icon" href="https://googledrive.com/host/0B9krI4oNidjiVUpfZVVVdzlBR0k/"
 
-    <title>{{team}}</title>
+    <title>{{name}}</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'polls/dist/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'polls/dist/css/bootstrap-theme.min.css' %}" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="https://googledrive.com/host/0B9krI4oNidjiNW9NZld5aFFUWGc/" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="{% static 'polls/general.css' %}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- player_template.css -->
+    <link href="https://googledrive.com/host/0B9krI4oNidjia0lERTN3bU56X2M/" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -29,88 +28,89 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+   <style type="text/css">
+    .intro-header {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-image: url("{{simage}}");
+  background-size: 100%;
+  background-attachment: fixed;
+  text-shadow: -1.5px 0 black, 1.5px 0 black, 1.5px 0 black, 0 -1.5px black;
+  }
+  .jumbotron {
+
+    background-color: rgba(255,255,255,0.75);
+}
+  </style>
+
 
   <body role="document">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../../"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="../"><span class="ya">ya</span><span class="football">football</span><span class="db">db</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/divisions/">Divisions</a>
+                    </li>
+                    <li>
+                        <a href="/teams/">Teams</a>
+                    </li>
+                    <li>
+                        <a href="/players/">Players</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="../../divisions/">Divisions</a></li>
-            <li><a href="../../teams/">Teams</a></li>
-            <li><a href="../../players/">Players</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-right"><a href="../../about">About</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+        <!-- /.container -->
     </nav>
 
-    <div class="theme-showcase" role="main">
-      <div>
-        <div class="container jumbotron vertical-center">
-          <div class="col-md-12 player-name" align="center">
-            {{team}}
-          </div>
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading" style="font-size: 3em;"><br><br>{{team}}<br>{{city}},{{state}}</h2>
+                    <p class="lead" style="font-size: 2em;">Stadium: {{stadium}}<br>Coach: {{coach}}<br>Established: {{established}}<br>Conference Championships: {{cchamps}}<br>Super Bowl Championships: {{schamps}}<br><br></p>
+                </div>
+                <div class="col-lg-5 col-sm-6">
+                    <img class="img-responsive" src="{{timage}}" alt="">
+                </div>
+
+
         </div>
 
-        <div class="container jumbotron stats">
-          <div class="row">
-          <div class="col-md-4">
-            <div class="teamlogo">
-              <img src="{{timage}}" class="img-responsive center-block">
             </div>
-          </div>
-                    <div class="col-md-8">
-            <table class="table table-hover">
-              <tbody>
-                <tr>
-                  <th>State</th>
-                  <th>{{state}}</th>
-                </tr>
-                <tr>
-                  <th>City</th>
-                  <th>{{city}}</th>
-                </tr>
-                <tr>
-                  <th>Stadium</th>
-                  <th>{{stadium}}</th>
-                </tr>
-                <tr>
-                  <th>Coach</th>
-                  <th>{{coach}}</th>
-                </tr>
-                <tr>
-                  <th>Established</th>
-                  <th>{{established}}</th>
-                </tr>
-                <tr>
-                  <th>Conference Championships</th>
-                  <th>{{cchamps}}</th>
-                </tr>
-                <tr>
-                  <th>Super Bowl Championships</th>
-                  <th>{{schamps}}</th>
-                </tr>
-                <tr>
-                  <th>Twitter</th>
-                  <th><a class="twitter-timeline" href="https://twitter.com/{{twinn}}" data-widget-id="{{twiid}}">Tweets by @{{twinn}}</a>
+
+
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+  <div class="col-md-4 col-md-offset-4">
+      <a class="twitter-timeline" href="https://twitter.com/{{twinn}}" data-widget-id="{{twiid}}">Tweets by @{{twinn}}</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><th>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          </div>
+</div>
           <div class="align-center height:">
             <div class="teamlogo">
               <img src="{{simage}}" class="img-responsive center-block" width=600px>
