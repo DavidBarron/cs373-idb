@@ -121,9 +121,9 @@
             {% endfor %} -->
             <div class="container">
                 {% for pla, pla_url, pla_img in pinfo %}
-                  <div class="col-md-2">
+                  <div class="col-md-3">
                     <a href="{{pla_url}}">
-                      <img src="{{pla_img}}" class="img-circle img-responsive" width="600" height="436"/>{{pla}}</a>
+                      <img src="{{pla_img}}" class="img-circle img-responsive" style="min-height: 150px;width:auto !important; height: 100px;"/>{{pla}}</a>
                   </div>
                 {% endfor %}
             </div>

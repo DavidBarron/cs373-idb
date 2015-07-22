@@ -173,7 +173,7 @@ def division(request, d_name):
 
 
 def team(request, t_name):
-    #try:
+    try:
         context = RequestContext(request)
         tea = Team.objects.get(team=t_name.replace("_"," "))
         players = Player.objects.all().filter(team=tea)
@@ -211,8 +211,8 @@ def team(request, t_name):
             'twinn' : twin[6],
         }
         return render_to_response('team_template.html', context_dict, context)
-    #except:
-    #    return handler404(request)
+    except:
+        return handler404(request)
 
 def player(request, p_name):
     try:
