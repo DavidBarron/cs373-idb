@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E
 ======================================================================
 ERROR: tests (unittest.loader.ModuleImportFailure)
@@ -54,3 +55,5 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/creation.py", line 462, in _create_test_db
     "database '%s', or 'no' to cancel: " % test_database_name)
 OSError: [Errno 5] Input/output error
+=======
+>>>>>>> master

@@ -149,7 +149,7 @@ def division(request, d_name):
         teams = list(Team.objects.all().filter(division=div))
         context_dict = {
             'division' : div.division,
-            'dimage' : div.dimage,
+            'dimage' : '/' + div.dimage,
             'conference' : div.conference,
             'cimage' : div.cimage,
             'founded' : div.founded,
@@ -158,12 +158,16 @@ def division(request, d_name):
             'cnum' : div.cnum,
             'team0' : teams[0].team,
             'team0url' : '../../teams/' + teams[0].team.replace(" ", "_"),
+            'team0img' : '/' + teams[0].timage,
             'team1' : teams[1].team,
             'team1url' : '../../teams/' + teams[1].team.replace(" ", "_"),
+            'team1img' : '/' + teams[1].timage,
             'team2' : teams[2].team,
             'team2url' : '../../teams/' + teams[2].team.replace(" ", "_"),
+            'team2img' : '/' + teams[2].timage,
             'team3' : teams[3].team,
             'team3url' : '../../teams/' + teams[3].team.replace(" ", "_"),
+            'team3img' : '/' + teams[3].timage,
         }
         return render_to_response('division_template.html', context_dict, context)
     except:

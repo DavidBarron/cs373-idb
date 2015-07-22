@@ -19,23 +19,21 @@
 
     <!-- Custom CSS -->
     <!-- players.css -->
-    <link href="https://googledrive.com/host/0B9krI4oNidjiV3BfcW1pcWdYT2c/" rel="stylesheet">
-
-    <!-- Script for sortable table -->
-    <script src="https://googledrive.com/host/0B9krI4oNidjiRWFnOGxyZlM4SUk/"></script>
     
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
-
+    <link href="https://googledrive.com/host/0B9krI4oNidjiNW9NZld5aFFUWGc/" type="text/css" rel="stylesheet">
+    <link href="https://googledrive.com/host/0B9krI4oNidjiRWVXTkc0R1otQVk/" type="text/css" rel="stylesheet">
+    <link href="https://googledrive.com/host/0B9krI4oNidjicEZSU0Q0TzV5Nlk/" type="text/css" rel="stylesheet">
+        <link href="https://googledrive.com/host/0B9krI4oNidjiV3BfcW1pcWdYT2c/" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" 
+href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+<script type="text/javascript" 
+src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" 
+src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
 <body>
-
-<!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -70,7 +68,6 @@
         <!-- /.container -->
     </nav>
 
-
     <!-- Header -->
     <a name="about"></a>
     <div class="intro-header">
@@ -91,21 +88,16 @@
 
     </div>
     <!-- /.intro-header -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>Players</h3>
 
-    <!-- Page Content -->
+<div class="table-responsive">
 
-    <a  name="services"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <div class="clearfix"></div>
-        <div class="container stats">
-          <div class="col-md-8 col-md-offset-2">
-            <table class="table table-hover table-bordered sortable">
-              <thead>
-                <tr style="cursor:pointer">
+            <table class="display table" id="bootstrap-table">
+                <thead>
+                <tr>
                   <th>Player</th>
                   <th>Number</th>
                   <th>Team</th>
@@ -115,33 +107,28 @@
                   <th>Weight</th>
                   <th>Seasons Played</th>
                 </tr>
-              </thead>
-              <tbody>
-              {% for pla, plaurl, num, tea, teaurl, pos, col, hei, wei, seasons in pinfo %}
+                </thead>
+                <tbody>
+                {% for pla, plaurl, num, tea, teaurl, pos, col, hei, wei, seasons in pinfo %}
                 <tr>
-                  <th><a href="{{plaurl}}" style="color:black">{{pla}}</a></th>
-                  <th>{{num}}</th>
-                  <th><a href="{{teaurl}}" style="color:black">{{tea}}</a></th>
-                  <th>{{pos}}</th>
-                  <th>{{col}}</th>
-                  <th>{{hei}}</th>
-                  <th>{{wei}}</th>
-                  <th>{{seasons}}</th>
+                  <td><a href="{{plaurl}}" style="color:black">{{pla}}</a></td>
+                  <td>{{num}}</td>
+                  <td><a href="{{teaurl}}" style="color:black">{{tea}}</a></td>
+                  <td>{{pos}}</td>
+                  <td>{{col}}</td>
+                  <td>{{hei}}</td>
+                  <td>{{wei}}</td>
+                  <td>{{seasons}}</td>
                 </tr>
-              {% endfor %}
-              </tbody>
+                {% endfor %}
+                </tbody>
             </table>
-          </div>
         </div>
-                </div>
-            </div>
-
         </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.content-section-a -->
-         <!-- Footer -->
+</div>
+<br>
+<!-- Footer -->
     <footer>
         <div class="container" align = "center">
             <div class="row">
@@ -170,21 +157,18 @@
         </div>
     </footer>
 
-     <!-- jQuery -->
-    <script src="https://googledrive.com/host/0B9krI4oNidjiQWYxLVNFc3FuZzA/"></script>
+<script>
+$(document).ready( function(){
+    $('#bootstrap-table').dataTable({
+    "iDisplayLength": 50,
+    "aLengthMenu": [[50, 100, 150, 200, 250, -1], [50, 100, 150, 200, 250, "All"]]
+    });
+});
+</script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://googledrive.com/host/0B9krI4oNidjiNmFMV0R4T2tBSkk/"></script>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript">
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
   (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
   e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
@@ -192,5 +176,5 @@
 
   _st('install','BuTxYQzkcSMz_4wRq732','2.0.0');
 </script>
-  </body>
+</body>
 </html>

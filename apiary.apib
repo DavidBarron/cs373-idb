@@ -12,15 +12,10 @@ http://www.yetanotherfootballdb.me/api/players
 
 # Group Divisions
 
-## Divisions Collection [/api/divisions/?offset={offset}&limit={limit}]
-
-+ Parameters
-    + offset (required, number, `1`) ... number `offset` of the Division to perform action with. Has example value.
-    + limit (required, number, `1`) ... number `limit` of the Division to perform action with. Has example value.
+## Divisions Collection [/api/divisions/]
 
 
-
-### List first {limit} Divisions starting from {offset}. Queries are bounded by the number of divisions which is 8 [GET]
+### List Divisions. Queries are bounded by the number of divisions which is 8 [GET]
 + Response 200 (application/json)
 
         [
@@ -43,9 +38,6 @@ http://www.yetanotherfootballdb.me/api/players
 ## Divisions [/api/divisions/{id}]
 A single Division object with all its details
 
-+ Parameters
-    + id (required, string, `AFC East`) ... String `id` of the Division to perform action with. Has example value.
-
 ### Retrieve a Division [GET]
 + Response 200 (application/json)
 
@@ -62,15 +54,10 @@ A single Division object with all its details
 
 
 # Group Teams
-## Teams Collection [/api/teams/?offset={offset}&limit={limit}]
-
-+ Parameters
-    + offset (required, number, `1`) ... number `offset` of the Teams to perform action with. Has example value.
-    + limit (required, number, `1`) ... number `limit` of the Teams to perform action with. Has example value.
+## Teams Collection [/api/teams/]
 
 
-
-### List first {limit} Teams starting from {offset}. Queries are bounded by the number of teams which is 32. [GET]
+### List Teams. Queries are bounded by the number of teams which is 32. [GET]
 + Response 200 (application/json)
 
         [
@@ -97,8 +84,6 @@ A single Division object with all its details
 ## Teams [/api/teams/{id}]
 A single Team object with all its details
 
-+ Parameters
-    + id (required, string, `New England Patriots`) ... String `id` of the Team to perform action with. Has example value.
 
 ### Retrieve a Team [GET]
 + Response 200 (application/json)
@@ -120,14 +105,10 @@ A single Team object with all its details
  
 
 # Group Players
-## Players Collection [/api/players/?offset={offset}&limit={limit}]
-+ Parameters
-    + offset (required, number, `1`) ... number `offset` of the Players to perform action with. Has example value.
-    + limit (required, number, `1`) ... number `limit` of the Players to perform action with. Has example value.
+## Players Collection [/api/players/]
 
 
-
-### List first {limit} Players starting from {offset}. Queries are bounded by the number of players which is 2880[GET]
+### List first Players. Queries are bounded by the number of players which is 2880[GET]
 
 + Response 200 (application/json)
 
@@ -151,9 +132,6 @@ A single Team object with all its details
 
 ## Players [/api/players/{id}]
 A single Player object with all its details
-
-+ Parameters
-    + id (required, number, `1`) ... Int `id` of the Player to perform action with. Has example value.
 
 ### Retrieve a Player [GET]
 + Response 200 (application/json)
