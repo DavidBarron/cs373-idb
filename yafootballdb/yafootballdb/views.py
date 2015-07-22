@@ -173,12 +173,24 @@ def division(request, d_name):
 
 
 def team(request, t_name):
-    try:
+    #try:
         context = RequestContext(request)
         tea = Team.objects.get(team=t_name.replace("_"," "))
         players = Player.objects.all().filter(team=tea)
         player_names = sorted([x.name for x in players])
-        p = zip(player_names,['../../players/' + x.replace(" ","_") for x in player_names])
+        #p = zip(player_names,['../../players/' + x.replace(" ","_"), Player.objects.get(name=player_names[i]).pimage for x in player_names])
+        p = tuple()
+        i = 0
+        cur = tuple()
+        #cur = (pla0, pla0url, pla1, pla1url,pla2, pla2url, pla3, pla3url)
+        while i < len(player_names):
+            if(len(cur) < 3):
+                cur += (player_names[i], '../../players/' + player_names[i].replace(" ","_"), Player.objects.get(name=player_names[i]).pimage)
+                i = i + 1
+            else:
+                p += (cur,)
+                cur = tuple()
+
         twid = tea.twitter.replace(";"," ").replace("&"," ").replace("\""," ").split()
         twin = tea.twitter.replace("/"," ").replace("\""," ").split()
         context_dict = {    
@@ -199,8 +211,8 @@ def team(request, t_name):
             'twinn' : twin[6],
         }
         return render_to_response('team_template.html', context_dict, context)
-    except:
-        return handler404(request)
+    #except:
+    #    return handler404(request)
 
 def player(request, p_name):
     try:
