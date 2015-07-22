@@ -115,11 +115,12 @@
 	     <p><strong>Data Collection:</strong>
 	       <br/>
 	       <br/>
-	       Modules Used:  re (Regular Expressions), bs4 (Beautiful Soup), requests (Requests).
-	       <ul>
-		 <li> Regular Expressions is used to match class names with information.</li>
-		 <li> Beautiful Soup is used to perform searches on the HTML.</li>
-		 <li> Requests is used to load HTML content of a URL.</li>
+           Modules Used:  re (Regular Expressions), bs4 (BeautifulSoup), requests (Requests).
+           <ul>
+         <li> Requests is used to load HTML content of a URL.</li>
+         <li> BeautifulSoup is used to perform searches on the HTML passed in from Requests.</li>
+         <li> Regular Expressions is used in conjunction with BeautifulSoup to match segments of class names with information on the page being scraped. </li>
+         <li> Scraping is a simple process of pattern matching.</li>
 	       </ul>
 	     </p>
 	     <br/>
