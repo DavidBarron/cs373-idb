@@ -102,30 +102,35 @@
         </div>
       </div>
   </div>
-
-  </div>
+</div>
 
 
         <!-- /.container -->
 
     </div>
     <!-- /.intro-header -->
-<br><br>
-  <div class="col-md-4 col-md-offset-4">
-      <a class="twitter-timeline" href="https://twitter.com/{{twinn}}" data-widget-id="{{twiid}}">Tweets by @{{twinn}}</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><th>
-</div>
-
-          <div class="align-center height:">
-          </div>
-        </div>
+    <br><br>
+  
+  </div>
 
         <div class="container jumbotron roster">
           <div class="roster-title" align="center" style="font-size:3em;">Roster</div>
           <div align="center"style="font-size:1.25em">
-            {% for x, y in pinfo %}
-            <div class="rnames"><a href="{{y}}" style="color:black;">{{x}}</a></div>
-            {% endfor %}
+            <!-- {% for x, y in pinfo %} -->
+            <!-- <div class="rnames"><a href="{{y}}" style="color:black;">{{x}}</a></div>
+            {% endfor %} -->
+            <div class="container">
+                {% for pla, pla_url, pla_img in pinfo %}
+                  <div class="col-md-3">
+                    <a href="{{pla_url}}">
+                      <img src="{{pla_img}}" class="img-circle img-responsive" style="min-height: 150px;width:auto !important; height: 100px;"/>{{pla}}</a>
+                  </div>
+                {% endfor %}
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+      <a class="twitter-timeline" href="https://twitter.com/{{twinn}}" data-widget-id="{{twiid}}">Tweets by @{{twinn}}</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
           </div>
 
         </div>
