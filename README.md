@@ -30,7 +30,7 @@ The group must collaborate using Slack and it must be integrated with the GitHub
 
 #### Topic Chosen
 
-NFL; Gather information on divisions, teams, and players of the National Football League.
+Gather information on divisions, teams, and players of the National Football League.
 
 #### Team Members
 
