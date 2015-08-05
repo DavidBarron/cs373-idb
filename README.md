@@ -34,22 +34,22 @@ NFL; Gather information on divisions, teams, and players of the National Footbal
 
 #### Team Members
 
-Name: Paulo Alves
-Github ID: saNed
-Email: p@uloalv.es
+Name: Paulo Alves<br>
+Github ID: saNed<br>
+Email: p@uloalv.es<br>
 
-Name: Samantha Amador
-Github ID: samador88
-Email: samador@utexas.edu
+Name: Samantha Amador<br>
+Github ID: samador88<br>
+Email: samador@utexas.edu<br>
 
-Name: David Barron
-Github ID: DavidBarron
-Email: david.barron91@gmail.com
+Name: David Barron<br>
+Github ID: DavidBarron<br>
+Email: david.barron91@gmail.com<br>
 
-Name: Luis Lopez
-Github ID: lclg21
-Email: lclg21@utexas.edu
+Name: Luis Lopez<br>
+Github ID: lclg21<br>
+Email: lclg21@utexas.edu<br>
 
-Name: Nic Lam
-Github ID: killVung
-Email: nickylam125@gmail.com
+Name: Nic Lam<br>
+Github ID: killVung<br>
+Email: nickylam125@gmail.com<br>
