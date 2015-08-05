@@ -1,6 +1,6 @@
 # cs373-idb
-
-## University of Texas at Austin
+---------------------------------------------
+# University of Texas at Austin
 
 ### CS 373 - Software Engineering
 
