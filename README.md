@@ -3,6 +3,7 @@
 # University of Texas at Austin
 
 ### CS 373 - Software Engineering
+### Instructor - Glenn Downing
 
 ### Website URL: www.yetanotherfootballdb.me
 ---------------------------------------------
