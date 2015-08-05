@@ -27,3 +27,29 @@ The DB must be implemented using Django's ORM or SQLAlchemy and MySQL or Postgre
 The website must be hosted on Rackspace, using a URL provided by Namecheap.
 
 The group must collaborate using Slack and it must be integrated with the GitHub repo.
+
+#### Topic Chosen
+
+NFL; Gather information on divisions, teams, and players of the National Football League.
+
+#### Team Members
+
+Name: Paulo Alves
+Github ID: saNed
+Email: p@uloalv.es
+
+Name: Samantha Amador
+Github ID: samador88
+Email: samador@utexas.edu
+
+Name: David Barron
+Github ID: DavidBarron
+Email: david.barron91@gmail.com
+
+Name: Luis Lopez
+Github ID: lclg21
+Email: lclg21@utexas.edu
+
+Name: Nic Lam
+Github ID: killVung
+Email: nickylam125@gmail.com
