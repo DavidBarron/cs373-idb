@@ -52,4 +52,4 @@ Email: lclg21@utexas.edu<br>
 
 Name: Nic Lam<br>
 Github ID: killVung (Also known as "NL")<br>
-Email: nickylam125@gmail.com<br>
+Email: kiulam125@gmail.com<br>
