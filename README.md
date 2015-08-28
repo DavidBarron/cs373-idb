@@ -52,4 +52,9 @@ Email: lclg21@utexas.edu<br>
 
 Name: Nic Lam<br>
 Github ID: killVung (Also known as "NL")<br>
+
+Seriously! I am really suprised of the fact that Github would not tracked the name of author other than the one that had been registed on Github, even thought I had published my work in the name of "NL" instead of "killvung", Github wouldn't bother to make a note of it, so I would either have to convince people outside of project that I had really worked on the materials, or let them believe that I was a free rider here for all time...<br>
+
 Email: kiulam125@gmail.com<br>
+
+
