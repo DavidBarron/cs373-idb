@@ -52,9 +52,6 @@ Email: lclg21@utexas.edu<br>
 
 Name: Nic Lam<br>
 Github ID: killVung (Also known as "NL")<br>
-
-Seriously! I am really suprised of the fact that Github would not tracked the name of the author, other than the one that had been registed on Github, even thought I had published my work under the name of "NL" instead of "killvung", Github wouldn't bother to make a note of it, so I would either have to convince people outside of project, that I had really worked on this repo, such as implementing the unit test for running in Django, dynamically fetching data from database through Django, or even import data from other API, or let them believe that I was a free rider here for all the time...<br>
-
 Email: kiulam125@gmail.com<br>
 
 
