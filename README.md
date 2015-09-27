@@ -5,7 +5,8 @@
 ### CS 373 - Software Engineering
 ### Instructor - Glenn Downing
 
-### Website URL: www.yetanotherfootballdb.me
+### Website URL: (Apparently hosting platform has been reserved by Paulo, for his cool bus stop project,
+trying my best to contact him, after 24 hours Hackathon)
 ---------------------------------------------
 
 #### Project Goals
