@@ -1,5 +1,5 @@
+# YET ANOTHER FOOTBALL DATABASE
 #### Project Goals
-
 Create a Web app hosted on Rackspace that emulates IMDB to track something.
 
 This is a group project with three phases and only one repo will be used across all of the three phases.
