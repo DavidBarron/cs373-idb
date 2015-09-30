@@ -1,14 +1,3 @@
-# cs373-idb
----------------------------------------------
-# University of Texas at Austin
-
-### CS 373 - Software Engineering
-### Instructor - Glenn Downing
-
-### Website URL: http://yetanotherfootballdb.me/
-
----------------------------------------------
-
 #### Project Goals
 
 Create a Web app hosted on Rackspace that emulates IMDB to track something.
@@ -52,7 +41,7 @@ Github ID: lclg21<br>
 Email: lclg21@utexas.edu<br>
 
 Name: Nic Lam<br>
-Github ID: killVung (Also known as "NL")<br>
+Github ID: killVung<br>
 Email: kiulam125@gmail.com<br>
 
 
